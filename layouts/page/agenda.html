@@ -13,6 +13,8 @@
     <div class="content">
       {{ .Content | markdownify | emojify | safeHTML }}
     </div>
+    {{ if or .Params.a21 .Params.a22_A .Params.a22_B .Params.a22_C .Params.a22_D .Params.a22_E .Params.a23_A .Params.a23_B .Params.a23_C .Params.a23_D .Params.a23_E }}
     {{ partial "index-sections/agenda-main.html" . }}
+    {{ end }}
   </article>
 {{ end }}

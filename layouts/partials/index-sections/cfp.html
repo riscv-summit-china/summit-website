@@ -3,7 +3,7 @@
   <div class="text-container">
     <h1>{{ .Title | markdownify | emojify }}</h1>
     <div class="content">
-      <p>{{ .Content | markdownify | emojify | safeHTML }}</p>
+      <div class="markdown-content">{{ .Content | markdownify | emojify | safeHTML }}</div>
     </div>
     {{ if .Params.link_slug }}
     <a class="details" href="{{ (path.Join "posts/" .Params.link_slug | relLangURL) }}">{{ i18n "details" | default "点击查阅详情" }}</a>

@@ -1,6 +1,6 @@
-baseURL = 'https://riscv-summit-china.com/'
+baseURL = 'https://riscv-summit-china.org/'
 languageCode = 'zh-CN'
-title = 'RISC-V Summit China 2024'
+title = 'RISC-V Summit China 2026'
 theme = 'ananke'
 timeZone = "Asia/Shanghai"
 recent_posts_number = 8
@@ -9,6 +9,9 @@ defaultContentLanguageInSubdir = false
 
 [markup.goldmark.renderer]
   unsafe= true
+
+[security]
+  allowContent = ['^text/html$', '^text/markdown$']
 
 [params]
   custom_css = ["custom.scss"]
@@ -33,7 +36,7 @@ defaultContentLanguageInSubdir = false
     languageCode = 'zh-CN'
     languageDirection = 'ltr'
     languageName = '简体中文'
-    title = 'RISC-V 中国峰会 2024'
+    title = 'RISC-V 中国峰会 2026'
     copyright = 'RISC-V 中国峰会。'
     weight = 1
     hasCJKLanguage = true
@@ -67,46 +70,22 @@ defaultContentLanguageInSubdir = false
       #  id   = 1
       #  text = '欢迎参加 RISC-V 中国峰会 2024'
         id   = 2
-        text = '《RISC-V 中国峰会 2024 - 参会指南》已上传'
-        link = 'https://github.com/cnrv/riscv-summit-china-website/blob/main/RISC-V-Summit-China-2024-Catalog.pdf?raw=true'
-        link_text = "点击下载"
+        text = 'RISC-V 中国峰会 2026 网站内容正在更新，敬请期待'
+        link = ''
+        link_text = ""
     [languages.zh.menu]
       [[languages.zh.menu.main]]
         name = "主页"
         url = "#"
         weight = 1
       [[languages.zh.menu.main]]
-        name = "新闻"
-        url = "#news"
-        weight = 5
-      [[languages.zh.menu.main]]
         name = "赞助商"
         url = "#sponsors"
         weight = 15
       [[languages.zh.menu.main]]
-        name = "同期活动"
-        url = "/co-events"
-        weight = 20
-      [[languages.zh.menu.main]]
-        name = "大会议程"
-        url = "/agenda"
-        weight = 25
-      [[languages.zh.menu.main]]
-        name = "直播"
-        url = "/live"
-        weight = 26
-      [[languages.zh.menu.main]]
-        name = "观众报名"
-        url = "#registration"
-        weight = 30
-      [[languages.zh.menu.main]]
         name = "路线及酒店"
         url = "#venue"
         weight = 35
-      [[languages.zh.menu.main]]
-        name = "展厅信息"
-        url = "#exhibition"
-        weight = 40
       [[languages.zh.menu.main]]
         name = "组织团队"
         url = "/organizing-teams"
@@ -117,7 +96,7 @@ defaultContentLanguageInSubdir = false
     languageCode = 'en-US'
     languageDirection = 'ltr'
     languageName = 'English'
-    title = 'RISC-V Summit China 2024'
+    title = 'RISC-V Summit China 2026'
     copyright = 'RISC-V Summit China.'
     weight = 2
     [languages.en.params]
@@ -149,46 +128,22 @@ defaultContentLanguageInSubdir = false
       #  id   = 1
       #  text = 'Welcome to attend RISC-V Summit China 2024'
         id   = 2
-        text = 'The "RISC-V Summit China 2024 Catalog" has been uploaded'
-        link = 'https://github.com/cnrv/riscv-summit-china-website/blob/main/RISC-V-Summit-China-2024-Catalog.pdf?raw=true'
-        link_text = "Click to download"
+        text = 'RISC-V Summit China 2026 website content is being updated. Stay tuned.'
+        link = ''
+        link_text = ""
     [languages.en.menu]
       [[languages.en.menu.main]]
         name = "Home"
         url = "#"
         weight = 1
       [[languages.en.menu.main]]
-        name = "News"
-        url = "#news"
-        weight = 5
-      [[languages.en.menu.main]]
         name = "Sponsors"
         url = "#sponsors"
         weight = 15
       [[languages.en.menu.main]]
-        name = "Co-events"
-        url = "/co-events"
-        weight = 20
-      [[languages.en.menu.main]]
-        name = "Agenda"
-        url = "/agenda"
-        weight = 25
-      [[languages.en.menu.main]]
-        name = "Live"
-        url = "/live"
-        weight = 26
-      [[languages.en.menu.main]]
-        name = "Registration"
-        url = "#registration"
-        weight = 30
-      [[languages.en.menu.main]]
-        name = "Venue & Accomodation"
+        name = "Venue & Accommodation"
         url = "#venue"
         weight = 35
-      [[languages.en.menu.main]]
-        name = "Exhibition Space"
-        url = "#exhibition"
-        weight = 40
       [[languages.en.menu.main]]
         name = "Organizing Teams"
         url = "/organizing-teams"

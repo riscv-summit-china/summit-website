@@ -13,6 +13,7 @@
     <div class="content">
       {{ .Content | markdownify | emojify | safeHTML }}
     </div>
+    {{ if .Params.events }}
     {{- with .Site.GetPage "co-events" }}
     <div id="co-events">
       <table class="adaptive">
@@ -62,5 +63,6 @@
       </table>
     </div>
     {{- end }}
+    {{ end }}
   </article>
 {{ end }}

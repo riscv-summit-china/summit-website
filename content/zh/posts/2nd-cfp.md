@@ -1,74 +1,54 @@
 ---
-title: 第二轮补充投稿通知：7 月 18 日截止｜2024 RISC-V 中国峰会演讲征集
-summary: 根据峰会投稿者的反馈和部分厂商新产品投稿的需求，RISC-V 中国峰会开启第二轮补充投稿通道。请第一轮投稿中收到返修要求的投稿者通过第二轮投稿渠道进行第二次投稿。同时程序委员会也欢迎错过第一轮投稿的厂商和研究机构、开源社区贡献者在第二轮截止前投递自己最新的工作。
-description: 根据峰会投稿者的反馈和部分厂商新产品投稿的需求，RISC-V 中国峰会开启第二轮补充投稿通道。请第一轮投稿中收到返修要求的投稿者通过第二轮投稿渠道进行第二次投稿。同时程序委员会也欢迎错过第一轮投稿的厂商和研究机构、开源社区贡献者在第二轮截止前投递自己最新的工作。
+title: 投稿通知：9月21日截止｜2026 RISC-V 中国峰会演讲征集
+summary: 2026 RISC-V 中国峰会演讲征集现已启动，欢迎提交与 RISC-V 相关的演讲申请。
+description: 2026 RISC-V 中国峰会演讲征集现已启动，欢迎提交与 RISC-V 相关的演讲申请。
 slug: 2ndcfp2024
-author:  RVSC2024组委会
-
+author: RVSC2026 组委会
 draft: false
-date: 2024-07-11T21:15:00+08:00
-lastmod: 
-expiryDate: 
-publishDate: 
-
-feature_image: 
-feature_image_alt: 
-
+date: 2026-06-29T15:50:00+08:00
 categories: announcement
 tags: cfp riscv
-series:
-
 toc: true
 related: true
-social_share: true
-newsletter: true
-disable_comments: false
+social_share: false
+newsletter: false
+disable_comments: true
 ---
-
-<p style="color: blue;">
-根据峰会投稿者的反馈和部分厂商新产品投稿的需求，RISC-V 中国峰会开启第二轮补充投稿通道。请第一轮投稿中收到返修要求的投稿者通过第二轮投稿渠道进行第二次投稿。同时程序委员会也欢迎错过第一轮投稿的厂商和研究机构、开源社区贡献者在第二轮截止前投递自己最新的工作。
-</p>
-
-第 4 届 RISC-V 中国峰会 (RVSC2024) 定于 8 月 19 至 25 日举办，其中主会和展会于 21 - 23 日在浙江杭州黄龙饭店举行。经过几年的发展，RISC-V 中国峰会已经成为全球三大 RISC-V 专业会展之一、国内最大的 RISC-V 年度活动。今年预计将会吸引超过三千名国内外观众线下参与、超过五十万观众线上观看，同时预计会有超过一百家企业及研究机构、开源技术社区参会。本次峰会也是 2021 年创办以来首次在浙江杭州举办，欢迎全球 RISC-V 生态伙伴及企业莅临。
-
-RISC-V 国际基金会是全球 RISC-V 峰会的领导者。2024 RISC-V 中国峰会组织委员会（组委会）负责中国峰会具体的筹备和协调。程序委员会负责对演讲申请的评审。组委会认真听取总结往届峰会后观众的反馈意见和建议，今年峰会拟设置更多的演讲分会场、分论坛，提供更多的演讲机会和更长的演讲时长，满足参会演讲者的交流分享需求。欢迎所有从事 RISC-V 相关研发及产业的伙伴踊跃投稿。
-
-## 重要日期
-
-* 第二轮开始日期：2024 年 7 月 11 日
-* <span style="background: yellow;">第二轮截止日期：2024 年 7 月 18 日 (AoE)</span>
-* 第二轮结果通知：2024 年 7 月 29 日
-* 　补充议程公告：2024 年 8 月 10 日
-* 　　幻灯片定稿：2024 年 8 月 8 日
-* 　峰会召开时间：2024 年 8 月 19 日至 25 日
-
-## 投稿说明
 
 我们邀请提交与 RISC-V 相关的演讲，讨论以下感兴趣的技术主题：
 
-* RISC-V + AI 相关的 IP/SoC/Chip 设计、解决方案、AI 软件栈、指令集标准化方面的最新工作进展
-* 汽车、消费电子等领域的应用案例
-* 高性能 RISC-V 处理器设计及相关工具进展
-* 开源硬件和开放芯片
-* RISC-V 架构指令集扩展的新提案
-* 面向 RISC-V 的编译器、虚拟机、模拟器的适配及优化
-* 操作系统
-* RISC-V 在嵌入式、物联网、边缘计算等领域的应用
-* 云计算、数据中心领域的新突破
-* RISC-V 教育、培训
-* 信息安全
-* 开源 EDA 设计及实现
-* 与 RISC-V 相关的其它主题
+## 1. 人工智能分会场（Track on Artificial Intelligence）
 
+范围：聚焦 RISC-V 在 AI 计算全栈中的角色——从矩阵 / 向量扩展的指令集标准化、编译器与算子库，到 AI 框架与运行时，再到云端集群与端侧异构部署的系统集成。议题应兼顾标准化进展与真实产品 / 部署案例。
+
+## 2. 数据中心 / 高性能计算分会场（Track on Datacenter / HPC）
+
+范围：聚焦应用级 RISC-V 在数据中心与高性能计算的平台化落地：服务器 SoC 与平台规范、固件与启动（UEFI / ACPI / SBI）、内存与互连（含 CXL）、虚拟化与云原生编排、机密计算与可信执行、HPC 并行框架与可扩展性。
+
+## 3. 软件生态分会场（Track on Software Ecosystem）
+
+范围：覆盖从工具链、内核、固件到发行版与上层运行时的通用软件生态，以及托管 / 语言运行时（JVM、V8、.NET、Python、Rust、Go）、JIT、调试与性能分析工具链、多发行版与软件包生态。凸显可移植的软件使能与生态成熟度。
+
+## 4. 芯片设计与验证分会场（Track on Design and Verification）
+
+范围：覆盖从微架构与 RTL 设计、敏捷开发方法学（Chisel / SpinalHDL），到硅前 / 形式化验证、一致性（compliance）与合规测试、原型（FPGA / 仿真）与流片的完整设计—验证链路。EDA 工具，突出开源 EDA 与开源 RISC-V 核生态，以及面向规范一致性的验证方法学。
+
+## 5. 汽车电子、工业与机器人分会场（Track on Automotive, Industrial & Robotics）
+
+范围：面向安全关键与实时嵌入式领域的 RISC-V 落地，涵盖车载电子电气架构、工业控制、机器人运动与感知、低空经济与航空航天。功能安全（ISO 26262 / IEC 61508）、实时性与确定性、安全关键认证、车规级软件栈与 AUTOSAR 适配。
+
+## 6. 嵌入式、物联网与智能硬件分会场（Track on Embedded, IoT & Smart Hardware）
+
+范围：面向资源受限与成本敏感的嵌入式与 IoT 量产场景，涵盖 MCU 级 RISC-V、RTOS 与裸机软件、低功耗与电源管理、无线连接、端侧 AI（TinyML）、设备安全与可信启动、量产与供应链，以及各种消费类电子产品的最新产业化进展等。
+
+## 7. 产学合作与创新创业分会场（Track on Industry-Academia Collaboration, Innovation & Entrepreneurship）
+
+范围：覆盖 RISC-V 人才培养与课程建设、高校与科研机构的前沿研究、开源社区与标准组织协作、初创企业与投融资生态，OPC 前沿讨论等。
 
 ## 投稿地址
 
-https://www.wenjuan.com/s/MfqIZj4/
+正式投稿地址将于近期上线，敬请关注。
 
 ## 进一步了解
 
-RISC-V 中国峰会信息将通过 RISC-V 中国社区 (CNRV)、中国开放指令集联盟 (CRVA)、中国 RISC-V 产业联盟 (CRVIC) 等协办单位网站及微信公众号发布。请留意 CNRV 微信公众号 (ID <span style="background: yellow; color: blue;">RISC-V</span>) 的后续推送。
-
-任何问题、咨询，可以联系 RVSC2024 组委会联络人<span style="color: blue;">吴伟</span>，邮箱地址为：
-
-<p align="center"><b>wuwei2016@iscas.ac.cn</b></p>
+如有疑问，请联系大会组委会：risc-v_summit_2026@rioslab.org

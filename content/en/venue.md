@@ -1,8 +1,8 @@
 ---
-title: Venue & Accomodation
-map_link: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1722.9804156812825!2d120.1431167!3d30.2666972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x344b628c8f4a2f27%3A0x588ce74d5b2e32ec!2sDragon%20Hotel!5e0!3m2!1sen!2sus!4v1719827291473!5m2!1sen!2sus"
+title: Venue & Accommodation
+map_link: "https://www.openstreetmap.org/export/embed.html?bbox=114.0510%2C22.5325%2C114.0650%2C22.5435&layer=mapnik&marker=22.5369%2C114.0596"
 ---
 
-**The Dragon Hotel Hangzhou**
+**Venue: Shenzhen Convention & Exhibition Center (Futian)**
 
-Address: 120 Shuguang Road, Xihu Area, Hangzhou, China
+Address: No. 111 Fuhua 3rd Road, Futian District, Shenzhen, Guangdong, China. The venue is adjacent to Futian CBD and is conveniently accessible. Attendees can take Shenzhen Metro Line 1 or Line 4 to Convention & Exhibition Center Station and walk to the venue after exiting the station.

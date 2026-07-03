@@ -23,16 +23,16 @@ other = "地图载入中.."
 other = "报名链接"
 
 [diamond]
-other = "钻石赞助"
+other = "钻石级"
 
 [gold]
-other = "黄金赞助"
+other = "黄金级"
 
 [silver]
-other = "白银赞助"
+other = "白银级"
 
 [bronze]
-other = "青铜赞助"
+other = "青铜级"
 
 [community]
 other = "社区支持"
