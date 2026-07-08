@@ -79,13 +79,37 @@ defaultContentLanguageInSubdir = false
         url = "#"
         weight = 1
       [[languages.zh.menu.main]]
+        name = "新闻"
+        url = "#news"
+        weight = 5
+      [[languages.zh.menu.main]]
         name = "赞助商"
         url = "#sponsors"
         weight = 15
       [[languages.zh.menu.main]]
+        name = "同期活动"
+        url = "/co-events"
+        weight = 20
+      [[languages.zh.menu.main]]
+        name = "大会议程"
+        url = "/agenda"
+        weight = 25
+      [[languages.zh.menu.main]]
+        name = "直播"
+        url = "/live"
+        weight = 26
+      [[languages.zh.menu.main]]
+        name = "观众报名"
+        url = "#registration"
+        weight = 30
+      [[languages.zh.menu.main]]
         name = "路线及酒店"
         url = "#venue"
         weight = 35
+      [[languages.zh.menu.main]]
+        name = "展厅信息"
+        url = "#exhibition"
+        weight = 40
       [[languages.zh.menu.main]]
         name = "组织团队"
         url = "/organizing-teams"
@@ -137,13 +161,37 @@ defaultContentLanguageInSubdir = false
         url = "#"
         weight = 1
       [[languages.en.menu.main]]
+        name = "News"
+        url = "#news"
+        weight = 5
+      [[languages.en.menu.main]]
         name = "Sponsors"
         url = "#sponsors"
         weight = 15
       [[languages.en.menu.main]]
+        name = "Co-events"
+        url = "/co-events"
+        weight = 20
+      [[languages.en.menu.main]]
+        name = "Agenda"
+        url = "/agenda"
+        weight = 25
+      [[languages.en.menu.main]]
+        name = "Live"
+        url = "/live"
+        weight = 26
+      [[languages.en.menu.main]]
+        name = "Registration"
+        url = "#registration"
+        weight = 30
+      [[languages.en.menu.main]]
         name = "Venue & Accommodation"
         url = "#venue"
         weight = 35
+      [[languages.en.menu.main]]
+        name = "Exhibition Space"
+        url = "#exhibition"
+        weight = 40
       [[languages.en.menu.main]]
         name = "Organizing Teams"
         url = "/organizing-teams"
