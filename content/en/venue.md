@@ -1,6 +1,6 @@
 ---
 title: Venue & Accommodation
-map_link: "https://www.openstreetmap.org/export/embed.html?bbox=114.0510%2C22.5325%2C114.0650%2C22.5435&layer=mapnik&marker=22.5369%2C114.0596"
+map_link: "https://www.openstreetmap.org/export/embed.html?bbox=114.0505%2C22.5305%2C114.0590%2C22.5365&layer=mapnik&marker=22.5335041%2C114.0547472"
 ---
 
 **Venue: Shenzhen Convention & Exhibition Center (Futian)**
