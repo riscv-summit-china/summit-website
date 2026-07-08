@@ -2,6 +2,11 @@
 name: Deploy Hugo site to Pages
 
 on:
+  # Runs on pull requests targeting the default branch
+  pull_request:
+    branches:
+      - main
+
   # Runs on pushes targeting the default branch
   push:
     branches:
@@ -19,8 +24,8 @@ permissions:
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 # Default to bash
 defaults:
@@ -46,6 +51,7 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - name: Setup Pages
+        if: github.event_name != 'pull_request'
         id: pages
         uses: actions/configure-pages@v6
       - name: Install Node.js dependencies
@@ -57,17 +63,24 @@ jobs:
           HUGO_ENV: production
           TZ: America/Los_Angeles
         run: |
+          BASE_URL="https://riscv-summit-china.org/"
+          if [[ "${{ github.event_name }}" != "pull_request" ]]; then
+            BASE_URL="${{ steps.pages.outputs.base_url }}/"
+          fi
+
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+            --baseURL "${BASE_URL}"
       - name: Upload artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
 
   # Deployment job
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
