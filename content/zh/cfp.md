@@ -13,7 +13,9 @@ link_slug: cfp-2026
 
 ## 投稿链接
 
-正式投稿地址将于近期上线，敬请关注。如有疑问，请联系大会组委会：risc-v\_summit\_2026@rioslab.org
+[https://cfp2026.riscv-summit-china.org/rvsc2026/cfp](https://cfp2026.riscv-summit-china.org/rvsc2026/cfp)
+
+如有疑问，请联系大会组委会：risc-v\_summit\_2026@rioslab.org
 
 ## 核心时间节点
 

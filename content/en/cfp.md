@@ -13,7 +13,9 @@ The call for academic and industry topics for RISC-V Summit China 2026 has now o
 
 ## Submission Link
 
-The official submission link will be available soon. Please stay tuned. For questions, please contact the organizing committee: risc-v\_summit\_2026@rioslab.org
+[https://cfp2026.riscv-summit-china.org/rvsc2026/cfp](https://cfp2026.riscv-summit-china.org/rvsc2026/cfp)
+
+For questions, please contact the organizing committee: risc-v\_summit\_2026@rioslab.org
 
 ## Key Dates
 
