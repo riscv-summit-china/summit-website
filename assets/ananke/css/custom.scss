@@ -7,14 +7,18 @@
 
 html {
     width: 100%;
+    max-width: 100%;
     position: relative;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     -webkit-scroll-behavior: smooth;
 }
 
 body {
     width: 100%;
+    max-width: 100%;
     position: relative;
+    overflow-x: hidden;
     background-color: $primaryColor;
 }
 
@@ -28,7 +32,7 @@ body {
 
 .fullweb-section {
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: 100%;
 }
 
 .force-hidden {
@@ -38,7 +42,7 @@ body {
 #home-page-cover {
     position: fixed;
     z-index: -99;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     top: 0;
     left: 0;
@@ -51,7 +55,7 @@ body {
 #fullPageContainer {
     position: fixed;
     z-index: 999;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     top: 0;
     left: 0;
@@ -131,7 +135,8 @@ body >header {
     transition-duration: 0.3s;
     >div {
         position: relative;
-        background-color: #0000002A;
+        background-color: #fff;
+        box-shadow: 0 1px 0 rgba(12, 21, 61, 0.1);
         overflow: show;
     }
     >div#banners {
@@ -173,8 +178,7 @@ body >header >div >nav {
     top: 0;
     left: 0;
     width: 100%;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    color: $primaryColor;
     padding-top: calc(1rem + var(--sat)) !important;
     padding-left: calc(1rem + var(--sal)) !important;
     padding-right: calc(1rem + var(--sar)) !important;
@@ -185,6 +189,26 @@ body >header >div >nav {
     li a {
         display: inline-block;
         padding: 0.5em 0.8em;
+        color: $primaryColor !important;
+
+        &:hover {
+            color: #d69700 !important;
+        }
+    }
+
+    .languages-selector {
+        a.dropbtn {
+            color: $primaryColor;
+        }
+
+        div.dropdown-content {
+            background-color: #fff;
+            box-shadow: 0 8px 24px rgba(12, 21, 61, 0.16);
+
+            a {
+                color: $primaryColor !important;
+            }
+        }
     }
     .desktop-nav {
         position: relative;
@@ -443,8 +467,13 @@ section.section-container {
     &#cover.hero-image-section {
         min-height: auto;
         min-width: 100%;
-        padding: 0;
-        background: #00195a;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 100px 32px 0;
+        background:
+            radial-gradient(ellipse at 50% 48%, #233974 0%, #111f50 52%, #050b20 100%);
         overflow: hidden;
         &:before {
             content: none;
@@ -452,17 +481,28 @@ section.section-container {
         .hero-image {
             display: block;
             width: 100%;
+            max-width: 1520px;
             height: auto;
+            margin: 0 auto;
+            border-radius: 0;
+            box-shadow: none;
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 14%, #000 86%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0%, #000 14%, #000 86%, transparent 100%);
+        }
+
+        @media all and (max-width: 600px) {
+            min-height: auto;
+            padding: 95px 16px 0;
         }
     }
 
     &#welcome {
         --section-container-pl: 3em;
         --section-container-pr: 3em;
-        padding-top: 6em;
+        padding-top: 3em;
         padding-bottom: 6em;
         color: $fontColorDark;
-        background-color: $bgColorPaper;
+        background-color: #fff;
         a {
             color: $fontColorDark;
         }
