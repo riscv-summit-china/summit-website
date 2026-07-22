@@ -3,7 +3,7 @@ import { resizeToFullCover } from "./common";
 const sidebarMask = document.createElement('div');
 sidebarMask.style.position = 'fixed';
 sidebarMask.style.margin = '0';
-sidebarMask.style.minWidth = '100vw';
+sidebarMask.style.minWidth = '100%';
 sidebarMask.style.zIndex = '-1';
 var sidebarMenuState = 0;
 

@@ -1,4 +1,4 @@
 <section id="cover" class="hero-image-section section-container {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
   <h1 class="force-hidden">{{ .Title | default .Site.Title }}</h1>
-  <img class="hero-image" src="{{ relURL (printf "/img/rvsc2026-hero.png?v=%s" (readFile "static/img/rvsc2026-hero.png" | sha1)) }}" alt="{{ .Title | default .Site.Title }}" />
+  <img class="hero-image" src="{{ relURL (printf "/img/rvsc2026-hero-wide.png?v=%s" (readFile "static/img/rvsc2026-hero-wide.png" | sha1)) }}" alt="{{ .Title | default .Site.Title }}" />
 </section>
