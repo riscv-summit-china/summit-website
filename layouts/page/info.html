@@ -1,0 +1,82 @@
+{{ define "header" }}
+  {{ partial "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+<article id="{{ .Params.page_id | default "information-page" }}" class="info-page {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh" }}">
+  <header class="cfp-hero">
+    <div class="cfp-shell">
+      <div class="cfp-hero-copy">
+        <span class="cfp-eyebrow">RISC-V SUMMIT CHINA 2026</span>
+        <h1>{{ .Title }}</h1>
+      </div>
+    </div>
+  </header>
+
+  <div class="cfp-shell cfp-content info-page-content">
+    <section class="cfp-section info-overview">
+      <header class="cfp-section-header">
+        <h2>{{ .Params.section_title }}</h2>
+      </header>
+      <div class="cfp-section-intro{{ with .Params.content_style }} {{ . }}{{ end }}">
+        {{ .Content | markdownify | emojify | safeHTML }}
+      </div>
+
+      {{ with .Params.registration_link }}
+      <div class="info-page-actions">
+        <a class="cfp-button" href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ i18n "registration" | default "进入报名系统" }}</a>
+      </div>
+      {{ end }}
+
+      {{ with .Params.map_link }}
+      <div class="venue-map">
+        <iframe title="{{ $.Title }}" src="{{ . }}" frameborder="0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      {{ end }}
+
+      {{ with .Params.summary_image }}
+      <div class="exhibition-plan-grid">
+        {{ range . }}
+        <figure>
+          <button class="image-preview-trigger" type="button" aria-label="{{ .description }}">
+            <img src="{{ (printf "%s?v=%s" .url (readFile (printf "static%s" .url) | sha1)) }}" alt="{{ .description }}" loading="lazy" />
+          </button>
+          <figcaption>{{ .description }}</figcaption>
+        </figure>
+        {{ end }}
+      </div>
+      {{ end }}
+    </section>
+
+    {{ with .Params.hotels }}
+    <section class="cfp-section hotel-section">
+      <header class="cfp-section-header">
+        <h2>{{ $.Params.hotel_section_title }}</h2>
+      </header>
+      <div class="cfp-section-intro"><p>{{ $.Params.hotel_notice }}</p></div>
+      <div class="hotel-grid">
+        {{ range . }}
+        <article class="hotel-card">
+          <header>
+            <h3>{{ .name }}</h3>
+            {{ with or .name_en .name_zh }}<p>{{ . }}</p>{{ end }}
+          </header>
+          <div class="hotel-card-body">
+            <h4>{{ if eq $.Site.Language.Lang "en" }}Recommended rooms{{ else }}推荐房型{{ end }}</h4>
+            <ul>
+              {{ range .rooms }}<li>{{ . }}</li>{{ end }}
+            </ul>
+          </div>
+          <dl class="hotel-contact">
+            <div><dt>{{ if eq $.Site.Language.Lang "en" }}Contact{{ else }}联系人{{ end }}</dt><dd>{{ .contact }}</dd></div>
+            <div><dt>{{ if eq $.Site.Language.Lang "en" }}Phone{{ else }}联系电话{{ end }}</dt><dd><a href="tel:{{ .phone }}">{{ .phone }}</a></dd></div>
+            <div><dt>{{ if eq $.Site.Language.Lang "en" }}Email{{ else }}邮箱{{ end }}</dt><dd><a href="mailto:{{ .email }}">{{ .email }}</a></dd></div>
+          </dl>
+        </article>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+  </div>
+</article>
+{{ end }}

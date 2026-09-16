@@ -4,12 +4,16 @@
 {{ end }}
 
 {{ define "main" }}
-  <article id="live" class="flex-l flex-wrap justify-between mw9 center ph3 {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
-    <header class="mt4 w-100">
-      <h1 class="f1 mt3 mb1">
-        {{- .Title -}}
-      </h1>
+  <article id="live" class="info-page {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
+    <header class="cfp-hero">
+      <div class="cfp-shell">
+        <div class="cfp-hero-copy">
+          <span class="cfp-eyebrow">RISC-V SUMMIT CHINA 2026</span>
+          <h1>{{ .Title }}</h1>
+        </div>
+      </div>
     </header>
+    <div class="cfp-shell cfp-content live-content">
     <div class="content">
       {{ .Content | markdownify | emojify | safeHTML }}
     </div>
@@ -163,5 +167,6 @@
         </tbody>
     </table>
     {{- end }}
+    </div>
   </article>
 {{ end }}

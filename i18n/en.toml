@@ -20,7 +20,13 @@ other = "Stay tuned"
 other = "Map loading.."
 
 [registration]
-other = "Register"
+other = "Open Registration Portal"
+
+[image_preview]
+other = "Image preview"
+
+[close_image_preview]
+other = "Close image preview"
 
 [diamond]
 other = "Diamond Sponsors"
@@ -114,4 +120,3 @@ other = "p.m."
 
 [tba2]
 other = "Waiting for updates"
-

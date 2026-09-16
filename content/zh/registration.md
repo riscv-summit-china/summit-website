@@ -1,10 +1,9 @@
 ---
 title: 观众报名
-registration_link: TBD
+layout: info
+page_id: registration-page
+section_title: 报名入口
+registration_link: https://main.banhuijia.com/view/business/static/_bad57359208448918b871a2df8956f94/_11341eb462f44e7b893399c7eedcb2e0/_d622a81829fe4e2abdac1fd9e19505c2.html
 ---
 
-**2026 RISC-V 中国峰会（RVSC2026）** 将于 2026 年 10 月 18 日至 20 日举办。
-
-本届峰会主会场及展览展示将于深圳会展中心（福田）举行。
-
-目前会议报名通道已开启，参会观众、参展商、演讲者及相关生态伙伴均可通过下方链接参与报名。
+报名通道现已开启，观众、媒体及展商请通过下方入口选择对应身份完成登记。

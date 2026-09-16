@@ -20,7 +20,13 @@ other = "即将公布，敬请关注"
 other = "地图载入中.."
 
 [registration]
-other = "报名链接"
+other = "进入报名系统"
+
+[image_preview]
+other = "图片预览"
+
+[close_image_preview]
+other = "关闭图片预览"
 
 [diamond]
 other = "钻石级"

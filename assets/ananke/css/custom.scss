@@ -95,13 +95,16 @@ body {
             }
         }
     }
-    >div.container +div.close {
+    >div.container +.close {
         position: absolute;
         top: 0;
         right: 0;
         width: 100px;
         height: 100px;
+        padding: 0;
+        border: 0;
         background-color: #00000040;
+        cursor: pointer;
         &:before, &:after {
             content: '';
             position: absolute;

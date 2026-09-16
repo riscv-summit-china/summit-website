@@ -58,7 +58,7 @@
 
     {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
     {{ partial "site-sidebar.html" . }}
-    <div id="fullPageContainer" style="display: none;"><div class="container"></div><div class="close"></div></div>
+    <div id="fullPageContainer" class="hidden" style="display: none;" role="dialog" aria-modal="true" aria-label="{{ i18n "image_preview" | default "图片预览" }}"><div class="container"></div><button class="close" type="button" aria-label="{{ i18n "close_image_preview" | default "关闭图片预览" }}"></button></div>
     <main role="main">
       {{ block "main" . }}{{ end }}
     </main>

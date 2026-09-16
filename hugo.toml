@@ -128,17 +128,17 @@ defaultContentLanguageInSubdir = false
         weight = 26
       [[languages.zh.menu.main]]
         name = "观众报名"
-        url = "#registration"
+        url = "/registration/"
         weight = 30
       [[languages.zh.menu.main]]
         name = "路线及酒店"
         identifier = "venue"
-        url = "#venue"
+        url = "/venue/"
         weight = 35
       [[languages.zh.menu.main]]
         name = "展厅信息"
         identifier = "exhibition"
-        url = "#exhibition"
+        url = "/exhibition/"
         weight = 40
       [[languages.zh.menu.main]]
         name = "组织团队"
@@ -240,17 +240,17 @@ defaultContentLanguageInSubdir = false
         weight = 26
       [[languages.en.menu.main]]
         name = "Registration"
-        url = "#registration"
+        url = "/registration/"
         weight = 30
       [[languages.en.menu.main]]
         name = "Venue & Accommodation"
         identifier = "venue"
-        url = "#venue"
+        url = "/venue/"
         weight = 35
       [[languages.en.menu.main]]
         name = "Exhibition Space"
         identifier = "exhibition"
-        url = "#exhibition"
+        url = "/exhibition/"
         weight = 40
       [[languages.en.menu.main]]
         name = "Organizing Teams"
