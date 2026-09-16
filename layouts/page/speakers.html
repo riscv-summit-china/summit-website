@@ -2,12 +2,17 @@
   {{ partial "page-header.html" . }}
 {{ end }}
 {{ define "main" }}
-<article id="keynote-speakers-page" class="mw8 center ph3 {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh" }}">
-  <header class="mt4 w-100">
-    <h1 class="f1 mt3 mb1">{{ .Title }}</h1>
-    {{- with .Params.updating_notice }}<p class="keynote-speaker-updating">{{ . }}</p>{{ end }}
+<article id="keynote-speakers-page" class="{{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh" }}">
+  <header class="cfp-hero">
+    <div class="cfp-shell">
+      <div class="cfp-hero-copy">
+        <span class="cfp-eyebrow">RISC-V SUMMIT CHINA 2026</span>
+        <h1>{{ .Title }}</h1>
+        {{- with .Params.updating_notice }}<p class="keynote-speaker-updating">{{ . }}</p>{{ end }}
+      </div>
+    </div>
   </header>
-  <div class="keynote-speaker-profiles">
+  <div class="cfp-shell keynote-speaker-profiles">
     {{- range .Params.speakers }}
     <section class="keynote-speaker-profile">
       <header>
