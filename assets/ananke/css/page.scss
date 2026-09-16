@@ -1173,64 +1173,124 @@ body:not(.in-home) {
         }
 
         .hotel-grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 1.25em;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em;
         }
 
         .hotel-card {
-            display: flex;
-            flex-direction: column;
             min-width: 0;
-            padding: 1.5em;
+            overflow: hidden;
             border: 1px solid var(--cfp-border);
             border-radius: 14px;
             background: #fff;
             box-shadow: 0 8px 24px rgba(18, 42, 86, 0.06);
-            >header {
-                padding-bottom: 1em;
-                border-bottom: 1px solid var(--cfp-border);
-                h3 {
-                    margin: 0;
-                    color: $primaryColor;
-                    font-size: 1.15rem;
-                    line-height: 1.4;
-                }
-                p {
-                    margin: 0.35em 0 0;
-                    color: #7a8698;
-                    font-size: 0.83rem;
-                }
+        }
+
+        .hotel-card-header {
+            padding: 1.25em 1.5em 1.1em;
+            border-bottom: 1px solid var(--cfp-border);
+            text-align: center;
+            h3 {
+                margin: 0;
+                color: $primaryColor;
+                font-size: 1.35rem;
+                line-height: 1.4;
+            }
+            p {
+                margin: 0.25em 0 0;
+                color: #7a8698;
+                font-size: 0.86rem;
+            }
+        }
+
+        .hotel-card-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1.12fr) minmax(20em, 0.88fr);
+            gap: 2em;
+            padding: 1.5em;
+        }
+
+        .hotel-card-overview {
+            min-width: 0;
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+            p {
+                margin: 1em 0 0;
+                color: #526079;
+                font-size: 0.78rem;
+                line-height: 1.75;
+                text-align: justify;
+            }
+        }
+
+        .hotel-card-details {
+            display: grid;
+            grid-template-rows: repeat(2, minmax(0, 1fr));
+            min-width: 0;
+            >section {
+                align-self: center;
+                justify-self: center;
+                width: 90%;
             }
         }
 
         .hotel-card-body {
-            flex: 1;
-            padding: 1em 0;
             h4 {
                 margin: 0 0 0.65em;
                 color: $primaryColorLighter;
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
             ul {
                 margin: 0;
-                padding-left: 1.2em;
+                padding: 0;
+                list-style: none;
                 color: #526079;
-                font-size: 0.88rem;
+                font-size: 0.84rem;
                 line-height: 1.7;
+            }
+            li {
+                position: relative;
+                padding: 0.38em 0 0.38em 1.05em;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 1em;
+                    left: 0;
+                    width: 0.42em;
+                    height: 0.42em;
+                    border-radius: 50%;
+                    background: $accentColor;
+                }
+            }
+        }
+
+        .hotel-booking {
+            h4 {
+                margin: 0 0 1em;
+                color: $primaryColorLighter;
+                font-size: 1rem;
             }
         }
 
         .hotel-contact {
             margin: 0;
-            padding-top: 1em;
-            border-top: 1px solid var(--cfp-border);
             font-size: 0.84rem;
             >div {
                 display: grid;
                 grid-template-columns: 4.8em minmax(0, 1fr);
                 gap: 0.5em;
-                margin-top: 0.45em;
+                padding: 0.48em 0;
+                &:first-child {
+                    padding-top: 0;
+                }
+                &:last-child {
+                    padding-bottom: 0;
+                }
             }
             dt {
                 color: #7a8698;
@@ -1288,10 +1348,15 @@ body:not(.in-home) {
                 min-height: 360px;
             }
             .hotel-grid {
-                grid-template-columns: 1fr;
+                gap: 1.25em;
             }
-            .hotel-card {
+            .hotel-card-layout {
+                grid-template-columns: 1fr;
+                gap: 1.25em;
                 padding: 1.25em;
+            }
+            .hotel-card-header {
+                padding: 1.1em 1.25em 1em;
             }
         }
     }

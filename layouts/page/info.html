@@ -56,22 +56,36 @@
       <div class="cfp-section-intro"><p>{{ $.Params.hotel_notice }}</p></div>
       <div class="hotel-grid">
         {{ range . }}
+        {{ $hotel := . }}
         <article class="hotel-card">
-          <header>
+          <header class="hotel-card-header">
             <h3>{{ .name }}</h3>
             {{ with or .name_en .name_zh }}<p>{{ . }}</p>{{ end }}
           </header>
-          <div class="hotel-card-body">
-            <h4>{{ if eq $.Site.Language.Lang "en" }}Recommended rooms{{ else }}推荐房型{{ end }}</h4>
-            <ul>
-              {{ range .rooms }}<li>{{ . }}</li>{{ end }}
-            </ul>
+          <div class="hotel-card-layout">
+            <div class="hotel-card-overview">
+              {{ with .image }}
+              <img src="{{ printf "%s?v=%s" . (readFile (printf "static%s" .) | sha1) }}" alt="{{ $hotel.name }} — {{ if eq $.Site.Language.Lang "en" }}hotel image{{ else }}酒店图片{{ end }}" loading="lazy" />
+              {{ end }}
+              {{ with .description }}<p>{{ . }}</p>{{ end }}
+            </div>
+            <div class="hotel-card-details">
+              <section class="hotel-card-body">
+                <h4>{{ if eq $.Site.Language.Lang "en" }}Recommended rooms{{ else }}房型推荐{{ end }}</h4>
+                <ul>
+                  {{ range .rooms }}<li>{{ . }}</li>{{ end }}
+                </ul>
+              </section>
+              <section class="hotel-booking">
+                <h4>{{ .booking_title | default (cond (eq $.Site.Language.Lang "en") "RISC-V Booking" "RISC-V 合作预订") }}</h4>
+                <dl class="hotel-contact">
+                  <div><dt>{{ if eq $.Site.Language.Lang "en" }}Contact{{ else }}联系人{{ end }}</dt><dd>{{ .contact }}</dd></div>
+                  <div><dt>{{ if eq $.Site.Language.Lang "en" }}Phone{{ else }}联系电话{{ end }}</dt><dd><a href="tel:{{ .phone }}">{{ .phone }}</a></dd></div>
+                  <div><dt>{{ if eq $.Site.Language.Lang "en" }}Email{{ else }}邮箱{{ end }}</dt><dd><a href="mailto:{{ .email }}">{{ .email }}</a></dd></div>
+                </dl>
+              </section>
+            </div>
           </div>
-          <dl class="hotel-contact">
-            <div><dt>{{ if eq $.Site.Language.Lang "en" }}Contact{{ else }}联系人{{ end }}</dt><dd>{{ .contact }}</dd></div>
-            <div><dt>{{ if eq $.Site.Language.Lang "en" }}Phone{{ else }}联系电话{{ end }}</dt><dd><a href="tel:{{ .phone }}">{{ .phone }}</a></dd></div>
-            <div><dt>{{ if eq $.Site.Language.Lang "en" }}Email{{ else }}邮箱{{ end }}</dt><dd><a href="mailto:{{ .email }}">{{ .email }}</a></dd></div>
-          </dl>
         </article>
         {{ end }}
       </div>
