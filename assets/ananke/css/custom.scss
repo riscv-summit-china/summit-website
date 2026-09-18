@@ -95,13 +95,16 @@ body {
             }
         }
     }
-    >div.container +div.close {
+    >div.container +.close {
         position: absolute;
         top: 0;
         right: 0;
         width: 100px;
         height: 100px;
+        padding: 0;
+        border: 0;
         background-color: #00000040;
+        cursor: pointer;
         &:before, &:after {
             content: '';
             position: absolute;
@@ -1030,16 +1033,18 @@ section.section-container {
             text-align: center;
         }
         .keynote-speaker-grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 1.25em;
             margin: 1em 0 2.5em;
             text-align: left;
         }
         .keynote-speaker-card {
             position: relative;
-            min-height: 18em;
-            padding: 2em 1.7em 1.7em;
+            flex: 0 1 280px;
+            min-height: 16.5em;
+            padding: 1.75em 1.5em 1.5em;
             overflow: hidden;
             border: 1px solid rgba(255, 255, 255, 0.22);
             border-radius: 12px;
@@ -1080,8 +1085,10 @@ section.section-container {
             line-height: 1.75;
         }
         @media all and (max-width: 900px) {
-            .keynote-speaker-grid { grid-template-columns: 1fr; }
-            .keynote-speaker-card { min-height: 0; }
+            .keynote-speaker-card {
+                flex-basis: 38em;
+                min-height: 0;
+            }
             .keynote-speaker-position,
             .keynote-speaker-name-en { min-height: 0; }
         }

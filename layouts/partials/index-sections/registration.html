@@ -6,7 +6,7 @@
       <p>{{ .Content | markdownify | emojify | safeHTML }}</p>
     </div>
     {{ if .Params.registration_link }}
-    <a class="registration button" href="{{ .Params.registration_link }}" target="_blank">{{ i18n "registration" | default "报名链接" }}</a>
+    <a class="registration button" href="{{ .Params.registration_link }}" target="_blank" rel="noopener noreferrer">{{ i18n "registration" | default "进入报名系统" }}</a>
     {{ end }}
     {{ if .Params.link_slug }}
     <a class="details" href="{{ (path.Join "posts/" .Params.link_slug | relLangURL) }}">{{ i18n "details" | default "点击查阅详情" }}</a>
