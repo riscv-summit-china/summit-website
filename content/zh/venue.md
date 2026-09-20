@@ -10,7 +10,7 @@ hotel_notice: 以下酒店信息由酒店提供，房态及最终价格请以预
 hotels:
   - name: 深圳东海朗廷酒店
     name_en: The Langham, Shenzhen
-    image: /img/hotels/langham-shenzhen.png
+    image: /img/hotels/langham-shenzhen.webp
     description: 作为朗廷酒店集团旗下的奢华地标，深圳东海朗廷酒店雄踞福田 CBD 核心地段。酒店设计灵感源自维多利亚时代的英伦贵族美学，将古典优雅与现代摩登巧妙交织。从精致的内饰陈设到享誉盛名的英式下午茶，每一处细节都诠释着百年朗廷的传奇品质，为都市旅人营造私密而尊贵的休憩空间。
     booking_title: 东海朗廷 RISC-V 合作预订
     rooms:
@@ -22,7 +22,7 @@ hotels:
     email: 1246677066@qq.com
   - name: 深圳大中华希尔顿酒店
     name_en: Hilton Shenzhen Futian
-    image: /img/hotels/hilton-shenzhen-futian.png
+    image: /img/hotels/hilton-shenzhen-futian.webp
     description: 作为希尔顿集团旗下的旗舰五星级酒店，坐落于深圳福田中心区核心地段，紧邻岗厦北交通枢纽，坐拥得天独厚的地理优势。酒店融合现代美学设计与奢华舒适体验，高层客房可将鹏城璀璨的云端夜景尽收眼底，是商务出行与休闲旅居的理想之选。
     booking_title: 大中华希尔顿 RISC-V 合作预订
     rooms:
@@ -34,7 +34,7 @@ hotels:
     email: Grace.Dai@Hilton.com
   - name: 深圳温德姆至尊酒店
     name_en: Wyndham Grand Shenzhen
-    image: /img/hotels/wyndham-grand-shenzhen.png
+    image: /img/hotels/wyndham-grand-shenzhen.webp
     description: 作为温德姆集团旗下的高端旗舰品牌，酒店雄踞福田 CBD 核心腹地，将前沿科技与奢华舒适完美融合。秉承“至尊”级服务理念，以智能化设施与细致入微的管家式服务，为商务精英与休闲旅客打造兼具科技感与舒适度的非凡旅居体验。
     booking_title: 温德姆 RISC-V 合作预订
     rooms:
@@ -46,7 +46,7 @@ hotels:
     email: dosm@wyndhamgrandszc.com.cn
   - name: 深圳太子湾美高梅酒店
     name_en: MGM Shenzhen
-    image: /img/hotels/mgm-shenzhen.png
+    image: /img/hotels/mgm-shenzhen.webp
     description: 深圳太子湾美高梅酒店延续美高梅品牌“让娱乐动人”的精髓，坐落于南山区蛇口核心区域，毗邻 K11 高端购物及生活中心、邮轮母港、海上世界文化艺术中心等。酒店拥有 298 间全海景客房，为追求质感、热爱鲜活的都市乐享家量身定制“都市港湾，乐享生活新秀场”。
     booking_title: 太子湾美高梅 RISC-V 合作预订
     rooms:
@@ -58,7 +58,7 @@ hotels:
     email: sueshi@mgmshenzhenprincebay.cn
   - name: 深圳湾安达仕酒店
     name_en: ANDAZ Shenzhen Bay
-    image: /img/hotels/andaz-shenzhen-bay.png
+    image: /img/hotels/andaz-shenzhen-bay.webp
     description: 深圳湾安达仕酒店是中国第三家安达仕品牌酒店，由备受推崇的纽约华人设计师季裕棠先生亲自设计打造，将活力摩登与静谧尊崇完美结合，构架出一个风格独树而又拥有私享体验的精英社交会所。酒店矗立于深圳湾核心地带，紧邻中国华润大厦和深圳湾万象城一期及二期购物中心，众多国际一线品牌与世界级高科技公司环绕林立，周边自然环境优美。
     booking_title: 安达仕 RISC-V 合作预订
     rooms:
