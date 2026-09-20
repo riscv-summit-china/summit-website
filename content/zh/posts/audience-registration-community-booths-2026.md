@@ -64,9 +64,4 @@ publisher_value: RISC-V 国际开源实验室
 - **落地储物柜规格：** 0.5 米 × 1 米 × 0.8 米
 - **申请截止时间：** 2026 年 9 月 30 日 24:00
 
-<div class="registration-news-actions">
-  <a class="details" href="https://send2me.cn/9Y7gEdGQ/SHuvaLyvGae1HA" target="_blank" rel="noopener noreferrer">申请开源社区展位</a>
-  <a class="registration-source-link" href="https://mp.weixin.qq.com/s/nnMCDiUWyILpDnhxAObk8w" target="_blank" rel="noopener noreferrer">查看原文</a>
-</div>
-
 <p class="registration-news-closing">十月深圳，我们不见不散！<br><strong>OPEN · CONNECT · INNOVATE</strong></p>

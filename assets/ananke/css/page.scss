@@ -1861,21 +1861,6 @@ body:not(.in-home) {
                 }
             }
 
-            .registration-news-actions {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                gap: 1em;
-                margin-top: 1.8em;
-
-                a.details { margin: 0; }
-                .registration-source-link {
-                    color: $primaryColorLighter;
-                    font-size: 0.88rem;
-                    font-weight: 700;
-                }
-            }
-
             .registration-news-closing {
                 margin: 3em 0 0;
                 padding: 1.8em;
@@ -1939,15 +1924,6 @@ body:not(.in-home) {
                     border-bottom: 1px solid var(--registration-news-border);
                     &:nth-last-child(2) { border-bottom: 1px solid var(--registration-news-border); }
                     &:last-child { border-bottom: 0; }
-                }
-                .registration-news-actions {
-                    display: block;
-                    text-align: center;
-                    a.details { display: flex; }
-                    .registration-source-link {
-                        display: inline-block;
-                        margin-top: 1.2em;
-                    }
                 }
             }
         }
