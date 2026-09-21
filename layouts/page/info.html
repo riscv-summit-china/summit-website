@@ -65,7 +65,7 @@
           <div class="hotel-card-layout">
             <div class="hotel-card-overview">
               {{ with .image }}
-              <img src="{{ printf "%s?v=%s" . (readFile (printf "static%s" .) | sha1) }}" alt="{{ $hotel.name }} — {{ if eq $.Site.Language.Lang "en" }}hotel image{{ else }}酒店图片{{ end }}" loading="lazy" />
+              <img src="{{ printf "%s?v=%s" . (readFile (printf "static%s" .) | sha1) }}" alt="{{ $hotel.name }} — {{ if eq $.Site.Language.Lang "en" }}hotel image{{ else }}酒店图片{{ end }}" loading="lazy" decoding="async" />
               {{ end }}
               {{ with .description }}<p>{{ . }}</p>{{ end }}
             </div>

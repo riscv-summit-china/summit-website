@@ -1769,6 +1769,111 @@ body:not(.in-home) {
             }
         }
 
+        &.audience-community-registration {
+            h1 {
+                font-size: clamp(1.65rem, 2.65vw, 2.2rem);
+            }
+
+            .registration-dual-grid {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 1.1em;
+                margin: 2em 0 0;
+            }
+
+            .registration-entry-card {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1.6em;
+                border: 1px solid #d9e8f1;
+                border-radius: 12px;
+                background: linear-gradient(145deg, #f5fafc, #fffaf1);
+
+                >span {
+                    color: $primaryColorLighter;
+                    font-size: 0.72rem;
+                    font-weight: 800;
+                    letter-spacing: 0.1em;
+                }
+
+                h2 {
+                    margin: 0.65em 0 0.8em;
+                    padding: 0;
+                    color: $primaryColor;
+                    background: transparent;
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    flex: 1;
+                    margin: 0 0 1.2em;
+                    color: var(--registration-news-muted);
+                    font-size: 0.9rem;
+                    line-height: 1.75;
+                }
+
+                a.details { margin: 0; }
+            }
+
+            .registration-event-facts {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 0;
+                border: 1px solid var(--registration-news-border);
+                border-radius: 10px;
+                overflow: hidden;
+
+                li {
+                    padding: 1.1em 1.3em;
+                    border: 0;
+                    border-right: 1px solid var(--registration-news-border);
+                    border-bottom: 1px solid var(--registration-news-border);
+                    &:nth-child(2n) { border-right: 0; }
+                    &:nth-last-child(-n + 2) { border-bottom: 0; }
+                    &:before { display: none; }
+                    span {
+                        display: block;
+                        margin-bottom: 0.35em;
+                        color: #718096;
+                        font-size: 0.78rem;
+                    }
+                    strong {
+                        display: block;
+                        line-height: 1.55;
+                    }
+                }
+            }
+
+            .registration-news-figure {
+                margin: 1.5em 0 1.8em;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 10px;
+                }
+                figcaption {
+                    margin-top: 0.7em;
+                    color: #718096;
+                    font-size: 0.78rem;
+                    text-align: center;
+                }
+            }
+
+            .registration-news-closing {
+                margin: 3em 0 0;
+                padding: 1.8em;
+                color: $primaryColor;
+                background: linear-gradient(135deg, #eef7fb, #fff7e9);
+                text-align: center;
+                strong {
+                    color: #b96516;
+                    letter-spacing: 0.08em;
+                }
+            }
+        }
+
         @media all and (max-width: 760px) {
             .registration-news-shell { width: calc(100% - 2.4em); }
             .registration-news-hero >.registration-news-shell { padding-top: 2em; }
@@ -1806,6 +1911,19 @@ body:not(.in-home) {
                         border-bottom: 1px solid #dfe8ef;
                         &:last-child { border-bottom: 0; }
                     }
+                }
+            }
+            &.audience-community-registration {
+                h1 { font-size: clamp(1.7rem, 8vw, 2.2rem); }
+                .registration-dual-grid,
+                .registration-event-facts {
+                    grid-template-columns: 1fr;
+                }
+                .registration-event-facts li {
+                    border-right: 0;
+                    border-bottom: 1px solid var(--registration-news-border);
+                    &:nth-last-child(2) { border-bottom: 1px solid var(--registration-news-border); }
+                    &:last-child { border-bottom: 0; }
                 }
             }
         }

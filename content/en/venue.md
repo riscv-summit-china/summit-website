@@ -10,7 +10,7 @@ hotel_notice: Hotel information is provided by the properties. Room availability
 hotels:
   - name: The Langham, Shenzhen
     name_zh: 深圳东海朗廷酒店
-    image: /img/hotels/langham-shenzhen.png
+    image: /img/hotels/langham-shenzhen.webp
     description: As a luxury landmark under The Langham Hospitality Group, The Langham, Shenzhen Donghai stands prominently in the heart of Futian CBD. Drawing design inspiration from the aristocratic British aesthetics of the Victorian era, the hotel artfully blends classical elegance with modern sophistication. From exquisite interior furnishings to its world-renowned afternoon tea, every detail embodies the legendary heritage of the century-old Langham brand, crafting an intimate and exclusive retreat for urban travellers.
     booking_title: "Hotel Reservation (RISC-V Collaboration):"
     rooms:
@@ -22,7 +22,7 @@ hotels:
     email: 1246677066@qq.com
   - name: Hilton Shenzhen Futian
     name_zh: 深圳大中华希尔顿酒店
-    image: /img/hotels/hilton-shenzhen-futian.png
+    image: /img/hotels/hilton-shenzhen-futian.webp
     description: As a flagship five-star hotel under Hilton Group, it is located in the heart of Futian Central District, Shenzhen, adjacent to Gangxia North Transportation Hub, boasting an unparalleled geographic advantage. Integrating modern aesthetic design with luxurious and comfortable experiences, its high-floor guest rooms offer sweeping panoramic views of Shenzhen’s dazzling night skyline, making it an ideal choice for both business trips and leisure stays.
     booking_title: "Hotel Reservation (RISC-V Collaboration):"
     rooms:
@@ -34,7 +34,7 @@ hotels:
     email: Grace.Dai@Hilton.com
   - name: Wyndham Grand Shenzhen
     name_zh: 深圳温德姆至尊酒店
-    image: /img/hotels/wyndham-grand-shenzhen.png
+    image: /img/hotels/wyndham-grand-shenzhen.webp
     description: As a high-end flagship brand under Wyndham Hotels & Resorts, the hotel is situated in the heart of Futian CBD, seamlessly integrating cutting-edge technology with luxury and comfort. Upholding the “ultimate” service philosophy, it features intelligent facilities and meticulous butler service to deliver an extraordinary stay experience combining technological sophistication and comfort for business elites and leisure travellers.
     booking_title: "Hotel Reservation (RISC-V Collaboration):"
     rooms:
@@ -46,7 +46,7 @@ hotels:
     email: dosm@wyndhamgrandszc.com.cn
   - name: Shenzhen Prince Bay
     name_zh: 深圳太子湾美高梅酒店
-    image: /img/hotels/mgm-shenzhen.png
+    image: /img/hotels/mgm-shenzhen.webp
     description: MGM Shenzhen Taiziwan carries forward the brand essence of MGM, “Make Entertainment Moving”. Nestled in the heart of Shekou, Nanshan District, the hotel sits adjacent to K11 premium lifestyle centre, the Cruise Homeport and Sea World Culture and Arts Center. It features 298 full sea-view guest rooms, serving as a tailor-made “Urban Harbour, New Stage for Joyful Living” for urban enthusiasts who pursue quality and embrace vibrant life.
     booking_title: "Hotel Reservation (RISC-V Collaboration):"
     rooms:
@@ -58,7 +58,7 @@ hotels:
     email: sueshi@mgmshenzhenprincebay.cn
   - name: ANDAZ Shenzhen Bay
     name_zh: 深圳湾安达仕酒店
-    image: /img/hotels/andaz-shenzhen-bay.png
+    image: /img/hotels/andaz-shenzhen-bay.webp
     description: Andaz Shenzhen Bay — the third Andaz hotel in China, masterfully designed by the acclaimed New York-based Chinese designer Tony Chi. It perfectly blends vibrant modernity with serene exclusivity, creating an elite social club with a distinctive style and private experiences. Rising in the heart of Shenzhen Bay, the hotel sits next to Shenzhen’s landmark — China Resources Tower, as well as Phase I and Phase II of Shenzhen Bay MixC shopping mall, surrounded by numerous top international brands and world-class high-tech enterprises. Boasting beautiful natural surroundings, it is within walking distance of Shenzhen Bay Culture Square, Shenzhen Talent Park, Shenzhen Bay Park and Mangrove Nature Reserve.
     booking_title: "Hotel Reservation (RISC-V Collaboration):"
     rooms:
