@@ -1116,6 +1116,11 @@ body:not(.in-home) {
             padding: 1.5em 0 2em;
         }
 
+        &#co-events-page .co-events-content >.content {
+            width: 100%;
+            max-width: none;
+        }
+
         .content {
             max-width: 780px;
             color: #3f4c62;
