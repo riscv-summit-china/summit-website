@@ -30,23 +30,10 @@
     </header>
 
     <div class="cfp-shell cfp-content">
-      <section class="cfp-section cfp-tracks">
-        <header class="cfp-section-header">
-          <h2>{{ .Params.tracks_title }}</h2>
-        </header>
+      <section class="cfp-section cfp-participant-actions">
         <div class="cfp-section-intro">
-          <p>{{ .Params.tracks_intro }}</p>
-          <p>{{ .Params.tracks_policy }}</p>
+          <p>{{ .Params.participant_guidance | safeHTML }}</p>
         </div>
-
-        <ol class="cfp-track-list">
-          {{ range .Params.track_summaries }}
-            <li>
-              <h3>{{ .name }}</h3>
-              <p>{{ .description }}</p>
-            </li>
-          {{ end }}
-        </ol>
       </section>
 
       <section class="cfp-section cfp-timeline">
@@ -68,7 +55,6 @@
         </div>
         <div class="cfp-timeline-action">
           <a class="cfp-button" href="{{ .Params.submission_url }}" target="_blank" rel="noopener noreferrer">{{ .Params.submission_label }}</a>
-          <p class="cfp-submission-note">{{ .Params.submission_note }}</p>
         </div>
       </section>
 

@@ -14,13 +14,11 @@
         </tbody>
       </table>
     </div>
-    <h2>{{ .Params.tracks_title }}</h2>
-    <p class="cfp-track-list">{{ delimit .Params.track_names " · " }}</p>
+    <p class="cfp-participant-guidance">{{ .Params.participant_guidance | safeHTML }}</p>
     <div class="cfp-actions">
       <a class="cfp-action cfp-action-primary" href="{{ .Params.submission_url }}">{{ .Params.submission_label }}</a>
       <a class="cfp-action cfp-action-secondary" href="{{ "/cfp" | relLangURL }}">{{ .Params.details_label }}</a>
     </div>
-    <p class="cfp-submission-note">{{ .Params.submission_note }}</p>
   </div>
 </section>
 {{- end }}
