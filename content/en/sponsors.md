@@ -28,6 +28,9 @@ gold:
     alt: "SOPHGO"
   - icon: "/img/logos/2026/gold/synopsys-software.webp"
     alt: "Synopsys Software"
+silver:
+  - icon: "/img/logos/2026/silver/starfive.webp"
+    alt: "StarFive"
 bronze:
   - icon: "/img/logos/2026/bronze/andes-technology.webp"
     alt: "Andes Technology"
@@ -55,6 +58,8 @@ bronze:
     alt: "WCH"
   - icon: "/img/logos/2026/bronze/wingsemi-technology.webp"
     alt: "WingSemi Technology"
+  - icon: "/img/logos/2026/bronze/stream-computing.webp"
+    alt: "Stream Computing"
 host:
   - icon: "/img/rios-logo.png"
     url: "https://www.rioslab.org"

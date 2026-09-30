@@ -809,24 +809,25 @@ section.section-container {
             .sponsor-logo {
                 position: relative;
                 margin: auto;
-                height: 140px;
+                box-sizing: border-box;
+                height: 156px;
                 width: 100%;
                 display: flex;
-                padding: 20px 30px;
+                padding: 14px 16px;
             }
             img {
                 margin: auto;
                 object-fit: contain;
                 border: none;
-                height: 100px;
-                max-width: 100%;
+                width: 100%;
+                height: 100%;
+                max-width: none;
+                max-height: 100%;
             }
             @media all and (max-width: 800px) {
                 .sponsor-logo {
-                    height: 100px;
-                }
-                img {
-                    height: 60px;
+                    height: 116px;
+                    padding: 12px;
                 }
             }
             &.keep-ratio {
@@ -869,7 +870,12 @@ section.section-container {
                 width: calc(33% - 10px);
             }
         }
-        &.silver, &.bronze, &.community {
+        &.silver {
+            div.icon {
+                width: calc(29% - 10px);
+            }
+        }
+        &.bronze, &.community {
             div.icon {
                 width: calc(25% - 10px);
             }
