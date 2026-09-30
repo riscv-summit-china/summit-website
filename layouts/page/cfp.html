@@ -37,6 +37,9 @@
       </section>
 
       <section class="cfp-section cfp-timeline">
+        <div class="cfp-timeline-action">
+          <a class="cfp-button" href="{{ .Params.submission_url }}" target="_blank" rel="noopener noreferrer">{{ .Params.submission_label }}</a>
+        </div>
         <header class="cfp-section-header">
           <h2>{{ .Params.timeline_title }}</h2>
         </header>
@@ -53,10 +56,27 @@
             </div>
           {{ end }}
         </div>
-        <div class="cfp-timeline-action">
-          <a class="cfp-button" href="{{ .Params.submission_url }}" target="_blank" rel="noopener noreferrer">{{ .Params.submission_label }}</a>
-        </div>
       </section>
+
+      {{ with .Params.track_summaries }}
+      <section class="cfp-section cfp-tracks">
+        <header class="cfp-section-header">
+          <h2>{{ $.Params.tracks_title }}</h2>
+        </header>
+        <div class="cfp-section-intro">
+          <p>{{ $.Params.tracks_intro }}</p>
+          <p>{{ $.Params.tracks_policy }}</p>
+        </div>
+        <ol class="cfp-track-list">
+          {{ range . }}
+          <li>
+            <h3>{{ .name }}</h3>
+            <p>{{ .description }}</p>
+          </li>
+          {{ end }}
+        </ol>
+      </section>
+      {{ end }}
 
       <section id="contact" class="cfp-footer">
         <div>

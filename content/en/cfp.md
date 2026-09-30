@@ -23,13 +23,31 @@ milestones:
   - stage: Review Results Notification
     date: September 21, 2026
     status: Results announced
-    active: true
   - stage: Summit Dates
     date: October 18-20, 2026
     status: In preparation
+    active: true
 deadline_label: Submission Deadline
 deadline_date: August 31, 2026
 deadline_note: Anywhere on Earth (AoE)
+tracks_title: Seven Forum Tracks
+tracks_intro: This year's call for presentations covered the following seven forum tracks.
+tracks_policy: Each track accepted both academic research contributions and industrial deployment reports. Work previously presented at peer-reviewed venues (e.g., ISCA, MICRO, HPCA, ASPLOS, DAC, PLDI/CGO) was also within scope; the program committee will deliberately program research results alongside deployment experience within sessions.
+track_summaries:
+  - name: Artificial Intelligence
+    description: Focuses on RISC-V's role across the full AI computing stack — from ISA standardization of matrix / vector extensions, compilers and operator libraries, to AI frameworks and runtimes, and on to system integration of cloud clusters and heterogeneous edge deployment.
+  - name: Datacenter / High-Performance Computing
+    description: Focuses on platform-level deployment of application-class RISC-V in datacenter and high-performance computing, including server SoCs, firmware and boot, memory and interconnects, virtualization, cloud-native orchestration, confidential computing, and HPC scalability.
+  - name: Software Ecosystem
+    description: Covers the general-purpose software ecosystem from toolchains, kernels, and firmware to distributions, language runtimes, JITs, debugging, performance analysis, and software-package ecosystems.
+  - name: Chip Design and Verification
+    description: Covers the full design-verification chain, from microarchitecture, RTL design, and agile methodologies to formal verification, compliance testing, prototyping, tape-out, and open-source EDA.
+  - name: Automotive, Industrial and Robotics
+    description: Targets RISC-V deployment in safety-critical and real-time domains, including automotive electronics, industrial control, robotics, low-altitude systems, aerospace, functional safety, and AUTOSAR adaptation.
+  - name: Embedded, IoT and Smart Hardware
+    description: Targets resource-constrained embedded and IoT production scenarios, including MCUs, RTOS, low-power design, wireless connectivity, on-device AI, device security, trusted boot, and supply chains.
+  - name: Industry-Academia Collaboration, Innovation and Entrepreneurship
+    description: Covers talent development, curriculum building, frontier research, open-source and standards collaboration, startups, and the investment ecosystem.
 participant_guidance: Submitters may sign in to the submission system to view review results and manage their submission. Accepted speakers must submit the required materials by <strong>October 11, 2026 (AoE)</strong> and monitor their registered email address for further notices.
 submission_url: https://cfp2026.riscv-summit-china.org/rvsc2026/cfp
 submission_label: Access Submission System
