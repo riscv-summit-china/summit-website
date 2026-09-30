@@ -7,7 +7,7 @@ link_slug: co-events
 
 <div class="co-event-card-list">
   <article class="co-event-card">
-    <h2>进迭时空首届开发者大会 2026 · SpacemiT DevCon 2026</h2>
+    <h2>进迭时空首届开发者大会 2026</h2>
     <p class="co-event-description">面向 RISC-V 开发者与硬核技术爱好者的实战型盛会。围绕 K3 系列芯片的同构融合架构与 Bianbu OS 软硬件技术栈，呈现开源生态、AI 框架适配、开发者板计划与工具链最新成果，并正式启动 Dev Partner Program。采用 "Keynote + 实战" 双引擎形式：高密度技术分享后开放开发者沙龙、30 人深度动手 Workshop 与 Demo 体验区三大区域，Workshop 优胜者可获限定版 K3 开发板。</p>
     <dl class="co-event-meta">
       <div><dt>主办单位</dt><dd>进迭时空（珠海）科技有限公司</dd></div>
