@@ -1608,6 +1608,12 @@ body:not(.in-home) {
                 background: #fff;
                 box-shadow: 0 8px 24px rgba(18, 42, 86, 0.06);
             }
+            .exhibition-plan-narrow {
+                width: 100%;
+                max-width: 420px;
+                box-sizing: border-box;
+                justify-self: center;
+            }
             .image-preview-trigger, img {
                 display: block;
                 width: 100%;

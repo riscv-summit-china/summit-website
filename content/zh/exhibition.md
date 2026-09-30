@@ -8,6 +8,10 @@ summary_image:
     description: "六楼会场平面图"
   - url: "/img/rvsc2026-exhibition-5f.jpg"
     description: "五楼会场平面图"
+exhibition_plan_title: 展厅平面图
+exhibition_plan_images:
+  - url: "/img/rvsc2026-orchid-hall-floorplan.png"
+    description: "兰花厅平面图"
 ---
 
 请注意，以下平面图可能存在变更，请以现场实际情况为准。

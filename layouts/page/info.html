@@ -63,6 +63,24 @@
       {{ end }}
     </section>
 
+    {{ with .Params.exhibition_plan_images }}
+    <section class="cfp-section exhibition-plan-section">
+      <header class="cfp-section-header">
+        <h2>{{ $.Params.exhibition_plan_title }}</h2>
+      </header>
+      <div class="exhibition-plan-grid">
+        {{ range . }}
+        <figure class="exhibition-plan-narrow">
+          <button class="image-preview-trigger" type="button" aria-label="{{ .description }}">
+            <img src="{{ (printf "%s?v=%s" .url (readFile (printf "static%s" .url) | sha1)) }}" alt="{{ .description }}" loading="lazy" />
+          </button>
+          <figcaption>{{ .description }}</figcaption>
+        </figure>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+
     {{ with .Params.transport_groups }}
     <section id="{{ $.Params.transport_section_id | default "transport-guide" }}" class="cfp-section travel-guide-section info-anchor-section">
       <header class="cfp-section-header">
