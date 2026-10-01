@@ -93,7 +93,7 @@ defaultContentLanguageInSubdir = false
         url = "/cfp"
         weight = 1
       [[languages.zh.menu.main]]
-        name = "立即投稿"
+        name = "投稿系统"
         parent = "cfp"
         url = "https://cfp2026.riscv-summit-china.org/rvsc2026/cfp"
         weight = 2

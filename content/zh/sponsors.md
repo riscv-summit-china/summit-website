@@ -28,6 +28,9 @@ gold:
     alt: "厦门算能科技股份有限公司"
   - icon: "/img/logos/2026/gold/synopsys-software.webp"
     alt: "新思软件科技（上海）有限公司"
+silver:
+  - icon: "/img/logos/2026/silver/starfive.webp"
+    alt: "赛昉科技（StarFive）"
 bronze:
   - icon: "/img/logos/2026/bronze/andes-technology.webp"
     alt: "晶心科技（Andes Technology）"
@@ -55,6 +58,8 @@ bronze:
     alt: "南京沁恒微电子股份有限公司（WCH）"
   - icon: "/img/logos/2026/bronze/wingsemi-technology.webp"
     alt: "隼瞻科技（WingSemi Technology）"
+  - icon: "/img/logos/2026/bronze/stream-computing.webp"
+    alt: "希姆计算（Stream Computing）"
 host:
   - icon: "/img/rios-logo.png"
     url: "https://www.rioslab.org"

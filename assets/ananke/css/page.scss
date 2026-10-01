@@ -772,7 +772,7 @@ body:not(.in-home) {
 
         .cfp-hero-copy {
             max-width: 900px;
-            margin: 3em 0 2em;
+            margin: 3em 0 0.75em;
             padding: 0;
         }
 
@@ -860,7 +860,7 @@ body:not(.in-home) {
         }
 
         .cfp-content {
-            padding-top: 1.5em;
+            padding-top: 0.5em;
         }
 
         .cfp-section {
@@ -892,9 +892,18 @@ body:not(.in-home) {
             margin-bottom: 1.2em;
             p {
                 margin: 0 0 1em;
-                color: #3f4c62;
-                font-size: 0.95rem;
-                line-height: 1.85;
+                color: #526079;
+                font-family: inherit;
+                font-size: 1.08rem;
+                line-height: 1.75;
+            }
+        }
+
+        .cfp-participant-actions {
+            padding-bottom: 1.5em;
+            .cfp-section-intro {
+                margin-bottom: 0;
+                p { margin-bottom: 0; }
             }
         }
 
@@ -956,7 +965,7 @@ body:not(.in-home) {
 
         .cfp-timeline {
             padding-top: 0;
-            padding-bottom: 4.5em;
+            padding-bottom: 2.5em;
             border-top: 0;
         }
 
@@ -967,7 +976,7 @@ body:not(.in-home) {
         }
 
         .cfp-timeline-action {
-            margin-top: 2.25em;
+            margin: 0 0 2em;
             .cfp-submission-note {
                 margin: 0.75em 0 0;
                 color: var(--cfp-muted);
@@ -1105,6 +1114,11 @@ body:not(.in-home) {
     article.info-page {
         .info-page-content {
             padding: 1.5em 0 2em;
+        }
+
+        &#co-events-page .co-events-content >.content {
+            width: 100%;
+            max-width: none;
         }
 
         .content {
