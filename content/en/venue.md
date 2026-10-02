@@ -19,13 +19,8 @@ section_nav:
     label: Important Notes for Participants
 overview_section_id: venue-overview
 summary_image:
-  - url: /img/venue/shenzhen-convention-exhibition-center-futian.jpg
-    alt: Exterior view of Shenzhen Convention & Exhibition Center (Futian)
-    description: Shenzhen Convention & Exhibition Center (Futian)
-    credit: Dinkun Chen
-    source_url: https://commons.wikimedia.org/wiki/File:Shenzhen_Convention_%26_Exhibition_Center_(10).jpg
-    license: CC BY-SA 4.0
-    license_url: https://creativecommons.org/licenses/by-sa/4.0/
+  - url: /img/venue/venue-exterior-distant.webp
+    alt: Distant view of Shenzhen Convention & Exhibition Center (Futian)
   - url: /img/venue/venue-exterior-north-plaza.webp
     alt: Close view of Shenzhen Convention & Exhibition Center North Plaza
     description: North Plaza and main façade of Shenzhen Convention & Exhibition Center

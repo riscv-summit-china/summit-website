@@ -19,13 +19,8 @@ section_nav:
     label: 参会重要须知
 overview_section_id: venue-overview
 summary_image:
-  - url: /img/venue/shenzhen-convention-exhibition-center-futian.jpg
-    alt: 深圳会展中心（福田）外景
-    description: 深圳会展中心（福田）
-    credit: Dinkun Chen
-    source_url: https://commons.wikimedia.org/wiki/File:Shenzhen_Convention_%26_Exhibition_Center_(10).jpg
-    license: CC BY-SA 4.0
-    license_url: https://creativecommons.org/licenses/by-sa/4.0/
+  - url: /img/venue/venue-exterior-distant.webp
+    alt: 深圳会展中心（福田）远景
   - url: /img/venue/venue-exterior-north-plaza.webp
     alt: 深圳会展中心北广场及主立面
     description: 深圳会展中心北广场及主立面
