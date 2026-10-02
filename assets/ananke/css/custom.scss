@@ -1141,75 +1141,9 @@ section.section-container {
             color: rgba(255, 255, 255, 0.72);
         }
 
-        /* 2. 主题演讲嘉宾 (Theme Grid) - 5 位讲者 3 + 2 优雅居中平衡排版 */
-        .theme-speaker-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1.25em;
-            max-width: 1160px;
-            margin: 0 auto;
-            text-align: left;
-        }
-
-        .theme-card {
-            flex: 0 1 calc(33.333% - 1em);
-            min-width: 290px;
-            max-width: 360px;
-
-            .speaker-name {
-                color: #ffffff;
-            }
-
-            .speaker-position {
-                min-height: 2.7em;
-                color: rgba(255, 255, 255, 0.78);
-            }
-
-            &:hover {
-                .speaker-name {
-                    color: $accentColor;
-                }
-            }
-        }
-
-        .speaker-talk {
-            margin: 1.1em 0 0;
-            padding-top: 0.9em;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.9em;
-            line-height: 1.5;
-            flex-grow: 1;
-
-            .talk-label {
-                color: $accentColor;
-                font-weight: 600;
-            }
-
-            .talk-title {
-                color: rgba(255, 255, 255, 0.95);
-                font-weight: 500;
-            }
-        }
-
-        /* 响应式断点适配 */
         @media all and (max-width: 900px) {
             .keynote-speaker-grid {
                 grid-template-columns: 1fr;
-            }
-            .theme-card {
-                flex-basis: calc(50% - 0.7em);
-                max-width: none;
-            }
-        }
-
-        @media all and (max-width: 640px) {
-            .theme-card {
-                flex-basis: 100%;
-                min-width: 0;
-            }
-            .theme-card .speaker-position {
-                min-height: 0;
             }
         }
     }
@@ -1504,24 +1438,6 @@ article#keynote-speakers-page {
                 line-height: 1.6;
             }
         }
-        .theme-speaker-talk {
-            margin: 0.8em 0 0;
-            color: #8a6500;
-            font-weight: 700;
-            font-size: 1.1em;
-            line-height: 1.6;
-            .talk-tag-inline {
-                display: inline-block;
-                padding: 0.15em 0.5em;
-                background: #fef3c7;
-                color: #92400e;
-                font-size: 0.78rem;
-                font-weight: 700;
-                border-radius: 4px;
-                vertical-align: middle;
-                margin-right: 0.35em;
-            }
-        }
         .speaker-detail-section {
             margin-top: 1.5em;
             h4 {
@@ -1536,15 +1452,6 @@ article#keynote-speakers-page {
                 &:last-child { margin-bottom: 0; }
             }
             .keynote-speaker-bio { margin: 0; }
-        }
-        .speaker-abstract {
-            padding-bottom: 1.5em;
-            border-bottom: 1px solid #e6ebf2;
-            .abstract-content {
-                line-height: 1.85;
-                color: #334155;
-                p { margin-bottom: 0.9em; &:last-child { margin-bottom: 0; } }
-            }
         }
     }
     @media all and (max-width: 700px) {

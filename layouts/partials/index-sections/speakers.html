@@ -8,7 +8,6 @@
     <p class="keynote-speaker-updating">{{ . }}</p>
     {{- end }}
 
-    {{/* 1. 主旨演讲嘉宾 */}}
     {{- with .Params.keynotes }}
     <div class="speaker-group">
       <h2 class="speaker-group-title">{{ $speakersPage.Params.keynote_title | default (cond $isEn "Keynote Speakers" "主旨演讲嘉宾") }}</h2>
@@ -28,49 +27,6 @@
         </a>
         {{- end }}
       </div>
-    </div>
-    {{- end }}
-
-    {{/* 2. 主题演讲嘉宾 */}}
-    {{- with .Params.theme_speakers }}
-    <div class="speaker-group">
-      <h2 class="speaker-group-title">{{ $speakersPage.Params.theme_title | default (cond $isEn "Featured Speakers" "主题演讲嘉宾") }}</h2>
-      <div class="theme-speaker-grid">
-        {{- range . }}
-        <a class="speaker-card theme-card" href="{{ printf "%s#%s" ($speakersPage.Params.link_slug | relLangURL) .id }}">
-          <div class="speaker-card-header">
-            <h3 class="speaker-name">{{ .name }}</h3>
-            <p class="speaker-position">{{ .position }}</p>
-          </div>
-          {{- with .talk_title }}
-          <div class="speaker-talk">
-            <span class="talk-label">{{ cond $isEn "Topic: " "演讲议题：" }}</span>
-            <span class="talk-title">{{ . }}</span>
-          </div>
-          {{- end }}
-        </a>
-        {{- end }}
-      </div>
-    </div>
-    {{- end }}
-
-    {{/* 旧版兼容 */}}
-    {{- if and (not .Params.keynotes) (not .Params.theme_speakers) }}
-    <div class="keynote-speaker-grid">
-      {{- range $index, $speaker := .Params.speakers }}
-      <div class="speaker-card keynote-card">
-        <div class="speaker-card-header">
-          <h3 class="speaker-name">
-            {{ $speaker.name }}
-            {{- with $speaker.name_en }}<span class="speaker-name-en">{{ . }}</span>{{ end }}
-          </h3>
-          <p class="speaker-position">{{ $speaker.position }}</p>
-        </div>
-        {{- with $speaker.summary }}
-        <p class="speaker-summary">{{ . }}</p>
-        {{- end }}
-      </div>
-      {{- end }}
     </div>
     {{- end }}
 

@@ -1,62 +1,24 @@
 ---
-title: 演讲摘要与嘉宾简介
+title: 主旨演讲嘉宾简介
 home_title: 演讲嘉宾
 layout: speakers
 link_slug: speakers
 updating_notice: 持续更新中…
 keynote_title: 主旨演讲嘉宾
-theme_title: 主题演讲嘉宾
-abstract_label: 演讲摘要：
 bio_label: 嘉宾简介：
 keynotes:
   - id: david-patterson
-    name: 大卫 · 帕特森
+    name: 大卫·帕特森
     name_en: David A. Patterson
-    position: UC Berkeley  荣誉教授（ Professor Emeritus, UC Berkeley ）
-    summary: 图灵奖得主（2017 年，与 John Hennessy 共同获得），RISC 与 RISC-V 指令集架构联合奠基人，计算机体系结构领域权威学者。
-    bio: 图灵奖得主（2017 年，与 John Hennessy 共同获得），RISC 与 RISC-V 指令集架构联合奠基人，计算机体系结构领域权威学者。加州大学伯克利分校荣誉教授，20 世纪 80 年代主导伯克利 RISC 研究项目，其精简指令集思想深刻影响了此后四十余年的处理器设计，并直接孕育了 RISC-V 架构的诞生；他还提出了 RAID 存储架构概念，与 Hennessy 合著《计算机体系结构：量化研究方法》《计算机组成与设计》两部经典教材，培养了全球几代体系结构人才。2018 年发起 RISC-V 国际开源实验室（RIOS Lab），持续推动 RISC-V 生态在全球范围内的产学研协作与开源发展。
+    position: 加州大学伯克利分校荣誉教授
+    position_en: Professor Emeritus, UC Berkeley
+    summary: 图灵奖得主，RISC 与 RISC-V 指令集架构联合奠基人。
+    bio: 大卫·帕特森是 2017 年图灵奖得主（与 John Hennessy 共同获得），也是 RISC 与 RISC-V 指令集架构联合奠基人。他是加州大学伯克利分校荣誉教授，20 世纪 80 年代主导伯克利 RISC 研究项目，其精简指令集思想深刻影响了此后四十余年的处理器设计，并直接孕育了 RISC-V 架构的诞生。他还提出 RAID 存储架构概念，与 Hennessy 合著《计算机体系结构：量化研究方法》和《计算机组成与设计》。2018 年，他发起 RISC-V 国际开源实验室（RIOS Lab），持续推动 RISC-V 生态的全球产学研协作与开源发展。
   - id: andrea-gallo
-    name: 安德烈亚 · 加洛
+    name: 安德烈亚·加洛
     name_en: Andrea Gallo
-    position: RISC-V International CEO
-    summary: 现任首席执行官，长期深耕开源处理器生态与全球半导体协作，负责推动 RISC-V 开放指令集架构在全球范围内的生态拓展与产业落地。
-    bio: RISC-V International 现任首席执行官，长期深耕开源处理器生态与全球半导体协作，负责推动 RISC-V 开放指令集架构在全球范围内的生态拓展与产业落地。加入 RISC-V International 后曾任技术副总裁（VP of Technology），负责组织技术项目与标准演进；更早前在 Arm 生态协作组织 Linaro 工作十余年，历任业务发展副总裁，主导会员拓展战略，并管理数据中心与云、移动、网络、IoT 及嵌入式等多个业务板块的开源协作项目；此前曾任意法半导体（STMicroelectronics）Fellow，主导智能手机与通信芯片的软硬件架构优化。他还曾担任 Linux 基金会开源社区健康项目 CHAOSS 董事会成员，在开源社区治理与国际产业联盟运营方面经验丰富。
-theme_speakers:
-  - id: xinxia-jia
-    name: 贾新霞
-    position: 蓝芯算力（深圳）科技有限公司 CTO
-    talk_title: "LX500：解锁 AI 推理新路径"
-    summary: 拥有超过 20 年 SoC 设计经验，长期从事 RISC-V 与 AI 架构高性能服务器 CPU 研发。
-    bio: 蓝芯算力（深圳）科技有限公司 CTO，西安电子科技大学信息与通信工程专业硕士，拥有超过 20 年 SoC 设计经验，曾任职于字节跳动服务器芯片部门、高通、新思等企业。主导 RISC-V 与 AI 架构高性能服务器 CPU 的研发与验证体系建设，推动公司在自主可控算力领域持续突破。
-  - id: meng-zhou
-    name: 周萌
-    position: 中电标协 RISC-V 工作委员会执行秘书长
-    talk_title: 中国 RISC-V 产业的规模化拐点与标准化实践
-    abstract: |-
-      中国 RISC-V 产业正站在从生态培育迈向规模化商用的拐点上。根据工委会调研统计，2025 年中国 RISC-V 芯片出货量突破 30 亿颗，约占全球出货量一半，芯片、模组与整机环节产值约 1,700 亿元，同比增长超 35%——中国已成为全球领先的应用市场。但目前国内 RISC-V 芯片出货仍以中低端物联网芯片为主，向高性能与 AI 场景的迁移刚刚开始。
-
-      本报告聚焦三个层面：一是产业拐点，从工委会标杆产品申报量两年翻倍、软件生态从“能跑”向“好用”跨越，观察国内产业结构迁移与区域发展特点；二是标准化实践，介绍工委会以“翻译转化 + 参考转化”的路径开展 35 项团体标准工作，推动指令集层与国际对齐，并逐步完善系统级与场景化标准；三是 AI 融合与深圳产业特色优势，分析深圳通过政策联动，在智慧高速、智慧水务、家电穿戴和服务器整机等场景形成的量产实践。
-
-      报告还将提出把深圳建设为 RISC-V“标准验证场”的建议，打通“标准—测评—场景—规模”闭环，并邀请全球生态伙伴与中国产业和市场加强对接。
-    summary: 长期参与集成电路公共服务平台、行业标准与 RISC-V 产业研究工作。
-    bio: 中电标协 RISC-V 工作委员会执行秘书长，工学博士，高级工程师。曾负责国家集成电路公共服务平台建设和工信部集成电路 IP 核标准工作组的技术工作，参与起草多项集成电路行业标准，并主持和参与多项部委、省厅委托研究课题。
-  - id: jianyi-meng
-    name: 孟建熠
-    position: 阿里巴巴达摩院首席科学家
-    talk_title: 从稳定可靠到卓越——玄铁 IP 的技术创新与开放生态之路
-    summary: 国内 RISC-V 处理器架构专家，长期推动玄铁系列处理器研发与 RISC-V 标准建设。
-    bio: 阿里巴巴集团达摩院首席科学家，博士，中国电子学会计算机分会副主任委员，国内 RISC-V 处理器架构领军专家。曾任阿里平头哥半导体副总裁，主导玄铁系列 RISC-V 处理器研发，推动架构从嵌入式走向高端通用与 AI 算力场景；现任 RISC-V 工委会轮值会长，牵头国内 RISC-V 标准制定，曾获 CCF 杰出工程师奖。
-  - id: zhijian-chen
-    name: 陈志坚
-    position: 进迭时空科技有限公司创始人兼 CEO
-    talk_title: 从端到云：RISC-V 的下一程
-    abstract: 过去几年，RISC-V 在终端完成了从能用到好用的验证。下一程的方向已经清晰：向上进入云端算力。本演讲讨论这一跨越需要跨过的技术关口——性能、系统软件、规范符合性，以及解决方案如何满足更高要求的算力场景。
-    summary: 专注高性能 RISC-V 处理器研发与产业化，推动 K1、K3 等 RISC-V AI CPU 芯片量产。
-    bio: 进迭时空创始人兼首席执行官，浙江大学电路与系统专业博士。2021 年 11 月创立进迭时空，以开源指令集架构 RISC-V 为技术路线，专注高性能处理器的研发与产业化。公司已面向市场量产推出 K1、K3 等 RISC-V AI CPU 芯片，并持续向更高算力场景拓展。
-  - id: ting-mu
-    name: 穆廷
-    position: 深圳计算科学研究院崖山数据库一体机总经理
-    talk_title: 携手共进，从源头创新到产业落地
-    summary: 负责崖山数据库产品体系、核心解决方案与渠道生态合作。
-    bio: 深圳计算科学研究院崖山数据库一体机总经理，负责崖山数据库（YashanDB）产品体系、核心解决方案与渠道生态合作。崖山数据库由深算院全自研，内核代码自主率 100%，已在深圳社保、燃气、水务、交通等民生核心系统上线应用，服务约 2000 万市民。
+    position: RISC-V International 首席执行官
+    position_en: CEO, RISC-V International
+    summary: 长期深耕开源处理器生态与全球半导体协作。
+    bio: 安德烈亚·加洛是 RISC-V International 首席执行官，负责推动 RISC-V 开放指令集架构在全球的生态拓展与产业落地。他曾任 RISC-V International 技术副总裁，负责组织技术项目与标准演进。更早之前，他在 Arm 生态协作组织 Linaro 工作十余年，历任业务发展副总裁，主导会员拓展战略，并管理数据中心与云、移动、网络、IoT 及嵌入式等多个业务板块的开源协作项目。他此前还曾任意法半导体 Fellow，并担任 Linux 基金会开源社区健康项目 CHAOSS 董事会成员。
 ---
