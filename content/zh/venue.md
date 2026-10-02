@@ -19,6 +19,13 @@ section_nav:
   - id: participant-notes
     label: 参会须知
 overview_section_id: venue-overview
+summary_image:
+  - url: /img/venue/shenzhen-convention-exhibition-center-futian.jpg
+    description: 深圳会展中心（福田）
+    credit: Dinkun Chen
+    source_url: https://commons.wikimedia.org/wiki/File:Shenzhen_Convention_%26_Exhibition_Center_(10).jpg
+    license: CC BY-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-sa/4.0/
 map_link: "https://www.openstreetmap.org/export/embed.html?bbox=114.0505%2C22.5305%2C114.0590%2C22.5365&layer=mapnik&marker=22.5335041%2C114.0547472"
 transport_section_id: transport-guide
 transport_section_title: 抵达交通指引

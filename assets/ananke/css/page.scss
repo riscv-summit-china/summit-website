@@ -1627,11 +1627,22 @@ body:not(.in-home) {
             img {
                 height: auto;
             }
+            .venue-summary-image img {
+                aspect-ratio: 16 / 7;
+                object-fit: cover;
+            }
             figcaption {
                 padding: 0.9em 0 0.15em;
                 color: #526079;
                 font-weight: 700;
                 text-align: center;
+            }
+            .image-credit {
+                display: block;
+                margin-top: 0.25em;
+                color: #7a8698;
+                font-size: 0.75rem;
+                font-weight: 500;
             }
         }
 

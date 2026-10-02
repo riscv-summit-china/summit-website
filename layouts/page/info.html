@@ -43,22 +43,26 @@
       </div>
       {{ end }}
 
-      {{ with .Params.map_link }}
-      <div class="venue-map">
-        <iframe title="{{ $.Title }}" src="{{ . }}" frameborder="0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      {{ end }}
-
       {{ with .Params.summary_image }}
       <div class="exhibition-plan-grid">
         {{ range . }}
-        <figure>
+        {{ $image := . }}
+        <figure{{ with $.Params.map_link }} class="venue-summary-image"{{ end }}>
           <button class="image-preview-trigger" type="button" aria-label="{{ .description }}">
             <img src="{{ (printf "%s?v=%s" .url (readFile (printf "static%s" .url) | sha1)) }}" alt="{{ .description }}" loading="lazy" />
           </button>
-          <figcaption>{{ .description }}</figcaption>
+          <figcaption>
+            {{ .description }}
+            {{ with $image.credit }}<span class="image-credit">{{ if eq $.Site.Language.Lang "en" }}Photo{{ else }}摄影{{ end }}：{{ with $image.source_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ end }}{{ . }}{{ with $image.source_url }}</a>{{ end }}{{ with $image.license }} · {{ with $image.license_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ end }}{{ . }}{{ with $image.license_url }}</a>{{ end }}{{ end }}</span>{{ end }}
+          </figcaption>
         </figure>
         {{ end }}
+      </div>
+      {{ end }}
+
+      {{ with .Params.map_link }}
+      <div class="venue-map">
+        <iframe title="{{ $.Title }}" src="{{ . }}" frameborder="0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       {{ end }}
     </section>
