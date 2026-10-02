@@ -46,7 +46,7 @@
       {{ end }}
 
       {{ with .Params.summary_image }}
-      <div class="exhibition-plan-grid{{ if gt (len .) 1 }} venue-images-grid{{ end }}">
+      <div class="exhibition-plan-grid{{ if and $.Params.map_link (gt (len .) 1) }} venue-images-grid{{ end }}">
         {{ range . }}
         {{ $image := . }}
         <figure{{ with $.Params.map_link }} class="venue-summary-image"{{ end }}>
