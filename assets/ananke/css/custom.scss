@@ -22,6 +22,15 @@ body {
     background-color: $primaryColor;
 }
 
+// `overflow-x: hidden` makes the page body a scroll container in Chromium,
+// which prevents the venue page's sticky section navigation from staying in
+// the viewport. `clip` keeps the horizontal overflow protection without
+// changing the sticky element's scrolling ancestor.
+html:has(article.info-page),
+body:has(article.info-page) {
+    overflow-x: clip;
+}
+
 .section-container {
     --section-container-pl: 0px;
     --section-container-pr: 0px;
