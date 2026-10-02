@@ -808,20 +808,33 @@ section.section-container {
     div.sponsors-container {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 0.5em;
+        margin-bottom: 2em;
         div.icon {
             position: relative;
             display: flex;
             background-color: #FFFFFF;
-            margin: 5px auto;
+            margin: 0;
             padding: 0;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-sizing: border-box;
+            &:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+            }
             .sponsor-logo {
                 position: relative;
                 margin: auto;
                 box-sizing: border-box;
-                height: 156px;
                 width: 100%;
                 display: flex;
-                padding: 14px 16px;
+                align-items: center;
+                justify-content: center;
             }
             img {
                 margin: auto;
@@ -829,14 +842,8 @@ section.section-container {
                 border: none;
                 width: 100%;
                 height: 100%;
-                max-width: none;
+                max-width: 100%;
                 max-height: 100%;
-            }
-            @media all and (max-width: 800px) {
-                .sponsor-logo {
-                    height: 116px;
-                    padding: 12px;
-                }
             }
             &.keep-ratio {
                 background-color: transparent;
@@ -850,54 +857,113 @@ section.section-container {
                 img {
                     margin: 0;
                 }
-                .sponsor-logo, img {
-                    height: 140px;
-                }
-                @media all and (max-width: 800px) {
-                    .sponsor-logo, img {
-                        height: 100px;
-                        width: 100%;
-                    }
-                }
             }
         }
         &.diamond {
+            gap: 18px;
             div.icon {
-                width: calc(50% - 10px);
+                flex: 0 1 calc(33.333% - 14px);
+                min-width: 290px;
+                max-width: 375px;
+                .sponsor-logo { height: 175px; padding: 10px 18px; }
             }
         }
         &.host {
-            justify-content: center;
             div.icon {
-                width: calc(33% - 10px);
+                flex: 0 1 380px;
                 max-width: 380px;
+                .sponsor-logo { height: 175px; padding: 10px 18px; }
             }
         }
         &.gold, &.co-hosts, &.organizers, &.co-organizers {
+            gap: 15px;
             div.icon {
-                width: calc(33% - 10px);
+                flex: 0 1 calc(25% - 12px);
+                min-width: 235px;
+                max-width: 280px;
+                .sponsor-logo { height: 138px; padding: 8px 14px; }
             }
         }
         &.silver {
             div.icon {
-                width: calc(29% - 10px);
+                flex: 0 1 280px;
+                .sponsor-logo { height: 130px; padding: 8px 14px; }
             }
         }
         &.bronze, &.community {
+            gap: 12px;
             div.icon {
-                width: calc(25% - 10px);
+                flex: 0 1 calc(20% - 10px);
+                min-width: 190px;
+                max-width: 224px;
+                .sponsor-logo { height: 110px; padding: 6px 10px; }
             }
         }
-        @media all and (max-width: 800px) {
-            &.diamond, &.host {
+
+        @media all and (max-width: 1080px) {
+            &.diamond div.icon {
+                flex-basis: calc(50% - 12px);
+                max-width: 380px;
+                .sponsor-logo { height: 155px; padding: 10px 16px; }
+            }
+            &.host div.icon {
+                flex-basis: 380px;
+                max-width: 100%;
+                .sponsor-logo { height: 155px; padding: 10px 16px; }
+            }
+            &.gold, &.co-hosts, &.organizers, &.co-organizers {
                 div.icon {
-                    width: calc(100% - 10px);
+                    flex-basis: calc(33.333% - 12px);
+                    max-width: 280px;
+                    .sponsor-logo { height: 130px; padding: 8px 12px; }
                 }
             }
-            &.gold, &.silver, &.bronze, &.community, &.co-hosts, &.organizers, &.co-organizers {
+            &.silver div.icon {
+                flex-basis: 280px;
+                .sponsor-logo { height: 125px; padding: 8px 12px; }
+            }
+            &.bronze, &.community {
                 div.icon {
-                    width: calc(50% - 10px);
+                    flex-basis: calc(25% - 10px);
+                    max-width: 224px;
+                    .sponsor-logo { height: 100px; padding: 6px 10px; }
                 }
+            }
+        }
+
+        @media all and (max-width: 768px) {
+            &.diamond div.icon,
+            &.host div.icon {
+                flex-basis: calc(50% - 8px);
+                min-width: 0;
+                .sponsor-logo { height: 130px; padding: 8px 14px; }
+            }
+            &.gold div.icon,
+            &.silver div.icon {
+                flex-basis: calc(50% - 8px);
+                min-width: 0;
+                .sponsor-logo { height: 115px; padding: 8px 12px; }
+            }
+            &.bronze, &.community {
+                div.icon {
+                    flex-basis: calc(33.333% - 8px);
+                    min-width: 0;
+                    .sponsor-logo { height: 90px; padding: 6px 8px; }
+                }
+            }
+        }
+
+        @media all and (max-width: 480px) {
+            &.diamond div.icon,
+            &.host div.icon {
+                flex-basis: 100%;
+                .sponsor-logo { height: 120px; padding: 8px 12px; }
+            }
+            &.gold div.icon,
+            &.silver div.icon,
+            &.bronze div.icon {
+                flex-basis: calc(50% - 6px);
+                .sponsor-logo { height: 85px; padding: 5px 8px; }
             }
         }
     }
