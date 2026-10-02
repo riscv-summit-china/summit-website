@@ -55,12 +55,10 @@
           </button>
           {{ if or .description $image.credit }}
           <figcaption>
+            {{ if $image.credit }}
+            <span class="image-credit">{{ if eq $.Site.Language.Lang "en" }}Image source:{{ else }}图片来源：{{ end }} {{ with $image.source_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ end }}{{ $image.source_label | default "Wikimedia Commons" }}{{ with $image.source_url }}</a>{{ end }} · {{ $image.credit }}{{ with $image.license }} · {{ with $image.license_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ end }}{{ . }}{{ with $image.license_url }}</a>{{ end }}{{ end }}</span>
+            {{ else }}
             {{ with .description }}<span class="image-desc">{{ . }}</span>{{ end }}
-            {{ with $image.credit }}
-            <span class="image-credit">
-              <svg class="credit-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-              <span>{{ if eq $.Site.Language.Lang "en" }}Photo{{ else }}摄影{{ end }}：{{ with $image.source_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ end }}{{ . }}{{ with $image.source_url }}</a>{{ end }}{{ with $image.license }}（{{ with $image.license_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ end }}{{ . }}{{ with $image.license_url }}</a>{{ end }}）{{ end }}</span>
-            </span>
             {{ end }}
           </figcaption>
           {{ end }}
