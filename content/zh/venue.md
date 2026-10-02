@@ -10,10 +10,10 @@ section_nav:
     label: 会场信息
   - id: transport-guide
     label: 交通指引
-  - id: accommodation
-    label: 住宿推荐
   - id: admission-parking
     label: 入场及停车
+  - id: accommodation
+    label: 住宿推荐
   - id: dining-guide
     label: 餐饮指引
   - id: participant-notes

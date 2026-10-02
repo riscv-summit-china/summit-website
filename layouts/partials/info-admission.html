@@ -1,0 +1,19 @@
+{{ with .Params.admission_groups }}
+<section id="{{ $.Params.admission_section_id | default "admission-parking" }}" class="cfp-section admission-guide-section info-anchor-section">
+  <header class="cfp-section-header">
+    <h2>{{ $.Params.admission_section_title }}</h2>
+  </header>
+  {{ with $.Params.admission_section_intro }}<div class="cfp-section-intro"><p>{{ . }}</p></div>{{ end }}
+  <div class="admission-guide-grid">
+    {{ range . }}
+    <article class="admission-guide-card">
+      <h3>{{ .title }}</h3>
+      {{ with .recommendation }}<p class="admission-guide-recommendation">{{ . }}</p>{{ end }}
+      <ol>
+        {{ range .steps }}<li>{{ . }}</li>{{ end }}
+      </ol>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
