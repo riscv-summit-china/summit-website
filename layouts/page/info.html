@@ -13,11 +13,13 @@
     </div>
   </header>
 
-  <div class="cfp-shell cfp-content info-page-content">
+  <div class="cfp-shell cfp-content info-page-content{{ with .Params.section_nav }} has-section-nav{{ end }}">
     <div class="info-page-layout{{ with .Params.section_nav }} has-section-nav{{ end }}">
       {{ with .Params.section_nav }}
       <aside class="info-section-nav" aria-label="{{ $.Params.section_nav_label | default (cond (eq $.Site.Language.Lang "en") "Page sections" "页面导航") }}">
-        <p class="info-section-nav-title">{{ $.Params.section_nav_label | default (cond (eq $.Site.Language.Lang "en") "On this page" "本页导航") }}</p>
+        {{ with $.Params.section_nav_label }}
+        <p class="info-section-nav-title">{{ . }}</p>
+        {{ end }}
         <nav>
           <ul>
             {{ range . }}
@@ -44,17 +46,24 @@
       {{ end }}
 
       {{ with .Params.summary_image }}
-      <div class="exhibition-plan-grid">
+      <div class="exhibition-plan-grid{{ if gt (len .) 1 }} venue-images-grid{{ end }}">
         {{ range . }}
         {{ $image := . }}
         <figure{{ with $.Params.map_link }} class="venue-summary-image"{{ end }}>
-          <button class="image-preview-trigger" type="button" aria-label="{{ .description }}">
-            <img src="{{ (printf "%s?v=%s" .url (readFile (printf "static%s" .url) | sha1)) }}" alt="{{ .description }}" loading="lazy" />
+          <button class="image-preview-trigger" type="button" aria-label="{{ .alt | default .description | default (cond (eq $.Site.Language.Lang "en") "Shenzhen Convention & Exhibition Center" "深圳会展中心") }}">
+            <img src="{{ (printf "%s?v=%s" .url (readFile (printf "static%s" .url) | sha1)) }}" alt="{{ .alt | default .description | default (cond (eq $.Site.Language.Lang "en") "Shenzhen Convention & Exhibition Center" "深圳会展中心") }}" loading="lazy" />
           </button>
+          {{ if or .description $image.credit }}
           <figcaption>
-            {{ .description }}
-            {{ with $image.credit }}<span class="image-credit">{{ if eq $.Site.Language.Lang "en" }}Photo{{ else }}摄影{{ end }}：{{ with $image.source_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ end }}{{ . }}{{ with $image.source_url }}</a>{{ end }}{{ with $image.license }} · {{ with $image.license_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ end }}{{ . }}{{ with $image.license_url }}</a>{{ end }}{{ end }}</span>{{ end }}
+            {{ with .description }}<span class="image-desc">{{ . }}</span>{{ end }}
+            {{ with $image.credit }}
+            <span class="image-credit">
+              <svg class="credit-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+              <span>{{ if eq $.Site.Language.Lang "en" }}Photo{{ else }}摄影{{ end }}：{{ with $image.source_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ end }}{{ . }}{{ with $image.source_url }}</a>{{ end }}{{ with $image.license }}（{{ with $image.license_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ end }}{{ . }}{{ with $image.license_url }}</a>{{ end }}）{{ end }}</span>
+            </span>
+            {{ end }}
           </figcaption>
+          {{ end }}
         </figure>
         {{ end }}
       </div>
@@ -91,6 +100,16 @@
         <h2>{{ $.Params.transport_section_title }}</h2>
       </header>
       {{ with $.Params.transport_section_intro }}<div class="cfp-section-intro"><p>{{ . }}</p></div>{{ end }}
+      {{ with $.Params.transport_image }}
+      <div class="transport-map-container">
+        <figure class="transport-map-figure">
+          <button class="image-preview-trigger" type="button" aria-label="{{ .description }}">
+            <img src="{{ (printf "%s?v=%s" .url (readFile (printf "static%s" .url) | sha1)) }}" alt="{{ .description }}" loading="lazy" />
+          </button>
+          <figcaption>{{ .description }}</figcaption>
+        </figure>
+      </div>
+      {{ end }}
       <div class="travel-guide-groups">
         {{ range . }}
         <article class="travel-guide-group">
@@ -100,8 +119,8 @@
             {{ range .routes }}
             <section class="travel-route-card">
               <h4>{{ .title }}</h4>
-              <p>{{ .description }}</p>
-              {{ with .note }}<p class="travel-route-note">{{ . }}</p>{{ end }}
+              <p>{{ .description | safeHTML }}</p>
+              {{ with .note }}<p class="travel-route-note">{{ . | safeHTML }}</p>{{ end }}
             </section>
             {{ end }}
           </div>
@@ -120,18 +139,32 @@
       <header class="cfp-section-header">
         <h2>{{ $.Params.hotel_section_title }}</h2>
       </header>
-      <div class="cfp-section-intro"><p>{{ $.Params.hotel_notice }}</p></div>
       {{ with $.Params.accommodation_guidance }}
-      <div class="accommodation-guidance">
-        <h3>{{ $.Params.accommodation_guidance_title }}</h3>
-        <ol>
-          {{ range . }}
-          <li><strong>{{ .title }}</strong><span>{{ .description }}</span></li>
+      <div class="accommodation-guidance-module">
+        <header class="accommodation-guidance-header">
+          <h3>{{ $.Params.accommodation_guidance_title | default (cond (eq $.Site.Language.Lang "en") "Accommodation Selection Guide" "住宿选择建议") }}</h3>
+          {{ with $.Params.accommodation_guidance_intro }}
+          <div class="accommodation-guidance-intro"><p>{{ . | safeHTML }}</p></div>
           {{ end }}
-        </ol>
+        </header>
+        <div class="accommodation-guidance-list">
+          {{ range . }}
+          <article class="accommodation-guidance-item">
+            <h4>{{ .title }}</h4>
+            <p>{{ .description | safeHTML }}</p>
+          </article>
+          {{ end }}
+        </div>
       </div>
       {{ end }}
-      <div class="hotel-grid">
+      <div class="organizer-hotels-module">
+        <header class="organizer-hotels-header">
+          <h3>{{ $.Params.organizer_hotels_title | default (cond (eq $.Site.Language.Lang "en") "Organizer Recommendations" "主办方推荐") }}</h3>
+          {{ with $.Params.hotel_notice }}
+          <div class="organizer-hotels-intro"><p>{{ . }}</p></div>
+          {{ end }}
+        </header>
+        <div class="hotel-grid">
         {{ range . }}
         {{ $hotel := . }}
         <article class="hotel-card">
@@ -166,6 +199,7 @@
         </article>
         {{ end }}
       </div>
+      </div>
     </section>
     {{ end }}
 
@@ -178,16 +212,26 @@
       <header class="cfp-section-header">
         <h2>{{ $.Params.dining_section_title }}</h2>
       </header>
-      {{ with $.Params.dining_section_intro }}<div class="cfp-section-intro"><p>{{ . }}</p></div>{{ end }}
-      <div class="dining-guide-grid">
+      {{ with $.Params.dining_section_intro }}<div class="cfp-section-intro"><p>{{ . | safeHTML }}</p></div>{{ end }}
+      <div class="dining-guide-list">
         {{ range . }}
-        <article class="dining-guide-card">
+        <article class="dining-guide-item">
           <h3>{{ .title }}</h3>
-          <p>{{ .description }}</p>
-          {{ with .note }}<p class="dining-guide-note">{{ . }}</p>{{ end }}
+          <p>{{ .description | safeHTML }}</p>
         </article>
         {{ end }}
       </div>
+      {{ $tip := or $.Params.dining_tip $.Params.dining_note }}
+      {{ if not $tip }}
+        {{ range . }}
+          {{ with .note }}{{ $tip = . }}{{ end }}
+        {{ end }}
+      {{ end }}
+      {{ with $tip }}
+      <p class="dining-tip-text">
+        <strong>{{ $.Params.dining_tip_label | default (cond (eq $.Site.Language.Lang "en") "Tip: " "预订提示：") }}</strong>{{ . | safeHTML }}
+      </p>
+      {{ end }}
     </section>
     {{ end }}
 
@@ -196,12 +240,15 @@
       <header class="cfp-section-header">
         <h2>{{ $.Params.notes_section_title }}</h2>
       </header>
-      <ol class="participant-notes-list">
+      <div class="participant-notes-list">
         {{ range . }}
-        <li><strong>{{ .title }}</strong><span>{{ .description }}</span></li>
+        <article class="participant-notes-item">
+          <h3>{{ .title }}</h3>
+          <p>{{ .description | safeHTML }}</p>
+        </article>
         {{ end }}
-      </ol>
-      {{ with $.Params.guide_disclaimer }}<p class="guide-disclaimer">{{ . }}</p>{{ end }}
+      </div>
+      {{ with $.Params.guide_disclaimer }}<p class="guide-disclaimer">{{ . | safeHTML }}</p>{{ end }}
     </section>
     {{ end }}
       </div>
