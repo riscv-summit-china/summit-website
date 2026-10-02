@@ -14,7 +14,22 @@
   </header>
 
   <div class="cfp-shell cfp-content info-page-content">
-    <section class="cfp-section info-overview">
+    <div class="info-page-layout{{ with .Params.section_nav }} has-section-nav{{ end }}">
+      {{ with .Params.section_nav }}
+      <aside class="info-section-nav" aria-label="{{ $.Params.section_nav_label | default (cond (eq $.Site.Language.Lang "en") "Page sections" "页面导航") }}">
+        <p class="info-section-nav-title">{{ $.Params.section_nav_label | default (cond (eq $.Site.Language.Lang "en") "On this page" "本页导航") }}</p>
+        <nav>
+          <ul>
+            {{ range . }}
+            <li><a href="#{{ .id }}">{{ .label }}</a></li>
+            {{ end }}
+          </ul>
+        </nav>
+      </aside>
+      {{ end }}
+
+      <div class="info-page-main">
+    <section id="{{ .Params.overview_section_id | default "overview" }}" class="cfp-section info-overview info-anchor-section">
       <header class="cfp-section-header">
         <h2>{{ .Params.section_title }}</h2>
       </header>
@@ -48,12 +63,48 @@
       {{ end }}
     </section>
 
+    {{ with .Params.transport_groups }}
+    <section id="{{ $.Params.transport_section_id | default "transport-guide" }}" class="cfp-section travel-guide-section info-anchor-section">
+      <header class="cfp-section-header">
+        <h2>{{ $.Params.transport_section_title }}</h2>
+      </header>
+      {{ with $.Params.transport_section_intro }}<div class="cfp-section-intro"><p>{{ . }}</p></div>{{ end }}
+      <div class="travel-guide-groups">
+        {{ range . }}
+        <article class="travel-guide-group">
+          <h3>{{ .title }}</h3>
+          {{ with .description }}<p class="travel-guide-description">{{ . }}</p>{{ end }}
+          <div class="travel-route-list">
+            {{ range .routes }}
+            <section class="travel-route-card">
+              <h4>{{ .title }}</h4>
+              <p>{{ .description }}</p>
+              {{ with .note }}<p class="travel-route-note">{{ . }}</p>{{ end }}
+            </section>
+            {{ end }}
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+
     {{ with .Params.hotels }}
-    <section class="cfp-section hotel-section">
+    <section id="{{ $.Params.hotel_section_id | default "accommodation" }}" class="cfp-section hotel-section info-anchor-section">
       <header class="cfp-section-header">
         <h2>{{ $.Params.hotel_section_title }}</h2>
       </header>
       <div class="cfp-section-intro"><p>{{ $.Params.hotel_notice }}</p></div>
+      {{ with $.Params.accommodation_guidance }}
+      <div class="accommodation-guidance">
+        <h3>{{ $.Params.accommodation_guidance_title }}</h3>
+        <ol>
+          {{ range . }}
+          <li><strong>{{ .title }}</strong><span>{{ .description }}</span></li>
+          {{ end }}
+        </ol>
+      </div>
+      {{ end }}
       <div class="hotel-grid">
         {{ range . }}
         {{ $hotel := . }}
@@ -91,6 +142,60 @@
       </div>
     </section>
     {{ end }}
+
+    {{ with .Params.admission_groups }}
+    <section id="{{ $.Params.admission_section_id | default "admission-parking" }}" class="cfp-section admission-guide-section info-anchor-section">
+      <header class="cfp-section-header">
+        <h2>{{ $.Params.admission_section_title }}</h2>
+      </header>
+      {{ with $.Params.admission_section_intro }}<div class="cfp-section-intro"><p>{{ . }}</p></div>{{ end }}
+      <div class="admission-guide-grid">
+        {{ range . }}
+        <article class="admission-guide-card">
+          <h3>{{ .title }}</h3>
+          {{ with .recommendation }}<p class="admission-guide-recommendation">{{ . }}</p>{{ end }}
+          <ol>
+            {{ range .steps }}<li>{{ . }}</li>{{ end }}
+          </ol>
+        </article>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+
+    {{ with .Params.dining_groups }}
+    <section id="{{ $.Params.dining_section_id | default "dining-guide" }}" class="cfp-section dining-guide-section info-anchor-section">
+      <header class="cfp-section-header">
+        <h2>{{ $.Params.dining_section_title }}</h2>
+      </header>
+      {{ with $.Params.dining_section_intro }}<div class="cfp-section-intro"><p>{{ . }}</p></div>{{ end }}
+      <div class="dining-guide-grid">
+        {{ range . }}
+        <article class="dining-guide-card">
+          <h3>{{ .title }}</h3>
+          <p>{{ .description }}</p>
+          {{ with .note }}<p class="dining-guide-note">{{ . }}</p>{{ end }}
+        </article>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+
+    {{ with .Params.participant_notes }}
+    <section id="{{ $.Params.notes_section_id | default "participant-notes" }}" class="cfp-section participant-notes-section info-anchor-section">
+      <header class="cfp-section-header">
+        <h2>{{ $.Params.notes_section_title }}</h2>
+      </header>
+      <ol class="participant-notes-list">
+        {{ range . }}
+        <li><strong>{{ .title }}</strong><span>{{ .description }}</span></li>
+        {{ end }}
+      </ol>
+      {{ with $.Params.guide_disclaimer }}<p class="guide-disclaimer">{{ . }}</p>{{ end }}
+    </section>
+    {{ end }}
+      </div>
+    </div>
   </div>
 </article>
 {{ end }}

@@ -1116,6 +1116,285 @@ body:not(.in-home) {
             padding: 1.5em 0 2em;
         }
 
+        &#venue-page .info-page-content {
+            max-width: 1180px;
+        }
+
+        .info-page-layout.has-section-nav {
+            display: grid;
+            grid-template-columns: 13.5em minmax(0, 1fr);
+            gap: 2.5em;
+            align-items: start;
+        }
+
+        .info-page-main {
+            min-width: 0;
+        }
+
+        .info-section-nav {
+            position: sticky;
+            top: 6.5em;
+            overflow: hidden;
+            border: 1px solid var(--cfp-border);
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 10px 28px rgba(18, 42, 86, 0.08);
+            z-index: 2;
+            .info-section-nav-title {
+                margin: 0;
+                padding: 1em 1.15em 0.85em;
+                border-bottom: 1px solid var(--cfp-border);
+                color: $primaryColor;
+                font-size: 0.82rem;
+                font-weight: 800;
+                letter-spacing: 0.04em;
+            }
+            ul {
+                margin: 0;
+                padding: 0.45em 0;
+                list-style: none;
+            }
+            li { margin: 0; }
+            a {
+                display: block;
+                padding: 0.75em 1.15em;
+                border-left: 3px solid transparent;
+                color: #526079;
+                font-size: 0.9rem;
+                font-weight: 700;
+                line-height: 1.4;
+                text-decoration: none;
+                transition: color 0.18s ease, background-color 0.18s ease, border-color 0.18s ease;
+                &:hover, &:focus {
+                    border-left-color: $accentColor;
+                    color: $primaryColor;
+                    background: #f7f9fc;
+                }
+            }
+        }
+
+        .info-anchor-section {
+            scroll-margin-top: 6.5em;
+        }
+
+        .travel-guide-section,
+        .admission-guide-section,
+        .dining-guide-section,
+        .participant-notes-section,
+        .hotel-section {
+            margin-top: 3.5em;
+        }
+
+        .travel-guide-groups {
+            display: grid;
+            gap: 1.5em;
+        }
+
+        .travel-guide-group {
+            padding: 1.5em;
+            border: 1px solid var(--cfp-border);
+            border-radius: 14px;
+            background: #fff;
+            box-shadow: 0 10px 28px rgba(18, 42, 86, 0.07);
+            >h3 {
+                margin: 0;
+                color: $primaryColor;
+                font-size: 1.2rem;
+                line-height: 1.45;
+            }
+        }
+
+        .travel-guide-description {
+            margin: 0.55em 0 0;
+            color: #66738a;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        .travel-route-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1em;
+            margin-top: 1.25em;
+        }
+
+        .travel-route-card {
+            padding: 1.1em 1.2em;
+            border-left: 4px solid $accentColor;
+            border-radius: 0 9px 9px 0;
+            background: #f7f9fc;
+            h4 {
+                margin: 0 0 0.45em;
+                color: $primaryColorLighter;
+                font-size: 0.98rem;
+                line-height: 1.5;
+            }
+            p {
+                margin: 0;
+                color: #526079;
+                font-size: 0.86rem;
+                line-height: 1.75;
+            }
+            .travel-route-note {
+                margin-top: 0.75em;
+                padding-top: 0.65em;
+                border-top: 1px solid #dde4ee;
+                color: #7a6116;
+            }
+        }
+
+        .admission-guide-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.25em;
+        }
+
+        .admission-guide-card {
+            padding: 1.5em;
+            border: 1px solid var(--cfp-border);
+            border-radius: 14px;
+            background: #fff;
+            box-shadow: 0 10px 28px rgba(18, 42, 86, 0.07);
+            h3 {
+                margin: 0;
+                color: $primaryColor;
+                font-size: 1.18rem;
+            }
+            ol {
+                margin: 1em 0 0;
+                padding-left: 1.3em;
+                color: #526079;
+                font-size: 0.88rem;
+                line-height: 1.75;
+            }
+            li +li { margin-top: 0.65em; }
+        }
+
+        .admission-guide-recommendation {
+            margin: 0.8em 0 0;
+            padding: 0.7em 0.85em;
+            border-radius: 7px;
+            color: #72540b;
+            background: #fff8df;
+            font-size: 0.86rem;
+            font-weight: 700;
+            line-height: 1.6;
+        }
+
+        .accommodation-guidance {
+            margin: 0 0 1.75em;
+            padding: 1.4em 1.5em;
+            border: 1px solid var(--cfp-border);
+            border-radius: 14px;
+            background: #f7f9fc;
+            h3 {
+                margin: 0 0 1em;
+                color: $primaryColor;
+                font-size: 1.15rem;
+            }
+            ol {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 1em 1.5em;
+                margin: 0;
+                padding-left: 1.4em;
+                color: $primaryColorLighter;
+            }
+            li { padding-left: 0.2em; }
+            strong, span { display: block; }
+            strong {
+                margin-bottom: 0.35em;
+                color: $primaryColorLighter;
+                font-size: 0.92rem;
+            }
+            span {
+                color: #526079;
+                font-size: 0.84rem;
+                line-height: 1.7;
+            }
+        }
+
+        .dining-guide-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1.1em;
+        }
+
+        .dining-guide-card {
+            padding: 1.35em;
+            border: 1px solid var(--cfp-border);
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 9px 24px rgba(18, 42, 86, 0.06);
+            h3 {
+                margin: 0 0 0.7em;
+                color: $primaryColor;
+                font-size: 1.05rem;
+                line-height: 1.45;
+            }
+            p {
+                margin: 0;
+                color: #526079;
+                font-size: 0.85rem;
+                line-height: 1.75;
+            }
+            .dining-guide-note {
+                margin-top: 0.85em;
+                padding-top: 0.75em;
+                border-top: 1px solid var(--cfp-border);
+                color: #7a6116;
+            }
+        }
+
+        .participant-notes-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1em;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            counter-reset: participant-note;
+            li {
+                position: relative;
+                min-height: 100%;
+                padding: 1.2em 1.2em 1.2em 3.6em;
+                border: 1px solid var(--cfp-border);
+                border-radius: 12px;
+                background: #fff;
+                counter-increment: participant-note;
+                &:before {
+                    content: counter(participant-note, decimal-leading-zero);
+                    position: absolute;
+                    top: 1.05em;
+                    left: 1.1em;
+                    color: $accentColor;
+                    font-size: 1rem;
+                    font-weight: 800;
+                }
+            }
+            strong, span { display: block; }
+            strong {
+                margin-bottom: 0.4em;
+                color: $primaryColor;
+                font-size: 0.95rem;
+            }
+            span {
+                color: #526079;
+                font-size: 0.84rem;
+                line-height: 1.75;
+            }
+        }
+
+        .guide-disclaimer {
+            margin: 1.5em 0 0;
+            padding: 1em 1.15em;
+            border-left: 4px solid $accentColor;
+            color: #66738a;
+            background: #f7f9fc;
+            font-size: 0.82rem;
+            line-height: 1.7;
+        }
+
         &#co-events-page .co-events-content >.content {
             width: 100%;
             max-width: none;
@@ -1180,10 +1459,6 @@ body:not(.in-home) {
                     color: $primaryColor;
                 }
             }
-        }
-
-        .hotel-section {
-            margin-top: 0;
         }
 
         .hotel-grid {
@@ -1354,6 +1629,34 @@ body:not(.in-home) {
             }
         }
 
+        @media all and (max-width: 980px) {
+            .info-page-layout.has-section-nav {
+                grid-template-columns: 1fr;
+                gap: 1.5em;
+            }
+            .info-section-nav {
+                top: 0;
+                border-radius: 10px;
+                .info-section-nav-title { display: none; }
+                nav { overflow-x: auto; }
+                ul {
+                    display: flex;
+                    width: max-content;
+                    min-width: 100%;
+                    padding: 0;
+                }
+                li { flex: 1 0 auto; }
+                a {
+                    padding: 0.85em 1em;
+                    border-left: 0;
+                    border-bottom: 3px solid transparent;
+                    text-align: center;
+                    white-space: nowrap;
+                    &:hover, &:focus { border-bottom-color: $accentColor; }
+                }
+            }
+        }
+
         @media all and (max-width: 760px) {
             .info-page-actions .cfp-button {
                 width: 100%;
@@ -1371,6 +1674,17 @@ body:not(.in-home) {
             }
             .hotel-card-header {
                 padding: 1.1em 1.25em 1em;
+            }
+            .travel-route-list,
+            .admission-guide-grid,
+            .accommodation-guidance ol,
+            .dining-guide-grid,
+            .participant-notes-list {
+                grid-template-columns: 1fr;
+            }
+            .travel-guide-group,
+            .admission-guide-card {
+                padding: 1.2em;
             }
         }
     }
