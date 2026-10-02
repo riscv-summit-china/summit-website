@@ -53,9 +53,9 @@
           <button class="image-preview-trigger" type="button" aria-label="{{ .alt | default .description | default (cond (eq $.Site.Language.Lang "en") "Shenzhen Convention & Exhibition Center" "深圳会展中心") }}">
             <img src="{{ (printf "%s?v=%s" .url (readFile (printf "static%s" .url) | sha1)) }}" alt="{{ .alt | default .description | default (cond (eq $.Site.Language.Lang "en") "Shenzhen Convention & Exhibition Center" "深圳会展中心") }}" loading="lazy" />
           </button>
-          {{ if or .description $image.credit }}
+          {{ if or .description (and $image.credit (not $image.hide_credit)) }}
           <figcaption>
-            {{ if $image.credit }}
+            {{ if and $image.credit (not $image.hide_credit) }}
             <span class="image-credit">{{ if eq $.Site.Language.Lang "en" }}Image source:{{ else }}图片来源：{{ end }} {{ with $image.source_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ end }}{{ $image.source_label | default "Wikimedia Commons" }}{{ with $image.source_url }}</a>{{ end }} · {{ $image.credit }}{{ with $image.license }} · {{ with $image.license_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ end }}{{ . }}{{ with $image.license_url }}</a>{{ end }}{{ end }}</span>
             {{ else }}
             {{ with .description }}<span class="image-desc">{{ . }}</span>{{ end }}

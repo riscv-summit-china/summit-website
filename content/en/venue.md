@@ -23,7 +23,7 @@ summary_image:
     alt: Distant view of Shenzhen Convention & Exhibition Center (Futian)
   - url: /img/venue/venue-exterior-north-plaza.webp
     alt: Close view of Shenzhen Convention & Exhibition Center North Plaza
-    description: North Plaza and main façade of Shenzhen Convention & Exhibition Center
+    hide_credit: true
     credit: Dinkun Chen
     source_url: https://commons.wikimedia.org/wiki/File:Shenzhen_Convention_%26_Exhibition_Center_(22).jpg
     license: CC BY-SA 4.0

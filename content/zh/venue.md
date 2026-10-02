@@ -23,7 +23,7 @@ summary_image:
     alt: 深圳会展中心（福田）远景
   - url: /img/venue/venue-exterior-north-plaza.webp
     alt: 深圳会展中心北广场及主立面
-    description: 深圳会展中心北广场及主立面
+    hide_credit: true
     credit: Dinkun Chen
     source_url: https://commons.wikimedia.org/wiki/File:Shenzhen_Convention_%26_Exhibition_Center_(22).jpg
     license: CC BY-SA 4.0
