@@ -32,6 +32,45 @@
       {{- end }}
     </section>
     {{- end }}
+
+    {{- with .Params.theme_speakers }}
+    <section class="speaker-profile-group">
+      <h2 class="speaker-profile-group-title">{{ $.Params.theme_title | default "主题演讲嘉宾" }}</h2>
+      {{- range . }}
+      <section id="{{ .id }}" class="keynote-speaker-profile theme-speaker-profile">
+        <header>
+          <h3>{{ .name }}</h3>
+          <p class="keynote-speaker-position">{{ .position }}</p>
+          {{- with .talk_title }}<p class="theme-speaker-talk"><span class="talk-tag-inline">{{ cond (eq $.Site.Language.Lang "en") "Topic" "议题" }}</span> {{ . }}</p>{{ end }}
+        </header>
+        {{- with .abstract }}
+        <div class="speaker-detail-section speaker-abstract">
+          <h4>{{ $.Params.abstract_label | default "演讲摘要：" }}</h4>
+          <div class="abstract-content">{{ . | markdownify }}</div>
+        </div>
+        {{- end }}
+        <div class="speaker-detail-section speaker-bio">
+          <h4>{{ $.Params.bio_label | default "嘉宾简介：" }}</h4>
+          <p class="keynote-speaker-bio">{{ .bio }}</p>
+        </div>
+      </section>
+      {{- end }}
+    </section>
+    {{- end }}
+
+    {{- if and (not .Params.keynotes) (not .Params.theme_speakers) }}
+      {{- range .Params.speakers }}
+      <section class="keynote-speaker-profile">
+        <header>
+          <h3>{{ .name }}</h3>
+          {{- with .name_en }}<p class="keynote-speaker-name-en">{{ . }}</p>{{ end }}
+          <p class="keynote-speaker-position">{{ .position }}</p>
+          {{- with .position_en }}<p class="keynote-speaker-position-en">{{ . }}</p>{{ end }}
+        </header>
+        <p class="keynote-speaker-bio">{{ .bio }}</p>
+      </section>
+      {{- end }}
+    {{- end }}
   </div>
 </article>
 {{ end }}
