@@ -1,0 +1,33 @@
+{{ with .Params.admission_groups }}
+<section id="{{ $.Params.admission_section_id | default "admission-parking" }}" class="cfp-section admission-guide-section info-anchor-section">
+  <header class="cfp-section-header">
+    <h2>{{ $.Params.admission_section_title }}</h2>
+  </header>
+  {{ with $.Params.admission_section_intro }}<div class="cfp-section-intro"><p>{{ . }}</p></div>{{ end }}
+  <div class="admission-guide-layout">
+    <div class="admission-guide-cards">
+      {{ range . }}
+      <article class="admission-guide-card">
+        <header class="admission-card-header">
+          <h3>{{ .title }}</h3>
+          {{ with .recommendation }}<span class="admission-guide-pill">{{ . }}</span>{{ end }}
+        </header>
+        <ol class="admission-steps-list">
+          {{ range .steps }}<li>{{ . | safeHTML }}</li>{{ end }}
+        </ol>
+      </article>
+      {{ end }}
+    </div>
+    {{ with $.Params.admission_image }}
+    <div class="admission-map-wrapper">
+      <figure class="admission-map-figure">
+        <button class="image-preview-trigger" type="button" aria-label="{{ .description | default "入场及停车路线示意图" }}">
+          <img src="{{ (printf "%s?v=%s" .url (readFile (printf "static%s" .url) | sha1)) }}" alt="{{ .description | default "入场及停车路线示意图" }}" loading="lazy" />
+        </button>
+        {{ with .description }}<figcaption>{{ . }}</figcaption>{{ end }}
+      </figure>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

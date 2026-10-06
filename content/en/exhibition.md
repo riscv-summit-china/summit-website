@@ -8,6 +8,10 @@ summary_image:
     description: "Sixth Floor Plan"
   - url: "/img/rvsc2026-exhibition-5f.jpg"
     description: "Fifth Floor Plan"
+exhibition_plan_title: Exhibition Hall Floor Plan
+exhibition_plan_images:
+  - url: "/img/rvsc2026-orchid-hall-floorplan.png"
+    description: "Orchid Hall Floor Plan"
 ---
 
 Please note that the following floor plans are subject to change. Please refer to the on-site information for the latest arrangement.

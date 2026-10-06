@@ -13,8 +13,25 @@
     </div>
   </header>
 
-  <div class="cfp-shell cfp-content info-page-content">
-    <section class="cfp-section info-overview">
+  <div class="cfp-shell cfp-content info-page-content{{ with .Params.section_nav }} has-section-nav{{ end }}">
+    <div class="info-page-layout{{ with .Params.section_nav }} has-section-nav{{ end }}">
+      {{ with .Params.section_nav }}
+      <aside class="info-section-nav" aria-label="{{ $.Params.section_nav_label | default (cond (eq $.Site.Language.Lang "en") "Page sections" "页面导航") }}">
+        {{ with $.Params.section_nav_label }}
+        <p class="info-section-nav-title">{{ . }}</p>
+        {{ end }}
+        <nav>
+          <ul>
+            {{ range . }}
+            <li><a href="#{{ .id }}">{{ .label }}</a></li>
+            {{ end }}
+          </ul>
+        </nav>
+      </aside>
+      {{ end }}
+
+      <div class="info-page-main">
+    <section id="{{ .Params.overview_section_id | default "overview" }}" class="cfp-section info-overview info-anchor-section">
       <header class="cfp-section-header">
         <h2>{{ .Params.section_title }}</h2>
       </header>
@@ -28,16 +45,43 @@
       </div>
       {{ end }}
 
+      {{ with .Params.summary_image }}
+      <div class="exhibition-plan-grid{{ if and $.Params.map_link (gt (len .) 1) }} venue-images-grid{{ end }}">
+        {{ range . }}
+        {{ $image := . }}
+        <figure{{ with $.Params.map_link }} class="venue-summary-image"{{ end }}>
+          <button class="image-preview-trigger" type="button" aria-label="{{ .alt | default .description | default (cond (eq $.Site.Language.Lang "en") "Shenzhen Convention & Exhibition Center" "深圳会展中心") }}">
+            <img src="{{ (printf "%s?v=%s" .url (readFile (printf "static%s" .url) | sha1)) }}" alt="{{ .alt | default .description | default (cond (eq $.Site.Language.Lang "en") "Shenzhen Convention & Exhibition Center" "深圳会展中心") }}" loading="lazy" />
+          </button>
+          {{ if or .description (and $image.credit (not $image.hide_credit)) }}
+          <figcaption>
+            {{ if and $image.credit (not $image.hide_credit) }}
+            <span class="image-credit">{{ if eq $.Site.Language.Lang "en" }}Image source:{{ else }}图片来源：{{ end }} {{ with $image.source_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ end }}{{ $image.source_label | default "Wikimedia Commons" }}{{ with $image.source_url }}</a>{{ end }} · {{ $image.credit }}{{ with $image.license }} · {{ with $image.license_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ end }}{{ . }}{{ with $image.license_url }}</a>{{ end }}{{ end }}</span>
+            {{ else }}
+            {{ with .description }}<span class="image-desc">{{ . }}</span>{{ end }}
+            {{ end }}
+          </figcaption>
+          {{ end }}
+        </figure>
+        {{ end }}
+      </div>
+      {{ end }}
+
       {{ with .Params.map_link }}
       <div class="venue-map">
         <iframe title="{{ $.Title }}" src="{{ . }}" frameborder="0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       {{ end }}
+    </section>
 
-      {{ with .Params.summary_image }}
+    {{ with .Params.exhibition_plan_images }}
+    <section class="cfp-section exhibition-plan-section">
+      <header class="cfp-section-header">
+        <h2>{{ $.Params.exhibition_plan_title }}</h2>
+      </header>
       <div class="exhibition-plan-grid">
         {{ range . }}
-        <figure>
+        <figure class="exhibition-plan-narrow">
           <button class="image-preview-trigger" type="button" aria-label="{{ .description }}">
             <img src="{{ (printf "%s?v=%s" .url (readFile (printf "static%s" .url) | sha1)) }}" alt="{{ .description }}" loading="lazy" />
           </button>
@@ -45,16 +89,80 @@
         </figure>
         {{ end }}
       </div>
-      {{ end }}
     </section>
+    {{ end }}
+
+    {{ with .Params.transport_groups }}
+    <section id="{{ $.Params.transport_section_id | default "transport-guide" }}" class="cfp-section travel-guide-section info-anchor-section">
+      <header class="cfp-section-header">
+        <h2>{{ $.Params.transport_section_title }}</h2>
+      </header>
+      {{ with $.Params.transport_section_intro }}<div class="cfp-section-intro"><p>{{ . }}</p></div>{{ end }}
+      {{ with $.Params.transport_image }}
+      <div class="transport-map-container">
+        <figure class="transport-map-figure">
+          <button class="image-preview-trigger" type="button" aria-label="{{ .description }}">
+            <img src="{{ (printf "%s?v=%s" .url (readFile (printf "static%s" .url) | sha1)) }}" alt="{{ .description }}" loading="lazy" />
+          </button>
+          <figcaption>{{ .description }}</figcaption>
+        </figure>
+      </div>
+      {{ end }}
+      <div class="travel-guide-groups">
+        {{ range . }}
+        <article class="travel-guide-group">
+          <h3>{{ .title }}</h3>
+          {{ with .description }}<p class="travel-guide-description">{{ . }}</p>{{ end }}
+          <div class="travel-route-list">
+            {{ range .routes }}
+            <section class="travel-route-card">
+              <h4>{{ .title }}</h4>
+              <p>{{ .description | safeHTML }}</p>
+              {{ with .note }}<p class="travel-route-note">{{ . | safeHTML }}</p>{{ end }}
+            </section>
+            {{ end }}
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+
+    {{ if ne .Site.Language.Lang "en" }}
+    {{ partial "info-admission.html" . }}
+    {{ end }}
 
     {{ with .Params.hotels }}
-    <section class="cfp-section hotel-section">
+    <section id="{{ $.Params.hotel_section_id | default "accommodation" }}" class="cfp-section hotel-section info-anchor-section">
       <header class="cfp-section-header">
         <h2>{{ $.Params.hotel_section_title }}</h2>
       </header>
-      <div class="cfp-section-intro"><p>{{ $.Params.hotel_notice }}</p></div>
-      <div class="hotel-grid">
+      {{ with $.Params.accommodation_guidance }}
+      <div class="accommodation-guidance-module">
+        <header class="accommodation-guidance-header">
+          <h3>{{ $.Params.accommodation_guidance_title | default (cond (eq $.Site.Language.Lang "en") "Accommodation Selection Guide" "住宿选择建议") }}</h3>
+          {{ with $.Params.accommodation_guidance_intro }}
+          <div class="accommodation-guidance-intro"><p>{{ . | safeHTML }}</p></div>
+          {{ end }}
+        </header>
+        <div class="accommodation-guidance-list">
+          {{ range . }}
+          <article class="accommodation-guidance-item">
+            <h4>{{ .title }}</h4>
+            <p>{{ .description | safeHTML }}</p>
+          </article>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+      <div class="organizer-hotels-module">
+        <header class="organizer-hotels-header">
+          <h3>{{ $.Params.organizer_hotels_title | default (cond (eq $.Site.Language.Lang "en") "Organizer Recommendations" "主办方推荐") }}</h3>
+          {{ with $.Params.hotel_notice }}
+          <div class="organizer-hotels-intro"><p>{{ . }}</p></div>
+          {{ end }}
+        </header>
+        <div class="hotel-grid">
         {{ range . }}
         {{ $hotel := . }}
         <article class="hotel-card">
@@ -89,8 +197,60 @@
         </article>
         {{ end }}
       </div>
+      </div>
     </section>
     {{ end }}
+
+    {{ if eq .Site.Language.Lang "en" }}
+    {{ partial "info-admission.html" . }}
+    {{ end }}
+
+    {{ with .Params.dining_groups }}
+    <section id="{{ $.Params.dining_section_id | default "dining-guide" }}" class="cfp-section dining-guide-section info-anchor-section">
+      <header class="cfp-section-header">
+        <h2>{{ $.Params.dining_section_title }}</h2>
+      </header>
+      {{ with $.Params.dining_section_intro }}<div class="cfp-section-intro"><p>{{ . | safeHTML }}</p></div>{{ end }}
+      <div class="dining-guide-list">
+        {{ range . }}
+        <article class="dining-guide-item">
+          <h3>{{ .title }}</h3>
+          <p>{{ .description | safeHTML }}</p>
+        </article>
+        {{ end }}
+      </div>
+      {{ $tip := or $.Params.dining_tip $.Params.dining_note }}
+      {{ if not $tip }}
+        {{ range . }}
+          {{ with .note }}{{ $tip = . }}{{ end }}
+        {{ end }}
+      {{ end }}
+      {{ with $tip }}
+      <p class="dining-tip-text">
+        <strong>{{ $.Params.dining_tip_label | default (cond (eq $.Site.Language.Lang "en") "Tip: " "预订提示：") }}</strong>{{ . | safeHTML }}
+      </p>
+      {{ end }}
+    </section>
+    {{ end }}
+
+    {{ with .Params.participant_notes }}
+    <section id="{{ $.Params.notes_section_id | default "participant-notes" }}" class="cfp-section participant-notes-section info-anchor-section">
+      <header class="cfp-section-header">
+        <h2>{{ $.Params.notes_section_title }}</h2>
+      </header>
+      <div class="participant-notes-list">
+        {{ range . }}
+        <article class="participant-notes-item">
+          <h3>{{ .title }}</h3>
+          <p>{{ .description | safeHTML }}</p>
+        </article>
+        {{ end }}
+      </div>
+      {{ with $.Params.guide_disclaimer }}<p class="guide-disclaimer">{{ . | safeHTML }}</p>{{ end }}
+    </section>
+    {{ end }}
+      </div>
+    </div>
   </div>
 </article>
 {{ end }}

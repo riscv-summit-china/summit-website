@@ -6,6 +6,7 @@ import './banners.js';
 import './inline-news.js';
 import './adaptive-table.js';
 import './adaptive-agenda.js';
+import { initSectionNav } from './section-nav.js';
 import { resizeToFullCover } from "./common";
 
 homePageCover = undefined;
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
   allFullwebSections.forEach((ele) => {
     resizeToFullCover(ele);
   });
+  initSectionNav();
 });
 
 window.addEventListener('resize', () => {
