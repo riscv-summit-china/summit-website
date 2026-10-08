@@ -1226,6 +1226,12 @@ article#agenda {
             font-size: 1.05rem;
         }
         span { display: block; }
+        .agenda-co-chairs {
+            margin-top: 0.6rem;
+            color: #0f2e67;
+            font-weight: 600;
+            line-height: 1.7;
+        }
         td >strong +span {
             display: flex;
             align-items: center;
