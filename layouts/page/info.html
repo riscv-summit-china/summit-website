@@ -51,7 +51,7 @@
         {{ $image := . }}
         <figure{{ with $.Params.map_link }} class="venue-summary-image"{{ end }}>
           <button class="image-preview-trigger" type="button" aria-label="{{ .alt | default .description | default (cond (eq $.Site.Language.Lang "en") "Shenzhen Convention & Exhibition Center" "深圳会展中心") }}">
-            <img src="{{ (printf "%s?v=%s" .url (readFile (printf "static%s" .url) | sha1)) }}" alt="{{ .alt | default .description | default (cond (eq $.Site.Language.Lang "en") "Shenzhen Convention & Exhibition Center" "深圳会展中心") }}" loading="lazy" />
+            <img src="{{ (printf "%s?v=%s" .url (readFile (printf "static%s" .url) | sha1)) }}" alt="{{ .alt | default .description | default (cond (eq $.Site.Language.Lang "en") "Shenzhen Convention & Exhibition Center" "深圳会展中心") }}" {{ if eq $.Params.page_id "exhibition-page" }}width="{{ (imageConfig (printf "static%s" .url)).Width }}" height="{{ (imageConfig (printf "static%s" .url)).Height }}"{{ end }} loading="lazy" />
           </button>
           {{ if or .description (and $image.credit (not $image.hide_credit)) }}
           <figcaption>
@@ -75,18 +75,41 @@
     </section>
 
     {{ with .Params.exhibition_plan_images }}
-    <section class="cfp-section exhibition-plan-section">
+    <section id="exhibition-floor-plan" class="cfp-section exhibition-plan-section">
       <header class="cfp-section-header">
         <h2>{{ $.Params.exhibition_plan_title }}</h2>
       </header>
-      <div class="exhibition-plan-grid">
+      {{ with $.Params.exhibition_hall_title }}<h3 id="orchid-hall" class="exhibition-hall-title">{{ . }}</h3>{{ end }}
+      {{ with $.Params.exhibition_hall_description }}<div class="cfp-section-intro"><p>{{ . }}</p></div>{{ end }}
+      {{ with $.Params.poster_arrangements_link }}
+      <p class="poster-arrangements-entry"><a href="{{ . | relLangURL }}">{{ $.Params.poster_arrangements_label }}</a></p>
+      {{ end }}
+      {{ with $.Params.exhibition_plan_pdf }}
+      <div class="exhibition-plan-actions">
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $.Params.exhibition_plan_pdf_label }}</a>
+        <a href="{{ . }}" download>{{ $.Params.exhibition_plan_download_label }}</a>
+      </div>
+      {{ end }}
+      <div class="exhibition-plan-grid{{ with $.Params.exhibition_plan_details }} orchid-plan-layout{{ end }}">
         {{ range . }}
         <figure class="exhibition-plan-narrow">
           <button class="image-preview-trigger" type="button" aria-label="{{ .description }}">
-            <img src="{{ (printf "%s?v=%s" .url (readFile (printf "static%s" .url) | sha1)) }}" alt="{{ .description }}" loading="lazy" />
+            <img src="{{ (printf "%s?v=%s" .url (readFile (printf "static%s" .url) | sha1)) }}" alt="{{ .description }}" width="{{ (imageConfig (printf "static%s" .url)).Width }}" height="{{ (imageConfig (printf "static%s" .url)).Height }}" loading="lazy" />
           </button>
           <figcaption>{{ .description }}</figcaption>
         </figure>
+        {{ end }}
+        {{ with $.Params.exhibition_plan_details }}
+        <div class="exhibition-plan-details">
+          {{ range . }}
+          <figure>
+            <button class="image-preview-trigger" type="button" aria-label="{{ .description }}">
+              <img src="{{ printf "%s?v=%s" .url (readFile (printf "static%s" .url) | sha1) }}" alt="{{ .description }}" width="{{ (imageConfig (printf "static%s" .url)).Width }}" height="{{ (imageConfig (printf "static%s" .url)).Height }}" loading="lazy" />
+            </button>
+            <figcaption>{{ .description }}</figcaption>
+          </figure>
+          {{ end }}
+        </div>
         {{ end }}
       </div>
     </section>

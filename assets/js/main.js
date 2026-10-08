@@ -6,6 +6,7 @@ import './banners.js';
 import './inline-news.js';
 import './adaptive-table.js';
 import './adaptive-agenda.js';
+import './poster-search.js';
 import { initSectionNav } from './section-nav.js';
 import { resizeToFullCover } from "./common";
 

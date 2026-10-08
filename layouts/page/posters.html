@@ -1,0 +1,19 @@
+{{ define "header" }}
+  {{ partial "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+<article id="posters-page" class="info-page {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh" }}">
+  <header class="cfp-hero">
+    <div class="cfp-shell">
+      <div class="cfp-hero-copy">
+        <span class="cfp-eyebrow">RISC-V SUMMIT CHINA 2026</span>
+        <h1>{{ .Title }}</h1>
+      </div>
+    </div>
+  </header>
+  <div class="cfp-shell cfp-content info-page-content">
+    {{ partial "poster-arrangements.html" . }}
+  </div>
+</article>
+{{ end }}
