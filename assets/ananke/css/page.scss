@@ -1812,6 +1812,63 @@ body:not(.in-home) {
             }
         }
 
+        .exhibition-plan-section { scroll-margin-top: 100px; }
+        .poster-arrangements-entry a { color: #0f2e67; font-weight: 700; text-underline-offset: 4px; }
+        .poster-arrangements {
+            scroll-margin-top: 100px;
+            .poster-map-link a { color: #0f2e67; text-underline-offset: 4px; }
+            .poster-search {
+                margin: 1.5em 0;
+                label { display: block; font-weight: 700; margin-bottom: 0.5em; color: #0f2e67; }
+                input { width: 100%; box-sizing: border-box; padding: 0.85em 1em; border: 1px solid #b7c6db; border-radius: 8px; font: inherit; background: white; color: #1c2942; }
+                input:focus-visible { outline: 2px solid #0f2e67; outline-offset: 2px; }
+            }
+            .poster-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 0.95rem; line-height: 1.6; }
+            caption { text-align: left; font-weight: 600; padding-bottom: 0.75em; color: #526079; }
+            th, td { padding: 0.9em 0.75em; text-align: left; vertical-align: top; border-bottom: 1px solid #dce3ec; overflow-wrap: anywhere; }
+            thead { background: #0f2e67; color: white; }
+            thead th:nth-child(1) { width: 11%; }
+            thead th:nth-child(2) { width: 14%; }
+            thead th:nth-child(3) { width: 48%; }
+            tbody th { color: #0f2e67; white-space: nowrap; }
+            tbody tr:nth-child(even) { background: #f6f8fc; }
+            tr[id] { scroll-margin-top: 100px; }
+            tr:target { background: #fff3cd; }
+            [hidden] { display: none !important; }
+            @media all and (max-width: 640px) {
+                .poster-table, tbody, caption { display: block; }
+                thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+                tbody tr { display: block; margin-bottom: 1em; border: 1px solid #dce3ec; border-radius: 8px; padding: 0.5em; }
+                tbody th, tbody td { display: grid; grid-template-columns: 5.5em minmax(0, 1fr); gap: 0.5em; border: 0; padding: 0.4em; }
+                tbody th::before, tbody td::before { content: attr(data-label); color: #526079; font-weight: 600; }
+            }
+        }
+        .exhibition-hall-title {
+            scroll-margin-top: 100px;
+            margin: 0 0 0.75em;
+            color: #0f2e67;
+            font-size: 1.4rem;
+        }
+        .exhibition-plan-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75em 1.5em;
+            margin: 1em 0 1.5em;
+            a { color: #0f2e67; font-weight: 700; text-underline-offset: 4px; }
+        }
+        .exhibition-plan-grid.orchid-plan-layout {
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+            align-items: start;
+            gap: 1.5em;
+            margin-top: 0;
+            .exhibition-plan-narrow { max-width: none; }
+            .exhibition-plan-details { display: grid; gap: 1.5em; min-width: 0; }
+            figcaption { margin-top: 0.75em; color: #0f2e67; font-weight: 600; text-align: center; }
+            @media all and (max-width: 760px) {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .exhibition-plan-grid {
             display: grid;
             grid-template-columns: 1fr;

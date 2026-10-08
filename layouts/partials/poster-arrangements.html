@@ -1,0 +1,46 @@
+{{ $isEn := eq .Site.Language.Lang "en" }}
+{{ $posters := .Site.Data.posters_2026.posters }}
+<section id="poster-arrangements" class="cfp-section poster-arrangements">
+  {{ if ne .Layout "posters" }}
+  <header class="cfp-section-header">
+    <h2>{{ cond $isEn "Poster Display Arrangements" "海报展示安排" }}</h2>
+  </header>
+  {{ end }}
+  <div class="cfp-section-intro">
+    {{ if $isEn }}
+    <p>Posters will be displayed in Orchid Hall on October 19–20, 2026. Find your poster number below and put up your poster at the corresponding numbered position. Each accepted poster has one assigned position.</p>
+    <p>Please print your poster in advance and bring it to the venue for self-setup. The finished size is 91 cm (width) × 122 cm (height); the organisers do not provide printing services.</p>
+    {{ else }}
+    <p>海报将于 2026 年 10 月 19–20 日在兰花厅展示。请查询下表中的展示编号，并按现场对应编号自行张贴海报。每篇录取海报分配一个展示位置。</p>
+    <p>请提前自行打印海报并带至现场，尺寸为宽 91 cm × 高 122 cm；组委会不提供海报打印服务。</p>
+    {{ end }}
+  </div>
+  <p class="poster-map-link"><a href="{{ "/exhibition/" | relLangURL }}#orchid-hall">{{ cond $isEn "View the Orchid Hall floor plan and numbered poster positions" "查看兰花厅平面图及海报展位序号" }}</a></p>
+  <div class="poster-search" hidden>
+    <label for="poster-search">{{ cond $isEn "Find your poster" "查询海报编号" }}</label>
+    <input id="poster-search" type="search" placeholder="{{ cond $isEn "Title, author, submission code or H number" "输入标题、作者、投稿 code 或 H 编号" }}" aria-controls="poster-table" />
+  </div>
+  <div class="poster-table-wrap">
+    <table id="poster-table" class="poster-table">
+      <thead><tr>
+        <th scope="col">{{ cond $isEn "Position" "展示编号" }}</th>
+        <th scope="col">{{ cond $isEn "Submission code" "投稿 code" }}</th>
+        <th scope="col">{{ cond $isEn "Poster title" "海报标题" }}</th>
+        <th scope="col">{{ cond $isEn "Authors" "作者" }}</th>
+      </tr></thead>
+      <tbody>
+        {{ range $posters }}
+        {{ $names := slice }}
+        {{ range .authors }}{{ $names = $names | append .name | append .name_zh }}{{ end }}
+        <tr id="poster-{{ .number }}" data-search="{{ .number }} {{ .code }} {{ .title }} {{ delimit $names " " }}">
+          <th scope="row" data-label="{{ cond $isEn "Position" "展示编号" }}">{{ .number }}</th>
+          <td class="poster-code" data-label="{{ cond $isEn "Submission code" "投稿 code" }}">{{ .code }}</td>
+          <td data-label="{{ cond $isEn "Poster title" "海报标题" }}">{{ .title }}</td>
+          <td data-label="{{ cond $isEn "Authors" "作者" }}">{{ range $index, $author := .authors }}{{ if $index }}{{ cond $isEn "; " "、" }}{{ end }}{{ if $isEn }}{{ $author.name }}{{ else }}{{ $author.name_zh }}{{ end }}{{ end }}</td>
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+  <p class="poster-no-results" hidden>{{ cond $isEn "No matching poster. Try a different title, author or submission code." "未找到匹配的海报，请尝试其他标题、作者或投稿 code。" }}</p>
+</section>
