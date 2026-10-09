@@ -17,7 +17,7 @@ link_slug: co-events
   </article>
 
   <article class="co-event-card">
-    <h2>2026 RISC-V Summit 中国峰会龙蜥生态分论坛（阿里云同期活动）</h2>
+    <h2>2026 RISC-V Summit 中国峰会龙蜥生态分论坛</h2>
     <p class="co-event-description">RISC-V 如何从处理器与服务器平台进一步走向可验证、可部署的数据中心应用？操作系统、基础软件与硬件平台之间还有哪些问题需要协同解决？围绕这些问题，龙蜥拟在本届峰会举办"龙蜥 RISC-V 生态共建分论坛"，延续数据中心应用与产学研协作主线，通过六场主题分享和一场行业圆桌，交流各方技术进展与实际需求，探讨基于龙蜥社区开展联合适配、测试验证和开源协作的路径。</p>
     <dl class="co-event-meta">
       <div><dt>主办单位</dt><dd>龙蜥社区（OpenAnolis）</dd></div>
@@ -31,6 +31,15 @@ link_slug: co-events
     <dl class="co-event-meta">
       <div><dt>主办单位</dt><dd>中国科学院计算技术研究所</dd></div>
       <div><dt>时间</dt><dd>2026年10月19日 下午</dd></div>
+    </dl>
+  </article>
+
+  <article class="co-event-card">
+    <h2>香山生态大会</h2>
+    <p class="co-event-description">香山生态大会汇聚香山开发者、产业伙伴与开源爱好者，聚焦 RISC-V 技术创新、开源协作与生态共建。上午面向开发者，分享香山开源社区、RISC-V AI 软件栈、昆明湖处理器核 IP 与微架构等最新进展，并设社区荣誉与技术交流环节；下午面向全行业，发布香山发展成果与规划，展示开源芯片社区、SMT 工作组和 RISC-V AI 等协同成果，联动产业伙伴共话应用落地。</p>
+    <dl class="co-event-meta">
+      <div><dt>主办单位</dt><dd>北京开源芯片研究院、中国科学院计算技术研究所、中国科学院软件研究所</dd></div>
+      <div><dt>时间</dt><dd>2026年10月20日 上午+下午（上午 3.5 小时、下午 3.5 小时）</dd></div>
     </dl>
   </article>
 
