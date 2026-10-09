@@ -81,15 +81,17 @@
       </header>
       {{ with $.Params.exhibition_hall_title }}<h3 id="orchid-hall" class="exhibition-hall-title">{{ . }}</h3>{{ end }}
       {{ with $.Params.exhibition_hall_description }}<div class="cfp-section-intro"><p>{{ . }}</p></div>{{ end }}
-      {{ with $.Params.poster_arrangements_link }}
-      <p class="poster-arrangements-entry"><a href="{{ . | relLangURL }}">{{ $.Params.poster_arrangements_label }}</a></p>
-      {{ end }}
-      {{ with $.Params.exhibition_plan_pdf }}
       <div class="exhibition-plan-actions">
+        {{ with $.Params.poster_arrangements_link }}
+        <a href="{{ . | relLangURL }}">{{ $.Params.poster_arrangements_label }}</a>
+        {{ end }}
+        {{ with $.Params.exhibition_plan_pdf }}
         <a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $.Params.exhibition_plan_pdf_label }}</a>
-        <a href="{{ . }}" download>{{ $.Params.exhibition_plan_download_label }}</a>
+        {{ with $.Params.exhibition_plan_download_label }}
+        <a href="{{ $.Params.exhibition_plan_pdf }}" download>{{ . }}</a>
+        {{ end }}
+        {{ end }}
       </div>
-      {{ end }}
       <div class="exhibition-plan-grid{{ with $.Params.exhibition_plan_details }} orchid-plan-layout{{ end }}">
         {{ range . }}
         <figure class="exhibition-plan-narrow">

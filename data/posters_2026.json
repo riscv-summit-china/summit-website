@@ -25,22 +25,24 @@
       "title": "香山 AI 处理器矩阵模块的高带宽访存优化",
       "authors": [
         {
-          "name": "王诲喆",
+          "name": "Huizhe Wang",
           "name_zh": "王诲喆"
         }
       ],
-      "number": "H01"
+      "number": "H01",
+      "title_en": "High-Bandwidth Memory Access Optimization for the Matrix Module of the XiangShan AI Processor"
     },
     {
       "code": "WV98DF",
       "title": "RISC-V矢量复数浮点指令扩展提案",
       "authors": [
         {
-          "name": "刘旭东",
+          "name": "Xudong Liu",
           "name_zh": "刘旭东"
         }
       ],
-      "number": "H02"
+      "number": "H02",
+      "title_en": "A Proposal for RISC-V Vector Complex-Number Floating-Point Instruction Extensions"
     },
     {
       "code": "WMTJPN",
@@ -51,18 +53,20 @@
           "name_zh": "Ken Gildersleeve"
         }
       ],
-      "number": "H03"
+      "number": "H03",
+      "title_en": "Portable NTrace Debug"
     },
     {
       "code": "YNNXUC",
       "title": "openKylin RISC-V+AI 从架构支持到智能应用落地",
       "authors": [
         {
-          "name": "李卓珩",
+          "name": "Zhuoheng Li",
           "name_zh": "李卓珩"
         }
       ],
-      "number": "H04"
+      "number": "H04",
+      "title_en": "openKylin RISC-V+AI: From Architecture Support to Intelligent Application Deployment"
     },
     {
       "code": "QG7PSZ",
@@ -73,7 +77,8 @@
           "name_zh": "宫帅"
         }
       ],
-      "number": "H05"
+      "number": "H05",
+      "title_en": "RISC-V IOMMU Two-Stage Translation: A Full-Stack Implementation from QEMU to the Linux Kernel"
     },
     {
       "code": "NPXVMU",
@@ -84,7 +89,8 @@
           "name_zh": "王韬"
         }
       ],
-      "number": "H06"
+      "number": "H06",
+      "title_en": "Practices of Formal Verification in RISC-V Microarchitecture Verification"
     },
     {
       "code": "HDHUU3",
@@ -95,18 +101,20 @@
           "name_zh": "过民欣"
         }
       ],
-      "number": "H07"
+      "number": "H07",
+      "title_en": "ZhiQian Platform: An Intelligent Software Migration Delivery Platform for RISC-V and Domestically Developed Computing Power"
     },
     {
       "code": "FF39LK",
       "title": "面向RISC-V的ISA-L EC存储加速库设计与极致性能优化",
       "authors": [
         {
-          "name": "吕烁",
+          "name": "Shuo Lv",
           "name_zh": "吕烁"
         }
       ],
-      "number": "H08"
+      "number": "H08",
+      "title_en": "Design and Extreme Performance Optimization of the ISA-L EC Storage Acceleration Library for RISC-V"
     },
     {
       "code": "Z3TH9V",
@@ -117,7 +125,8 @@
           "name_zh": "吴盈盈"
         }
       ],
-      "number": "H09"
+      "number": "H09",
+      "title_en": "A Self-Evolving System for Chip Verification Agents Based on Experience Closed-Loop Distillation, and Empirical Evidence of Its Effectiveness"
     },
     {
       "code": "CXYJAU",
@@ -128,7 +137,8 @@
           "name_zh": "杨畅"
         }
       ],
-      "number": "H10"
+      "number": "H10",
+      "title_en": "deepin-ports on RISC-V: Practice and Progress"
     },
     {
       "code": "WNKKRK",
@@ -139,18 +149,20 @@
           "name_zh": "刘栋"
         }
       ],
-      "number": "H11"
+      "number": "H11",
+      "title_en": "Evolution of Automotive-Grade RISC-V Debug Technology: Shift-Left, Heterogeneous, and System-Level Trace"
     },
     {
       "code": "MQVDHH",
       "title": "从选择 CPU 到定义 CPU：RISC-V 重塑存储控制计算的实践探索",
       "authors": [
         {
-          "name": "刘一桐",
+          "name": "Yitong Liu",
           "name_zh": "刘一桐"
         }
       ],
-      "number": "H12"
+      "number": "H12",
+      "title_en": "From Choosing a CPU to Defining a CPU: Practical Explorations of RISC-V Reshaping Storage-Control Computing"
     },
     {
       "code": "VEM8X3",
@@ -161,18 +173,20 @@
           "name_zh": "李"
         }
       ],
-      "number": "H13"
+      "number": "H13",
+      "title_en": "Toward the AI Era: The \"Lighting-Up\" Program and New Practices in the RISC-V Talent Ecosystem"
     },
     {
       "code": "T9TAVT",
       "title": "大模型推理栈的 RISC-V 适配与优化：工程实践与生态缺口分析",
       "authors": [
         {
-          "name": "吴少聪",
+          "name": "Shaocong Wu",
           "name_zh": "吴少聪"
         }
       ],
-      "number": "H14"
+      "number": "H14",
+      "title_en": "RISC-V Adaptation and Optimization of the Large Model Inference Stack: Engineering Practice and Ecosystem Gap Analysis"
     },
     {
       "code": "WT7N3F",
@@ -187,62 +201,68 @@
           "name_zh": "Yunxiang Luo"
         }
       ],
-      "number": "H15"
+      "number": "H15",
+      "title_en": "Sail-RISCV-WASM: A Browser-Native RISC-V Toolchain and Debug Workbench"
     },
     {
       "code": "PVBHCB",
       "title": "同一模型，不同答案：RISC-V 矩阵扩展的数值语义与端侧 AI 可靠性",
       "authors": [
         {
-          "name": "刘威",
+          "name": "Wei Liu",
           "name_zh": "刘威"
         }
       ],
-      "number": "H16"
+      "number": "H16",
+      "title_en": "Same Model, Different Answers: Numerical Semantics of RISC-V Matrix Extensions and On-Device AI Reliability"
     },
     {
       "code": "SZX73D",
       "title": "软硬协同：构建高性能 RISC-V 基础库软件生态",
       "authors": [
         {
-          "name": "兰静",
+          "name": "Leacy Lan",
           "name_zh": "兰静"
         }
       ],
-      "number": "H17"
+      "number": "H17",
+      "title_en": "Hardware-Software Co-Design: Building a High-Performance RISC-V Foundational Library Software Ecosystem"
     },
     {
       "code": "8CYP3V",
       "title": "RISC-V高性能计算安全防护体系",
       "authors": [
         {
-          "name": "武鹏",
+          "name": "Peng Wu",
           "name_zh": "武鹏"
         }
       ],
-      "number": "H18"
+      "number": "H18",
+      "title_en": "RISC-V High-Performance Computing Security Protection System"
     },
     {
       "code": "YMWTNK",
       "title": "A Trustworthy Benchmarking Methodology  for LLM Agents in Chip Verification",
       "authors": [
         {
-          "name": "苟铖",
+          "name": "Cheng Gou",
           "name_zh": "苟铖"
         }
       ],
-      "number": "H19"
+      "number": "H19",
+      "title_en": "A Trustworthy Benchmarking Methodology  for LLM Agents in Chip Verification"
     },
     {
       "code": "8XCNJ8",
       "title": "玄铁 RISC-V IP： 端侧 NPU 的可编程底座",
       "authors": [
         {
-          "name": "申壮",
+          "name": "Zhuang Shen",
           "name_zh": "申壮"
         }
       ],
-      "number": "H20"
+      "number": "H20",
+      "title_en": "XuanTie RISC-V IP: A Programmable Foundation for On-Device NPU"
     },
     {
       "code": "Y3RH39",
@@ -253,29 +273,32 @@
           "name_zh": "wang kun"
         }
       ],
-      "number": "H21"
+      "number": "H21",
+      "title_en": "XuanTie RISC-V Empowering Robotics: Full-Stack Capability and Core Algorithm Optimization"
     },
     {
       "code": "MAKWCY",
       "title": "基于 RISC-V 架构 DSP 的关节电机控制实践",
       "authors": [
         {
-          "name": "王武奇",
+          "name": "Wuqi Wang",
           "name_zh": "王武奇"
         }
       ],
-      "number": "H22"
+      "number": "H22",
+      "title_en": "Joint Motor Control Practice Based on a RISC-V Architecture DSP"
     },
     {
       "code": "NTUTHN",
       "title": "兼具超低中断与嵌套中断延迟的车规级安全内核",
       "authors": [
         {
-          "name": "辜善群",
+          "name": "Paul Ku",
           "name_zh": "辜善群"
         }
       ],
-      "number": "H23"
+      "number": "H23",
+      "title_en": "An Automotive-Grade Safety Core Featuring Ultra-Low Interrupt and Nested Interrupt Latency"
     },
     {
       "code": "H3UT9K",
@@ -286,7 +309,8 @@
           "name_zh": "Icenowy Zheng"
         }
       ],
-      "number": "H24"
+      "number": "H24",
+      "title_en": "The State of RISC-V Graphics Drivers in 2026: A Linux Distribution Perspective"
     },
     {
       "code": "GC7DBC",
@@ -297,40 +321,44 @@
           "name_zh": "张晓晓"
         }
       ],
-      "number": "H25"
+      "number": "H25",
+      "title_en": "A Streaming Verification Approach for High-Performance RISC-V Processors"
     },
     {
       "code": "DBMPTZ",
       "title": "PRISM: Intelligent RISC-V Hardware–Software Configuration via Large Language Models",
       "authors": [
         {
-          "name": "崔星",
+          "name": "Xing Cui",
           "name_zh": "崔星"
         }
       ],
-      "number": "H26"
+      "number": "H26",
+      "title_en": "PRISM: Intelligent RISC-V Hardware–Software Configuration via Large Language Models"
     },
     {
       "code": "CD3KH8",
       "title": "大衍NPU：张量原生的开源RISC-V AI处理器",
       "authors": [
         {
-          "name": "许广林",
+          "name": "Guanglin Xu",
           "name_zh": "许广林"
         }
       ],
-      "number": "H27"
+      "number": "H27",
+      "title_en": "Dayan NPU: A Tensor-Native Open-Source RISC-V AI Processor"
     },
     {
       "code": "TJLNAC",
       "title": "RISC-V 在中国：产学筑基、标准共建与生态出海的三线实践",
       "authors": [
         {
-          "name": "谭中意",
+          "name": "Jerry Tan",
           "name_zh": "谭中意"
         }
       ],
-      "number": "H28"
+      "number": "H28",
+      "title_en": "RISC-V in China: A Three-Track Practice of Industry-Academia Foundation Building, Joint Standards Development, and Ecosystem Going Global"
     },
     {
       "code": "QMLTEA",
@@ -341,18 +369,20 @@
           "name_zh": "甄好"
         }
       ],
-      "number": "H29"
+      "number": "H29",
+      "title_en": "A Simulator-RTL Alignment Methodology for High-Performance RISC-V Processors"
     },
     {
       "code": "GQMPAY",
       "title": "高性能内存控制器IP“玉泉”",
       "authors": [
         {
-          "name": "卢天越",
+          "name": "Tianyue Lu",
           "name_zh": "卢天越"
         }
       ],
-      "number": "H30"
+      "number": "H30",
+      "title_en": "\"YuQuan\": A High-Performance Memory Controller IP"
     },
     {
       "code": "QA7RXX",
@@ -363,7 +393,8 @@
           "name_zh": "张文蒙"
         }
       ],
-      "number": "H31"
+      "number": "H31",
+      "title_en": "From PyTorch to vLLM: Support and Optimization for Large Model Inference on Multi-Die RISC-V"
     },
     {
       "code": "PRPQYZ",
@@ -374,18 +405,20 @@
           "name_zh": "刘雨冬"
         }
       ],
-      "number": "H32"
+      "number": "H32",
+      "title_en": "RVFlow: Full-Stack Adaptation and RVV Acceleration of a Vector Database for RISC-V"
     },
     {
       "code": "V37YKB",
       "title": "赋能智能汽车：RISC-V 车规系统软件从验证到量产的交付实践",
       "authors": [
         {
-          "name": "唐朋朋",
+          "name": "Pengpeng Tang",
           "name_zh": "唐朋朋"
         }
       ],
-      "number": "H33"
+      "number": "H33",
+      "title_en": "Empowering Intelligent Vehicles: Delivery Practice of RISC-V Automotive-Grade System Software from Verification to Mass Production"
     },
     {
       "code": "WXWRRC",
@@ -396,7 +429,8 @@
           "name_zh": "陈俭东"
         }
       ],
-      "number": "H34"
+      "number": "H34",
+      "title_en": "Application of High-Performance RISC-V AI CPUs in Embodied Robots"
     },
     {
       "code": "MX8DHD",
@@ -407,7 +441,8 @@
           "name_zh": "王文晴"
         }
       ],
-      "number": "H35"
+      "number": "H35",
+      "title_en": "Firmware Testing Practice for Standard RISC-V Server Platforms Based on openRuyi"
     },
     {
       "code": "RGSYLN",
@@ -418,7 +453,8 @@
           "name_zh": "袁苗苗"
         }
       ],
-      "number": "H36"
+      "number": "H36",
+      "title_en": "Full-Stack Security for XiangShan: From Processor Execution to System-Level Protection"
     },
     {
       "code": "KRJEER",
@@ -429,7 +465,8 @@
           "name_zh": "许佳凯"
         }
       ],
-      "number": "H37"
+      "number": "H37",
+      "title_en": "A Cross-Side Fuzzing Approach for the RISC-V KVM Kernel Module"
     },
     {
       "code": "NPCYBY",
@@ -440,7 +477,8 @@
           "name_zh": "Ziyang Zheng"
         }
       ],
-      "number": "H38"
+      "number": "H38",
+      "title_en": "The Software Cornerstone: Practice in Building a High-Performance RISC-V Compiler Ecosystem"
     },
     {
       "code": "L7GPMC",
@@ -451,7 +489,8 @@
           "name_zh": "周海辰"
         }
       ],
-      "number": "H39"
+      "number": "H39",
+      "title_en": "A Hybrid RISC-V Security Verification Platform for XiangShan Processor"
     },
     {
       "code": "X7AFZP",
@@ -462,7 +501,8 @@
           "name_zh": "张正"
         }
       ],
-      "number": "H40"
+      "number": "H40",
+      "title_en": "Porting Unikraft, a Lightweight Isolated Execution Environment for RISC-V MicroVM/Sandbox"
     },
     {
       "code": "ZDDZTV",
@@ -473,7 +513,8 @@
           "name_zh": "李航帆"
         }
       ],
-      "number": "H41"
+      "number": "H41",
+      "title_en": "From Hack to Specification: FDT-Based Boot Flow and Generic Image Practice for RISC-V Platforms"
     },
     {
       "code": "HS3B73",
@@ -484,7 +525,8 @@
           "name_zh": "柴春阳"
         }
       ],
-      "number": "H42"
+      "number": "H42",
+      "title_en": "C950 RISC-V Server Platform BIOS Capability Overview"
     },
     {
       "code": "RNEQDZ",
@@ -495,7 +537,8 @@
           "name_zh": "刘昊源"
         }
       ],
-      "number": "H43"
+      "number": "H43",
+      "title_en": "Integration and Standardization Gaps in RISC-V SoC I/O Isolation"
     },
     {
       "code": "HJ738T",
@@ -506,7 +549,8 @@
           "name_zh": "Jahanzeb Khalid"
         }
       ],
-      "number": "H44"
+      "number": "H44",
+      "title_en": "Automatic Test generation from Sail Golden Model"
     },
     {
       "code": "M9REYU",
@@ -525,25 +569,27 @@
           "name_zh": "阎明铸"
         }
       ],
-      "number": "H45"
+      "number": "H45",
+      "title_en": "AI-Driven Testing of RISC-V GUI Applications"
     },
     {
       "code": "PBBXCQ",
       "title": "基于大模型技术的RISC-V生态自动化移植工作流探索与实践",
       "authors": [
         {
-          "name": "彭俊杰",
+          "name": "Jason Peng",
           "name_zh": "彭俊杰"
         }
       ],
-      "number": "H46"
+      "number": "H46",
+      "title_en": "Exploration and Practice of an Automated Porting Workflow for the RISC-V Ecosystem Based on Large Model Technology"
     },
     {
       "code": "UMKLSX",
       "title": "RISC-V二进制转译开源生态：Box64与Felix86",
       "authors": [
         {
-          "name": "庄秋彬",
+          "name": "Mark Zhuang",
           "name_zh": "庄秋彬"
         },
         {
@@ -551,29 +597,32 @@
           "name_zh": "曾治金"
         }
       ],
-      "number": "H47"
+      "number": "H47",
+      "title_en": "The RISC-V Binary Translation Open Source Ecosystem: Box64 and Felix86"
     },
     {
       "code": "XWTHRF",
       "title": "OpenHW CVA6 全景：架构定位、近期进展与未来路线图",
       "authors": [
         {
-          "name": "陈俊超（Junchao Chen）",
+          "name": "Junchao Chen",
           "name_zh": "陈俊超"
         }
       ],
-      "number": "H48"
+      "number": "H48",
+      "title_en": "OpenHW CVA6 in Full View: Architectural Positioning, Recent Progress, and Future Roadmap"
     },
     {
       "code": "EENBEJ",
       "title": "面向RISC-V的高性能二进制翻译系统 - DigitalBridge",
       "authors": [
         {
-          "name": "高丽",
+          "name": "Li Gao",
           "name_zh": "高丽"
         }
       ],
-      "number": "H49"
+      "number": "H49",
+      "title_en": "DigitalBridge: A High-Performance Binary Translation System for RISC-V"
     },
     {
       "code": "V3DEW7",
@@ -584,7 +633,8 @@
           "name_zh": "张洪滨"
         }
       ],
-      "number": "H50"
+      "number": "H50",
+      "title_en": "RuyiAI: A RISC-V Native AI System Software Stack"
     },
     {
       "code": "AYRLS8",
@@ -599,7 +649,8 @@
           "name_zh": "Yunxiang Luo"
         }
       ],
-      "number": "H51"
+      "number": "H51",
+      "title_en": "From Fragmentation to Systematization: RISC-V Course Quality Assessment and Systematic Reconstruction"
     },
     {
       "code": "9KW8VW",
@@ -610,18 +661,20 @@
           "name_zh": "Dong Xie"
         }
       ],
-      "number": "H52"
+      "number": "H52",
+      "title_en": "An AI Heterogeneous Computing Platform Based on the Yosemite RISC-V SoC: Wormhole Enablement and Large Model Inference Practice"
     },
     {
       "code": "GPJMWV",
       "title": "基于XS-GEM5的昆明湖V3 SMT-2建模、性能分析与优化",
       "authors": [
         {
-          "name": "杜星宇",
+          "name": "Xingyu Du",
           "name_zh": "杜星宇"
         }
       ],
-      "number": "H53"
+      "number": "H53",
+      "title_en": "SMT-2 Modeling, Performance Analysis, and Optimization of KunMingHu V3 Based on XS-GEM5"
     },
     {
       "code": "BZ9TQK",
@@ -636,18 +689,20 @@
           "name_zh": "Yunxiang Luo"
         }
       ],
-      "number": "H54"
+      "number": "H54",
+      "title_en": "Ruyi Package Manager: An Integrated, All-in-One Development Environment Built for RISC-V Developers"
     },
     {
       "code": "Y9TN77",
       "title": "基于 RTL 语义与覆盖率反馈的芯片验证覆盖率收敛方法",
       "authors": [
         {
-          "name": "宋方圆",
+          "name": "Fangyuan Song",
           "name_zh": "宋方圆"
         }
       ],
-      "number": "H55"
+      "number": "H55",
+      "title_en": "A Coverage Convergence Method for Chip Verification Based on RTL Semantics and Coverage Feedback"
     },
     {
       "code": "LXSMDT",
@@ -666,7 +721,8 @@
           "name_zh": "Sajosh Janarthanam"
         }
       ],
-      "number": "H56"
+      "number": "H56",
+      "title_en": "Pulsar: Cross-platform external traffic generator for CPU stress testing"
     },
     {
       "code": "EGH38V",
@@ -677,18 +733,20 @@
           "name_zh": "Akif Ejaz"
         }
       ],
-      "number": "H57"
+      "number": "H57",
+      "title_en": "Eclipse Atesor: Deterministic-First Agentic Framework for RISC-V Software Porting"
     },
     {
       "code": "9ZGRWN",
       "title": "基于RISC-V的开源生态建设",
       "authors": [
         {
-          "name": "易哲",
+          "name": "Zhe Yi",
           "name_zh": "易哲"
         }
       ],
-      "number": "H58"
+      "number": "H58",
+      "title_en": "Building the Open Source Ecosystem for RISC-V"
     },
     {
       "code": "NMCPP9",
@@ -699,7 +757,8 @@
           "name_zh": "歐福羅"
         }
       ],
-      "number": "H59"
+      "number": "H59",
+      "title_en": "Functional Verification Strategy of the CORE-V Floating-Point Unit (CVFPU) for RISC-V cores"
     },
     {
       "code": "UR9DUY",
@@ -710,40 +769,44 @@
           "name_zh": "段宝龙"
         }
       ],
-      "number": "H60"
+      "number": "H60",
+      "title_en": "RISC-V Confidential Computing: From Standard to Silicon Implementation"
     },
     {
       "code": "PFLVCZ",
       "title": "玄铁在RISC-V编译器上的进展",
       "authors": [
         {
-          "name": "瞿仙淼",
+          "name": "Cooper Qu",
           "name_zh": "瞿仙淼"
         }
       ],
-      "number": "H61"
+      "number": "H61",
+      "title_en": "XuanTie's Progress on the RISC-V Compiler"
     },
     {
       "code": "89ZCA3",
       "title": "RuyiTuner——基于优化协同效应分析的 LLVM 调优工具",
       "authors": [
         {
-          "name": "史宁宁",
+          "name": "Ningning Shi",
           "name_zh": "史宁宁"
         }
       ],
-      "number": "H62"
+      "number": "H62",
+      "title_en": "RuyiTuner: An LLVM Tuning Tool Based on Optimization Synergy Analysis"
     },
     {
       "code": "CPFSJE",
       "title": "国产高性能RISC-V MCU 打造机器人运控核心基础平台",
       "authors": [
         {
-          "name": "费振东",
+          "name": "Zhendong Fei",
           "name_zh": "费振东"
         }
       ],
-      "number": "H63"
+      "number": "H63",
+      "title_en": "Domestically Developed High-Performance RISC-V MCU: Building the Core Foundation Platform for Robot Motion Control"
     },
     {
       "code": "JQLT8V",
@@ -758,7 +821,8 @@
           "name_zh": "Yunxiang Luo"
         }
       ],
-      "number": "H64"
+      "number": "H64",
+      "title_en": "An Efficient Method for Applying the RISC-V Sail Model to Chip Verification"
     },
     {
       "code": "GTLLCU",
@@ -769,18 +833,20 @@
           "name_zh": "皮彦"
         }
       ],
-      "number": "H65"
+      "number": "H65",
+      "title_en": "AI Driven Module-Level Specification-to-Code Extraction and Mapping"
     },
     {
       "code": "7M38VD",
       "title": "夯实底座，逐层优化：RISC-V数据库软件生态建设",
       "authors": [
         {
-          "name": "焦小强",
+          "name": "Xiaoqiang Jiao",
           "name_zh": "焦小强"
         }
       ],
-      "number": "H66"
+      "number": "H66",
+      "title_en": "Strengthening the Foundation and Optimizing Layer by Layer: Building the RISC-V Database Software Ecosystem"
     },
     {
       "code": "FHHUPX",
@@ -791,7 +857,8 @@
           "name_zh": "朱家鑫"
         }
       ],
-      "number": "H67"
+      "number": "H67",
+      "title_en": "A Project-Level Software Source Code Migration Agent for RISC-V"
     },
     {
       "code": "MPWTYM",
@@ -802,18 +869,20 @@
           "name_zh": "张真瑜"
         }
       ],
-      "number": "H68"
+      "number": "H68",
+      "title_en": "Weft: A High-Performance RISC-V Operator Compiler for Encoding-Aware Hierarchical Numerical Implementation Abstraction"
     },
     {
       "code": "PFWFMS",
       "title": "面向 RISC-V 服务器平台规范：openEuler on RISC-V 进展与计划",
       "authors": [
         {
-          "name": "周嘉诚",
+          "name": "Jiacheng Zhou",
           "name_zh": "周嘉诚"
         }
       ],
-      "number": "H69"
+      "number": "H69",
+      "title_en": "Toward the RISC-V Server Platform Specification: Progress and Plans for openEuler on RISC-V"
     }
   ]
 }
