@@ -4,7 +4,7 @@
 {{ end }}
 
 {{ define "main" }}
-  <article id="agenda" class="{{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
+  <article id="agenda" class="info-page {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
     <header class="cfp-hero">
       <div class="cfp-shell">
         <div class="cfp-hero-copy">
@@ -13,13 +13,26 @@
         </div>
       </div>
     </header>
-    <div class="cfp-shell">
-      <div class="content">
-        {{ .Content | markdownify | emojify | safeHTML }}
+    <div class="cfp-shell cfp-content info-page-content has-section-nav">
+      <div class="info-page-layout has-section-nav">
+        <aside class="info-section-nav" aria-label="{{ cond (eq .Site.Language.Lang "en") "Page sections" "页面导航" }}">
+          <nav>
+            <ul>
+              {{ range .Params.section_nav }}
+              <li><a href="#{{ .id }}">{{ .label }}</a></li>
+              {{ end }}
+            </ul>
+          </nav>
+        </aside>
+        <div class="info-page-main">
+          <div class="content">
+            {{ .Content | markdownify | emojify | safeHTML }}
+          </div>
+          {{ if or .Params.a21 .Params.a22_A .Params.a22_B .Params.a22_C .Params.a22_D .Params.a22_E .Params.a23_A .Params.a23_B .Params.a23_C .Params.a23_D .Params.a23_E }}
+          {{ partial "index-sections/agenda-main.html" . }}
+          {{ end }}
+        </div>
       </div>
-      {{ if or .Params.a21 .Params.a22_A .Params.a22_B .Params.a22_C .Params.a22_D .Params.a22_E .Params.a23_A .Params.a23_B .Params.a23_C .Params.a23_D .Params.a23_E }}
-      {{ partial "index-sections/agenda-main.html" . }}
-      {{ end }}
     </div>
   </article>
 {{ end }}
