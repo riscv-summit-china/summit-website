@@ -17,7 +17,7 @@ link_slug: co-events
   </article>
 
   <article class="co-event-card">
-    <h2>RISC-V Summit China 2026 OpenAnolis Ecosystem Forum (Alibaba Cloud Co-event)</h2>
+    <h2>RISC-V Summit China 2026 OpenAnolis Ecosystem Forum</h2>
     <p class="co-event-description">How can RISC-V move beyond processors and server platforms toward verifiable, deployable datacenter applications? What issues still require coordination among operating systems, foundational software, and hardware platforms? The OpenAnolis RISC-V Ecosystem Collaboration Forum will continue the themes of datacenter applications and industry-academia collaboration through six technical talks and an industry roundtable, sharing technical progress and practical needs while exploring joint enablement, testing and validation, and open-source collaboration through the OpenAnolis community.</p>
     <dl class="co-event-meta">
       <div><dt>Organizer</dt><dd>OpenAnolis Community</dd></div>
@@ -31,6 +31,15 @@ link_slug: co-events
     <dl class="co-event-meta">
       <div><dt>Organizer</dt><dd>Institute of Computing Technology, Chinese Academy of Sciences</dd></div>
       <div><dt>Time</dt><dd>Afternoon, October 19, 2026</dd></div>
+    </dl>
+  </article>
+
+  <article class="co-event-card">
+    <h2>XiangShan Ecosystem Conference</h2>
+    <p class="co-event-description">The XiangShan Ecosystem Conference brings together XiangShan developers, industry partners, and open-source enthusiasts to explore RISC-V innovation, open-source collaboration, and ecosystem development. The morning program focuses on developers, sharing the latest progress in the XiangShan open-source community, the RISC-V AI software stack, and the Kunminghu processor core IP and microarchitecture, alongside community recognition and technical discussions. The afternoon program addresses the broader industry, presenting XiangShan's achievements and roadmap, showcasing collaborative work across the open-source chip community, the SMT working group, and RISC-V AI, and bringing industry partners together to discuss real-world adoption.</p>
+    <dl class="co-event-meta">
+      <div><dt>Organizer</dt><dd>Beijing Institute of Open Source Chip, Institute of Computing Technology, Chinese Academy of Sciences, and Institute of Software, Chinese Academy of Sciences</dd></div>
+      <div><dt>Time</dt><dd>Morning and afternoon, October 20, 2026 (3.5 hours each)</dd></div>
     </dl>
   </article>
 
