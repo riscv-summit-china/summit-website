@@ -1818,6 +1818,8 @@ body:not(.in-home) {
             scroll-margin-top: 100px;
             .poster-map-link a { color: #0f2e67; text-underline-offset: 4px; }
             .poster-search {
+                width: 380px;
+                max-width: 100%;
                 margin: 1.5em 0;
                 label { display: block; font-weight: 700; margin-bottom: 0.5em; color: #0f2e67; }
                 input { width: 100%; box-sizing: border-box; padding: 0.85em 1em; border: 1px solid #b7c6db; border-radius: 8px; font: inherit; background: white; color: #1c2942; }
@@ -1855,6 +1857,10 @@ body:not(.in-home) {
             gap: 0.75em 1.5em;
             margin: 1em 0 1.5em;
             a { color: #0f2e67; font-weight: 700; text-underline-offset: 4px; }
+        }
+        &.is-zh .exhibition-plan-actions {
+            flex-wrap: nowrap;
+            a { white-space: nowrap; }
         }
         .exhibition-plan-grid.orchid-plan-layout {
             grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);

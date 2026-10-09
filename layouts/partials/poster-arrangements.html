@@ -15,7 +15,7 @@
     <p>请提前自行打印海报并带至现场，尺寸为宽 91 cm × 高 122 cm；组委会不提供海报打印服务。</p>
     {{ end }}
   </div>
-  <p class="poster-map-link"><a href="{{ "/exhibition/" | relLangURL }}#orchid-hall">{{ cond $isEn "View the Orchid Hall floor plan and numbered poster positions" "查看兰花厅平面图及海报展位序号" }}</a></p>
+  <p class="poster-map-link"><a href="{{ "/exhibition/" | relLangURL }}#orchid-hall">{{ cond $isEn "View the Orchid Hall floor plan and numbered poster positions" "查看兰花厅平面图及海报展位" }}</a></p>
   <div class="poster-search" hidden>
     <label for="poster-search">{{ cond $isEn "Find your poster" "查询海报编号" }}</label>
     <input id="poster-search" type="search" placeholder="{{ cond $isEn "Title, author, submission code or H number" "输入标题、作者、投稿 code 或 H 编号" }}" aria-controls="poster-table" />
@@ -32,10 +32,10 @@
         {{ range $posters }}
         {{ $names := slice }}
         {{ range .authors }}{{ $names = $names | append .name | append .name_zh }}{{ end }}
-        <tr id="poster-{{ .number }}" data-search="{{ .number }} {{ .code }} {{ .title }} {{ delimit $names " " }}">
+        <tr id="poster-{{ .number }}" data-search="{{ .number }} {{ .code }} {{ .title }} {{ .title_en }} {{ delimit $names " " }}">
           <th scope="row" data-label="{{ cond $isEn "Position" "展示编号" }}">{{ .number }}</th>
           <td class="poster-code" data-label="{{ cond $isEn "Submission code" "投稿 code" }}">{{ .code }}</td>
-          <td data-label="{{ cond $isEn "Poster title" "海报标题" }}">{{ .title }}</td>
+          <td data-label="{{ cond $isEn "Poster title" "海报标题" }}">{{ if $isEn }}{{ .title_en | default .title }}{{ else }}{{ .title }}{{ end }}</td>
           <td data-label="{{ cond $isEn "Authors" "作者" }}">{{ range $index, $author := .authors }}{{ if $index }}{{ cond $isEn "; " "、" }}{{ end }}{{ if $isEn }}{{ $author.name }}{{ else }}{{ $author.name_zh }}{{ end }}{{ end }}</td>
         </tr>
         {{ end }}
