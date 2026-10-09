@@ -39,7 +39,7 @@ link_slug: co-events
     <p class="co-event-description">The XiangShan Ecosystem Conference brings together XiangShan developers, industry partners, and open-source enthusiasts to explore RISC-V innovation, open-source collaboration, and ecosystem development. The morning program focuses on developers, sharing the latest progress in the XiangShan open-source community, the RISC-V AI software stack, and the Kunminghu processor core IP and microarchitecture, alongside community recognition and technical discussions. The afternoon program addresses the broader industry, presenting XiangShan's achievements and roadmap, showcasing collaborative work across the open-source chip community, the SMT working group, and RISC-V AI, and bringing industry partners together to discuss real-world adoption.</p>
     <dl class="co-event-meta">
       <div><dt>Organizer</dt><dd>Beijing Institute of Open Source Chip<br>Institute of Computing Technology, Chinese Academy of Sciences<br>Institute of Software, Chinese Academy of Sciences</dd></div>
-      <div><dt>Time</dt><dd>October 20, 2026<br>Full day, with 3.5-hour morning and afternoon sessions</dd></div>
+      <div><dt>Time</dt><dd>October 20, 2026 — Full day<br>(3.5 hours each in the morning and afternoon)</dd></div>
     </dl>
   </article>
 
