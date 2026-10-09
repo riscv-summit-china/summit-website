@@ -1172,9 +1172,136 @@ section.section-container {
     }
 }
 
-article#agenda {
+body:not(.in-home) article#agenda {
+    .info-page-content.has-section-nav {
+        width: 100%;
+        max-width: none;
+    }
+    .agenda-session-title {
+        margin: 2rem 0 0.5rem;
+        color: #0f2e67;
+        font-size: 1.15rem;
+        line-height: 1.5;
+    }
+    .agenda-session-title .agenda-session-location {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        margin-right: 0.65rem;
+        color: #5a6b85;
+        font-size: 0.95rem;
+        font-weight: 400;
+        line-height: inherit;
+        vertical-align: baseline;
+        &:before {
+            content: '';
+            display: inline-block;
+            flex: 0 0 0.95rem;
+            width: 0.95rem;
+            height: 0.95rem;
+            background-color: #d59618;
+            -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z'/%3E%3Ccircle cx='12' cy='10' r='3'/%3E%3C/svg%3E") center / contain no-repeat;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z'/%3E%3Ccircle cx='12' cy='10' r='3'/%3E%3C/svg%3E") center / contain no-repeat;
+        }
+        @media all and (max-width: 700px) {
+            font-size: 0.85rem;
+            &:before {
+                flex-basis: 0.85rem;
+                width: 0.85rem;
+                height: 0.85rem;
+            }
+        }
+    }
+    .content .agenda-session-organizer {
+        margin-top: -0.5rem;
+        color: #35517d;
+        font-size: 0.95rem;
+        font-weight: 600;
+        line-height: 1.6;
+    }
+    #agenda-overview .summit-agenda-table {
+        td.agenda-date { width: 14%; }
+        th:nth-child(2), td.agenda-time { width: 14%; }
+        strong {
+            display: inline;
+            margin-bottom: 0;
+        }
+        td >strong +span {
+            display: inline-flex;
+            margin-left: 0.65rem;
+            font-size: 0.8rem;
+            line-height: inherit;
+            vertical-align: baseline;
+        }
+        td >strong +span:before {
+            align-self: center;
+            flex-basis: 0.8rem;
+            width: 0.8rem;
+            height: 0.8rem;
+        }
+        @media all and (max-width: 700px) {
+            td.agenda-date { width: 21%; }
+            th:nth-child(2), td.agenda-time { width: 21%; }
+            td >strong +span { font-size: 0.7rem; }
+            td >strong +span:before {
+                flex-basis: 0.7rem;
+                width: 0.7rem;
+                height: 0.7rem;
+            }
+        }
+    }
+    .summit-agenda-table.agenda-detail-table {
+        max-width: none;
+        margin: 0.75rem 0 2rem;
+        font-size: 0.925rem;
+        background: transparent;
+        border-collapse: collapse;
+        border-radius: 0;
+        box-shadow: none;
+        overflow: visible;
+        thead tr, tbody tr, tbody tr:nth-of-type(even) {
+            background: transparent;
+            border: none;
+        }
+        th, td {
+            padding: 0.7rem 0;
+            border-bottom: 1px solid #e6ebf2;
+            line-height: 1.5;
+        }
+        th {
+            background: transparent;
+            color: #64748b;
+            font-size: 0.875rem;
+            font-weight: 500;
+            border-bottom-color: #cbd5e1;
+        }
+        th:first-child, td.agenda-time { padding-right: 1.25rem; }
+        td.agenda-time {
+            color: #526079;
+            font-weight: 500;
+        }
+        th:first-child, td.agenda-time { width: 18%; }
+        th:nth-child(2) { width: auto; color: #64748b; white-space: normal; }
+        tbody tr:last-child td { border-bottom: 1px solid #e6ebf2; }
+        .agenda-session-note {
+            margin-top: 0.5rem;
+            color: #5a6b85;
+            font-size: 0.9em;
+        }
+        @media all and (max-width: 700px) {
+            font-size: 0.84rem;
+            th, td { padding: 0.6rem 0; }
+            th { font-size: 0.82rem; }
+            th:first-child, td.agenda-time { width: 25%; }
+        }
+    }
+    .agenda-placeholder p {
+        color: #64748b;
+        font-size: 0.925rem;
+    }
     .content {
         width: 100%;
+        max-width: none;
     }
     .summit-agenda-table {
         width: 100%;
