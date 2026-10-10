@@ -45,7 +45,7 @@ link_slug: co-events
 
   <article class="co-event-card">
     <h2>Advancing Matrix Computing, Building the Ecosystem Together — AME Technical Workshop</h2>
-    <p class="co-event-description">The AME specification has completed overall drafting and internal TG review. The workshop focuses on technical convergence, ecosystem collaboration, and preparation for approval. It will release the latest specification progress and ratification plan, collect substantive feedback from hardware and software experts, encourage compilers, operating systems, AI frameworks, and other software ecosystem participants to define enablement plans, and broaden AME's impact through the Summit.</p>
+    <p class="co-event-description">In the era of AI computing, RISC-V matrix extensions are flourishing, with AME, IME, VME, and other approaches advancing in parallel. This workshop brings together leading international architects and hardware and software experts from China to share the latest developments in AME, introduce matrix extension approaches such as IME and VME, and explore the future of the matrix computing ecosystem. Join us for a comprehensive look at the next generation of RISC-V matrix instruction sets.</p>
     <dl class="co-event-meta">
       <div><dt>Organizer</dt><dd>DAMO Academy (Shanghai) Technology Co., Ltd.</dd></div>
       <div><dt>Time</dt><dd>Afternoon, October 20, 2026</dd></div>
