@@ -45,7 +45,7 @@ link_slug: co-events
 
   <article class="co-event-card">
     <h2>矩阵聚力，共筑生态——AME 技术研讨会</h2>
-    <p class="co-event-description">AME 规范已完成整体撰写及 TG 内部评审。本次研讨会聚焦"技术收敛、生态共建、冲刺批准"三大主线，对外发布最新进展，汇聚国际/国内软硬件专家完善规范，为 Public Review 和最终 Ratify 凝聚共识：发布 AME Spec 最新进展与 ratified plan 时间表；线下收集软硬件专家实质性反馈；推动编译器、操作系统、AI 框架等软件生态方明确适配计划；借峰会平台扩大 AME 影响力。</p>
+    <p class="co-event-description">AI 算力时代，RISC-V 矩阵扩展正迎来蓬勃发展，AME、IME、VME 等方案齐头并进。本次研讨会汇聚国际顶尖架构师与国内软硬件专家，深入分享 AME 最新进展，同步介绍 IME、VME 等矩阵扩展技术方案，共同探讨矩阵计算生态的未来。诚邀您一同洞察下一代 RISC-V 矩阵指令集的全貌。</p>
     <dl class="co-event-meta">
       <div><dt>主办单位</dt><dd>达摩院（上海）科技有限公司</dd></div>
       <div><dt>时间</dt><dd>2026年10月20日 下午</dd></div>
