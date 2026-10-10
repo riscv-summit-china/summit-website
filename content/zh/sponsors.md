@@ -60,6 +60,10 @@ bronze:
     alt: "隼瞻科技（WingSemi Technology）"
   - icon: "/img/logos/2026/bronze/stream-computing.webp"
     alt: "希姆计算（Stream Computing）"
+  - icon: "/img/logos/2026/bronze/arteris.webp"
+    alt: "Arteris"
+  - icon: "/img/logos/2026/bronze/ricore.webp"
+    alt: "苏州睿芯（RICORE）"
 host:
   - icon: "/img/rios-logo.png"
     url: "https://www.rioslab.org"

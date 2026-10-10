@@ -60,6 +60,10 @@ bronze:
     alt: "WingSemi Technology"
   - icon: "/img/logos/2026/bronze/stream-computing.webp"
     alt: "Stream Computing"
+  - icon: "/img/logos/2026/bronze/arteris.webp"
+    alt: "Arteris"
+  - icon: "/img/logos/2026/bronze/ricore.webp"
+    alt: "RICORE"
 host:
   - icon: "/img/rios-logo.png"
     url: "https://www.rioslab.org"
