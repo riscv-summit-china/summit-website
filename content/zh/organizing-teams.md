@@ -22,7 +22,7 @@ teams:
       - name: 苏中
         position: 达摩院
       - name: 何宁
-        position: 奕思伟计算
+        position: 奕斯伟计算
       - name: 李向明
         position: RISCstar
       - name: 郭松柳
