@@ -1,11 +1,14 @@
 <section id="cover" class="hero-image-section section-container {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
   <h1 class="force-hidden">{{ .Title | default .Site.Title }}</h1>
-  {{- $heroDesktop := "static/img/rvsc2026-hero-wide.webp" -}}
-  {{- $heroMobile := "static/img/rvsc2026-hero-wide-960.webp" -}}
+  {{- $heroName := cond (eq .Site.Language.Lang "en") "rvsc2026-hero-wide-en" "rvsc2026-hero-wide" -}}
+  {{- $heroDesktopURL := printf "/img/%s.webp" $heroName -}}
+  {{- $heroMobileURL := printf "/img/%s-960.webp" $heroName -}}
+  {{- $heroDesktop := printf "static%s" $heroDesktopURL -}}
+  {{- $heroMobile := printf "static%s" $heroMobileURL -}}
   <img
     class="hero-image"
-    src="{{ relURL (printf "/img/rvsc2026-hero-wide.webp?v=%s" (readFile $heroDesktop | sha1)) }}"
-    srcset="{{ relURL (printf "/img/rvsc2026-hero-wide-960.webp?v=%s" (readFile $heroMobile | sha1)) }} 960w, {{ relURL (printf "/img/rvsc2026-hero-wide.webp?v=%s" (readFile $heroDesktop | sha1)) }} 1915w"
+    src="{{ relURL (printf "%s?v=%s" $heroDesktopURL (readFile $heroDesktop | sha1)) }}"
+    srcset="{{ relURL (printf "%s?v=%s" $heroMobileURL (readFile $heroMobile | sha1)) }} 960w, {{ relURL (printf "%s?v=%s" $heroDesktopURL (readFile $heroDesktop | sha1)) }} 1915w"
     sizes="(max-width: 600px) calc(100vw - 32px), min(1520px, calc(100vw - 64px))"
     width="1915"
     height="821"
