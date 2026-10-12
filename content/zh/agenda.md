@@ -29,7 +29,7 @@ section_nav:
     <tr><td class="agenda-time">9:30–18:00</td><td><strong><a class="agenda-overview-link" href="#oct18-xiangshan">香山处理器专场</a></strong><span>玫瑰厅2 · 5F</span></td></tr>
     <tr><td class="agenda-date" rowspan="2">10 月 19 日<span>周一</span></td><td class="agenda-time">9:00–12:20</td><td><strong><a class="agenda-overview-link" href="#october-19">第六届 RISC-V 中国峰会开幕式</a></strong><span>梅花厅 · 5F</span></td></tr>
     <tr><td class="agenda-time">13:30–17:40</td><td><strong><a class="agenda-overview-link" href="#october-19">第六届 RISC-V 中国峰会主论坛</a></strong><span>梅花厅 · 5F</span></td></tr>
-    <tr><td class="agenda-date" rowspan="7">10 月 20 日<span>周二</span></td><td class="agenda-time">9:00–17:45</td><td><strong><a class="agenda-overview-link" href="#oct20-track-a">人工智能分论坛</a></strong><span>茉莉厅 · 6F</span><span class="agenda-co-chairs">联合主席：陈炜（希姆计算）、苏中（达摩院）</span></td></tr>
+    <tr><td class="agenda-date" rowspan="7">10 月 20 日<span>周二</span></td><td class="agenda-time">9:00–17:30</td><td><strong><a class="agenda-overview-link" href="#oct20-track-a">人工智能分论坛</a></strong><span>茉莉厅 · 6F</span><span class="agenda-co-chairs">联合主席：陈炜（希姆计算）、苏中（达摩院）</span></td></tr>
     <tr><td class="agenda-time">9:00–17:45</td><td><strong><a class="agenda-overview-link" href="#oct20-track-b">数据中心与高性能计算分论坛</a></strong><span>水仙厅 · 6F</span><span class="agenda-co-chairs">联合主席：张泽松（香港城市大学）、何宁（奕斯伟计算）</span></td></tr>
     <tr><td class="agenda-time">9:00–17:45</td><td><strong><a class="agenda-overview-link" href="#oct20-track-c">软件生态分论坛</a></strong><span>牡丹厅 · 5F</span><span class="agenda-co-chairs">联合主席：屈晟（中科院软件所）、李向明（RISCstar）</span></td></tr>
     <tr><td class="agenda-time">9:00–17:45</td><td><strong><a class="agenda-overview-link" href="#oct20-track-d">嵌入式、物联网与智能硬件分论坛</a></strong><span>菊花厅 · 5F</span><span class="agenda-co-chairs">联合主席：胡振波（芯来科技）、张涛（海思）</span></td></tr>
@@ -131,8 +131,7 @@ section_nav:
       <tr><td class="agenda-time">16:30–16:45</td><td><span class="agenda-talk-title">重塑开源AI算力未来：从 OS 到 vLLM，共筑 RISC-V AI 生态底座</span><span class="agenda-talk-meta">傅炜 · Red Hat Limited</span></td></tr>
       <tr><td class="agenda-time">16:45–17:00</td><td><span class="agenda-talk-title">面向 Yosemite SoC 冷层内存的 RVV 加速 KV 缓存压缩</span><span class="agenda-talk-meta">刘小旋 · 众智齐芯（上海）科技有限公司</span></td></tr>
       <tr><td class="agenda-time">17:00–17:15</td><td><span class="agenda-talk-title">从单盒智能到多盒联邦：RISC-V智能体基础设施的架构与实践</span><span class="agenda-talk-meta">梁致远 · 中国电信研究院</span></td></tr>
-      <tr><td class="agenda-time">17:15–17:30</td><td><span class="agenda-talk-title">RISC-V筑基AI工厂：构建自主可控算力底座</span><span class="agenda-talk-meta">黄超 · 奕行智能</span></td></tr>
-      <tr><td class="agenda-time">17:30–17:45</td><td><span class="agenda-talk-title">Building Open Cloud‑Native AI with RISC‑V &amp; CNCF</span><span class="agenda-talk-meta">Keith Chan · The Linux Foundation APAC</span></td></tr>
+      <tr><td class="agenda-time">17:15–17:30</td><td><span class="agenda-talk-title">Building Open Cloud‑Native AI with RISC‑V &amp; CNCF</span><span class="agenda-talk-meta">Keith Chan · The Linux Foundation APAC</span></td></tr>
     </tbody>
   </table>
   <h3 id="oct20-track-b" class="agenda-session-title"><span class="agenda-session-location">水仙厅 · 6F</span>数据中心与高性能计算分论坛</h3>
@@ -216,7 +215,7 @@ section_nav:
       <tr><td class="agenda-time">9:45–10:00</td><td><span class="agenda-talk-title">航空机载全自主安全关键处理器</span><span class="agenda-talk-meta">景旭宇 · 中国航空工业集团西安飞行自动控制研究所</span></td></tr>
       <tr><td class="agenda-time">10:00–10:15</td><td><span class="agenda-talk-title">RISC-V + OpenHarmony 助力端侧AI芯未来</span><span class="agenda-talk-meta">张涛 · RISC-V工委会</span></td></tr>
       <tr class="agenda-break"><td class="agenda-time">10:15–10:45</td><td><span class="agenda-talk-title">茶歇</span></td></tr>
-      <tr><td class="agenda-time">10:45–11:00</td><td><span class="agenda-talk-title">从&quot;模型上芯&quot;到&quot;Agent 入场&quot;：RT-Thread 的 RISC-V 端侧 AI 全栈实践</span><span class="agenda-talk-meta">熊谱翔 · 睿赛德电子科技</span></td></tr>
+      <tr><td class="agenda-time">10:45–11:00</td><td><span class="agenda-talk-title">从&quot;模型上芯&quot;到&quot;Agent 入场&quot;：RT-Thread 的 RISC-V 端侧 AI 全栈实践</span><span class="agenda-talk-meta">张丙儒 · 睿赛德电子科技</span></td></tr>
       <tr><td class="agenda-time">11:00–11:15</td><td><span class="agenda-talk-title">T0生态芯片：全场景RISC-V嵌入式开发平台</span><span class="agenda-talk-meta">方华启 · 芯来科技</span></td></tr>
       <tr><td class="agenda-time">11:15–11:30</td><td><span class="agenda-talk-title">开源鸿蒙社区 &amp; 如意社区 联合OR工作组进展分享--共建 OpenHarmony + RISC-V 融合生态</span><span class="agenda-talk-meta">郑森文 · 中国科学院软件研究所</span></td></tr>
       <tr><td class="agenda-time">11:30–11:45</td><td><span class="agenda-talk-title">为 RISC-V MCU 构建类 TrustZone 可信执行环境：从 ISA 基础机制到兼容 PSA 的安全服务</span><span class="agenda-talk-meta">郑惠哲 · OSYX Technologies</span></td></tr>
@@ -272,7 +271,7 @@ section_nav:
       <tr><td class="agenda-time">16:45–17:00</td><td><span class="agenda-talk-title">工具赋能，架构致远——全面解码ArchitStudio处理器敏捷开发平台</span><span class="agenda-talk-meta">孙茜瑞 · 隼瞻科技（广州）有限公司</span></td></tr>
       <tr><td class="agenda-time">17:00–17:15</td><td><span class="agenda-talk-title">乱序执行Agent Flow：香山 AI 处理器的软硬件开发实践</span><span class="agenda-talk-meta">乐国春 · 北京开源芯片研究院</span></td></tr>
       <tr><td class="agenda-time">17:15–17:30</td><td><span class="agenda-talk-title">利用混合仿真加速 RISC-V SoC 初始调试与软件开发</span><span class="agenda-talk-meta">朱振中 · 上海合见工业软件集团股份有限公司</span></td></tr>
-      <tr><td class="agenda-time">17:30–17:45</td><td><span class="agenda-talk-title">基于大模型驱动的RISC-V虚拟平台及调试工作流</span><span class="agenda-talk-meta">吴旭 · 思尔芯</span></td></tr>
+      <tr><td class="agenda-time">17:30–17:45</td><td><span class="agenda-talk-title">基于大模型驱动的RISC-V虚拟平台及调试工作流</span><span class="agenda-talk-meta">杨德豪 · 思尔芯</span></td></tr>
     </tbody>
   </table>
   <h3 id="oct20-track-g" class="agenda-session-title"><span class="agenda-session-location">玫瑰厅2 · 5F</span>产学合作与创新创业分论坛</h3>
@@ -304,7 +303,7 @@ section_nav:
       <tr><td class="agenda-time">13:45–14:00</td><td><span class="agenda-talk-title">从编译器到运行时库—RISC-V 功能安全工具链的落地实践</span><span class="agenda-talk-meta">霍世莹 · 兆松科技（武汉）有限公司</span></td></tr>
       <tr><td class="agenda-time">14:00–14:15</td><td><span class="agenda-talk-title">RISC-V内核中断实时特性增强与MCU硬件虚拟化架构</span><span class="agenda-talk-meta">范添彬 · 芯来科技</span></td></tr>
       <tr><td class="agenda-time">14:15–14:30</td><td><span class="agenda-talk-title">RISC-V驱动汽车芯片革新</span><span class="agenda-talk-meta">曹常锋 · 湖南紫荆半导体有限公司</span></td></tr>
-      <tr><td class="agenda-time">14:30–14:45</td><td><span class="agenda-talk-title">RT-Thread/RISC-V在车载与机器人实时控制中的实践</span><span class="agenda-talk-meta">熊谱翔 · 睿赛德电子科技</span></td></tr>
+      <tr><td class="agenda-time">14:30–14:45</td><td><span class="agenda-talk-title">RT-Thread/RISC-V在车载与机器人实时控制中的实践</span><span class="agenda-talk-meta">张丙儒 · 睿赛德电子科技</span></td></tr>
       <tr><td class="agenda-time">14:45–15:00</td><td><span class="agenda-talk-title">RISC-V助力软件定义汽车创新</span><span class="agenda-talk-meta">仲小龙 · Infineon</span></td></tr>
       <tr><td class="agenda-time">15:00–15:15</td><td><span class="agenda-talk-title">基于 RISC-V 的微电网边缘协同实践</span><span class="agenda-talk-meta">范健 · 上海赛昉半导体科技有限公司</span></td></tr>
       <tr><td class="agenda-time">15:15–15:30</td><td><span class="agenda-talk-title">从开放到可靠——玄铁车规功能安全架构演进</span><span class="agenda-talk-meta">李伟立 · 阿里巴巴达摩院</span></td></tr>
