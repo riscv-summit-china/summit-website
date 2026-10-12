@@ -35,6 +35,15 @@ link_slug: co-events
   </article>
 
   <article class="co-event-card">
+    <h2>芯华章 Agentic EDA 数字流程解决方案研讨会</h2>
+    <p class="co-event-description">随着智能体深入芯片设计与验证流程，Agentic EDA 的价值不只在于提升内容生成与任务执行效率，更在于交付可证明、可核验、可追溯、可治理的工程结果。芯华章 Agentic EDA 平台依托融合的系统设计与验证技术底座，将智能体能力融入关键环节，并以结果交付（Results-as-a-Service）为导向，推动 Agentic EDA 从单点工具提效走向可信工程结果的全流程交付。本次研讨会将交流真实芯片项目中的实践经验与需求，探索 Agentic EDA 规模化工程应用的可复制路径，为参会工程师提供可借鉴的技术思路。</p>
+    <dl class="co-event-meta">
+      <div><dt>主办单位</dt><dd>芯华章科技股份有限公司</dd></div>
+      <div><dt>时间</dt><dd>2026年10月19日 下午</dd></div>
+    </dl>
+  </article>
+
+  <article class="co-event-card">
     <h2>香山生态大会</h2>
     <p class="co-event-description">香山生态大会汇聚香山开发者、产业伙伴与开源爱好者，聚焦 RISC-V 技术创新、开源协作与生态共建。上午面向开发者，分享香山开源社区、RISC-V AI 软件栈、昆明湖处理器核 IP 与微架构等最新进展，并设社区荣誉与技术交流环节；下午面向全行业，发布香山发展成果与规划，展示开源芯片社区、SMT 工作组和 RISC-V AI 等协同成果，联动产业伙伴共话应用落地。</p>
     <dl class="co-event-meta">
