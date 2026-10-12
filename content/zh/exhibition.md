@@ -4,10 +4,8 @@ layout: info
 page_id: exhibition-page
 section_title: 会议场地平面图
 summary_image:
-  - url: "/img/rvsc2026-exhibition-6f.jpg"
-    description: "六楼会场平面图"
-  - url: "/img/rvsc2026-exhibition-5f.jpg"
-    description: "五楼会场平面图"
+  - url: "/img/rvsc2026-conference-site-plan.jpg"
+    description: "会议场地平面图"
 exhibition_plan_title: 展厅平面图
 poster_arrangements_link: /posters/
 poster_arrangements_label: 查看海报展示安排

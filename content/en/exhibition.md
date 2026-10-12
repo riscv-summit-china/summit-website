@@ -4,10 +4,8 @@ layout: info
 page_id: exhibition-page
 section_title: Venue Floor Plans
 summary_image:
-  - url: "/img/rvsc2026-exhibition-6f.jpg"
-    description: "Sixth Floor Plan"
-  - url: "/img/rvsc2026-exhibition-5f.jpg"
-    description: "Fifth Floor Plan"
+  - url: "/img/rvsc2026-conference-site-plan.jpg"
+    description: "Conference Site Plan"
 exhibition_plan_title: Exhibition Hall Floor Plan
 poster_arrangements_link: /posters/
 poster_arrangements_label: Find your poster number and display instructions
