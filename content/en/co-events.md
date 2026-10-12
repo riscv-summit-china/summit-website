@@ -35,6 +35,15 @@ link_slug: co-events
   </article>
 
   <article class="co-event-card">
+    <h2>X-EPIC Agentic EDA Digital Flow Solutions Workshop</h2>
+    <p class="co-event-description">As AI agents become part of chip design and verification, the value of Agentic EDA extends beyond faster content generation and task execution to delivering engineering results that can be proven, verified, traced, and governed. Built on an integrated system design and verification platform, X-EPIC's Agentic EDA platform brings agents into key stages of the workflow. Guided by Results-as-a-Service, it aims to move from isolated productivity gains to end-to-end delivery of trustworthy engineering results. This workshop will share experience and needs from real chip projects, offering engineers practical ideas and exploring repeatable paths to Agentic EDA deployment at scale.</p>
+    <dl class="co-event-meta">
+      <div><dt>Organizer</dt><dd>X-EPIC</dd></div>
+      <div><dt>Time</dt><dd>Afternoon, October 19, 2026</dd></div>
+    </dl>
+  </article>
+
+  <article class="co-event-card">
     <h2>XiangShan Ecosystem Conference</h2>
     <p class="co-event-description">The XiangShan Ecosystem Conference brings together XiangShan developers, industry partners, and open-source enthusiasts to explore RISC-V innovation, open-source collaboration, and ecosystem development. The morning program focuses on developers, sharing the latest progress in the XiangShan open-source community, the RISC-V AI software stack, and the Kunminghu processor core IP and microarchitecture, alongside community recognition and technical discussions. The afternoon program addresses the broader industry, presenting XiangShan's achievements and roadmap, showcasing collaborative work across the open-source chip community, the SMT working group, and RISC-V AI, and bringing industry partners together to discuss real-world adoption.</p>
     <dl class="co-event-meta">
