@@ -1180,6 +1180,11 @@ body:not(.in-home) article#agenda {
         width: 100%;
         max-width: 1800px;
     }
+    @media screen and (min-width: 981px) {
+        &.is-en .info-section-nav a {
+            font-size: 0.9rem;
+        }
+    }
     .agenda-session-title {
         margin: 2rem 0 0.5rem;
         color: #0f2e67;
@@ -1220,7 +1225,7 @@ body:not(.in-home) article#agenda {
         }
     }
     .content .agenda-session-organizer {
-        margin-top: -0.5rem;
+        margin-top: -0.25rem;
         color: #35517d;
         font-size: 1.05rem;
         font-weight: 600;
@@ -1258,7 +1263,7 @@ body:not(.in-home) article#agenda {
         strong {
             display: inline;
             margin-bottom: 0;
-            font-size: 1.12rem;
+            font-size: 1.06rem;
         }
         .agenda-overview-link {
             color: inherit;

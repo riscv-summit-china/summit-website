@@ -757,9 +757,7 @@ body:not(.in-home) {
         --cfp-border: #dce3ec;
         --cfp-muted: #40506b;
 
-        &:not(#agenda) {
-            font-size: 1.08rem;
-        }
+        font-size: 1.08rem;
 
         .cfp-shell {
             width: calc(100% - 4em);
@@ -1172,7 +1170,7 @@ body:not(.in-home) {
                 margin-left: -1.5px;
                 border-left: 2px solid transparent;
                 color: #475569;
-                font-size: 1.06rem;
+                font-size: 1rem;
                 font-weight: 500;
                 line-height: 1.45;
                 text-decoration: none;
