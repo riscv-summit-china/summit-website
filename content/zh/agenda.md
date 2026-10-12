@@ -189,7 +189,7 @@ section_nav:
       <tr class="agenda-break"><td class="agenda-time">12:00–13:30</td><td><span class="agenda-talk-title">午餐</span></td></tr>
       <tr><td class="agenda-time">13:30–13:45</td><td><span class="agenda-talk-title">RISC-V P 扩展：性能、验证与工具链支持</span><span class="agenda-talk-meta">Hank Chang · SiFive</span></td></tr>
       <tr><td class="agenda-time">13:45–14:00</td><td><span class="agenda-talk-title">RISC-V开源基础软件安全治理</span><span class="agenda-talk-meta">刘通 · 中国科学院软件研究所</span></td></tr>
-      <tr><td class="agenda-time">14:00–14:15</td><td><span class="agenda-talk-title">Digital Bridge：面向RISC-V应用迁移的高性能二进制翻译与智能化演进</span><span class="agenda-talk-meta">谢梦瑶 · 中国科学院计算技术研究所</span></td></tr>
+      <tr><td class="agenda-time">14:00–14:15</td><td><span class="agenda-talk-title">DigitalBridge+：面向RISC-V应用生态的高性能二进制翻译与智能化迁移</span><span class="agenda-talk-meta">谢梦瑶 · 中国科学院计算技术研究所</span></td></tr>
       <tr><td class="agenda-time">14:15–14:30</td><td><span class="agenda-talk-title">筑牢 RISC-V 存储底座：Ceph 适配与优化实践</span><span class="agenda-talk-meta">雷文 · 中兴通讯股份有限公司</span></td></tr>
       <tr><td class="agenda-time">14:30–14:45</td><td><span class="agenda-talk-title">让 RISC-V + AI 更易用：一种面向异步张量计算的并行编程范式</span><span class="agenda-talk-meta">文渊博 · 中国科学院计算技术研究所</span></td></tr>
       <tr><td class="agenda-time">14:45–15:00</td><td><span class="agenda-talk-title">Chimera：通过二进制重写实现透明且高性能的 ISAX 异构计算</span><span class="agenda-talk-meta">何家泰 · 中国科学院软件研究所</span></td></tr>
