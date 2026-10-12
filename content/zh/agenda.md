@@ -148,7 +148,7 @@ section_nav:
       <tr class="agenda-break"><td class="agenda-time">10:15–10:45</td><td><span class="agenda-talk-title">茶歇</span></td></tr>
       <tr><td class="agenda-time">10:45–11:00</td><td><span class="agenda-talk-title">深耕通算与智算：算能高性能RISC-V处理器的产业应用实践</span><span class="agenda-talk-meta">康晓啸 · 厦门算能科技股份有限公司</span></td></tr>
       <tr><td class="agenda-time">11:00–11:15</td><td><span class="agenda-talk-title">当需求遇上开源：昆明湖 V3 需求工程与香山开源工作组</span><span class="agenda-talk-meta">张建 · 北京开源芯片研究院</span></td></tr>
-      <tr><td class="agenda-time">11:15–11:30</td><td><span class="agenda-talk-title">AIA 扩展提案 - IMSIC 内存驻留中断文件 和 软件中断 MSI 控制器</span><span class="agenda-talk-meta">郭任 · 阿里巴巴达摩院</span></td></tr>
+      <tr><td class="agenda-time">11:15–11:30</td><td><span class="agenda-talk-title">面向 Agent Sandbox 的 AIA 扩展提案：软件中断 MSI 控制器 和 IMSIC 内存驻留中断文件</span><span class="agenda-talk-meta">郭任 · 阿里巴巴达摩院</span></td></tr>
       <tr><td class="agenda-time">11:30–11:45</td><td><span class="agenda-talk-title">DASICS——基于RISC-V处理器的内存安全隔离技术</span><span class="agenda-talk-meta">卢天越 · 中国科学院计算技术研究所</span></td></tr>
       <tr><td class="agenda-time">11:45–12:00</td><td><span class="agenda-talk-title">迈向RISC-V高性能通用/AI计算：进迭时空全栈技术架构与实践</span><span class="agenda-talk-meta">费晓龙 · 进迭时空科技有限公司</span></td></tr>
       <tr class="agenda-break"><td class="agenda-time">12:00–13:30</td><td><span class="agenda-talk-title">午餐</span></td></tr>
