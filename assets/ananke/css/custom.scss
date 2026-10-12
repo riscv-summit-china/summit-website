@@ -1226,29 +1226,33 @@ body:not(.in-home) article#agenda {
     .agenda-session-title .agenda-session-location {
         display: inline-flex;
         align-items: center;
-        gap: 0.4rem;
-        margin-right: 0.65rem;
-        color: #5a6b85;
-        font-size: 0.95rem;
-        font-weight: 400;
-        line-height: inherit;
-        vertical-align: baseline;
+        gap: 0.35rem;
+        margin: 0 0.65rem 0.25rem 0;
+        padding: 0.2rem 0.65rem;
+        border: 1px solid #ead5a9;
+        border-radius: 999px;
+        background: #fff8e9;
+        color: #77500d;
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1.4;
+        vertical-align: middle;
         &:before {
             content: '';
             display: inline-block;
-            flex: 0 0 0.95rem;
-            width: 0.95rem;
-            height: 0.95rem;
-            background-color: #d59618;
+            flex: 0 0 0.9rem;
+            width: 0.9rem;
+            height: 0.9rem;
+            background-color: #b7790a;
             -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z'/%3E%3Ccircle cx='12' cy='10' r='3'/%3E%3C/svg%3E") center / contain no-repeat;
             mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z'/%3E%3Ccircle cx='12' cy='10' r='3'/%3E%3C/svg%3E") center / contain no-repeat;
         }
         @media all and (max-width: 700px) {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             &:before {
-                flex-basis: 0.85rem;
-                width: 0.85rem;
-                height: 0.85rem;
+                flex-basis: 0.8rem;
+                width: 0.8rem;
+                height: 0.8rem;
             }
         }
     }
@@ -1259,12 +1263,49 @@ body:not(.in-home) article#agenda {
         font-weight: 600;
         line-height: 1.6;
     }
+    .agenda-track-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin: 1.25rem 0 1.75rem;
+        a {
+            display: inline-block;
+            padding: 0.35rem 0.7rem;
+            border: 1px solid #dce4f0;
+            border-radius: 999px;
+            background: #f4f7fc;
+            color: #0f2e67;
+            font-size: 0.85rem;
+            font-weight: 600;
+            line-height: 1.4;
+            text-decoration: none;
+            &:hover, &:focus-visible {
+                border-color: #b8c8e1;
+                background: #eaf0f9;
+            }
+        }
+    }
+    #october-18 .agenda-session-title,
+    #october-20 .agenda-session-title {
+        scroll-margin-top: 8rem;
+    }
     #agenda-overview .summit-agenda-table {
         td.agenda-date { width: 14%; }
         th:nth-child(2), td.agenda-time { width: 14%; }
         strong {
             display: inline;
             margin-bottom: 0;
+        }
+        .agenda-overview-link {
+            color: inherit;
+            text-decoration: none;
+            &:hover, &:focus-visible {
+                color: #1b4f96;
+            }
+            &:focus-visible {
+                outline: 2px solid currentColor;
+                outline-offset: 3px;
+            }
         }
         td >strong +span {
             display: inline-flex;
@@ -1327,6 +1368,23 @@ body:not(.in-home) article#agenda {
             margin-top: 0.5rem;
             color: #5a6b85;
             font-size: 0.9em;
+        }
+        .agenda-talk-title {
+            display: block;
+            color: #1c2942;
+            font-weight: 600;
+        }
+        .agenda-talk-meta {
+            display: block;
+            margin-top: 0.2rem;
+            color: #5a6b85;
+            font-size: 0.88em;
+            line-height: 1.5;
+        }
+        .agenda-break .agenda-talk-title,
+        .agenda-reserved .agenda-talk-title {
+            color: #64748b;
+            font-weight: 500;
         }
         @media all and (max-width: 700px) {
             font-size: 0.84rem;
