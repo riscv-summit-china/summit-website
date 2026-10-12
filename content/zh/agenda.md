@@ -213,7 +213,7 @@ section_nav:
       <tr><td class="agenda-time">9:00–9:15</td><td><span class="agenda-talk-title">ESS-E嵌入式安全可信执行环境方案设计与应用</span><span class="agenda-talk-meta">柴志勇 · 北京奕斯伟计算技术股份有限公司</span></td></tr>
       <tr><td class="agenda-time">9:15–9:30</td><td><span class="agenda-talk-title">RISC-V赋能高性能计算机外设：从芯片到产品的技术实践与创新</span><span class="agenda-talk-meta">于浩然 · 南京沁恒微电子股份有限公司</span></td></tr>
       <tr><td class="agenda-time">9:30–9:45</td><td><span class="agenda-talk-title">从定制走向通用：RISC-V 嵌入式生态建设的实践与思考</span><span class="agenda-talk-meta">何小庆 · 嵌入式系统联谊会</span></td></tr>
-      <tr><td class="agenda-time">9:45–10:00</td><td><span class="agenda-talk-title">航空机载全自主安全关键处理器</span><span class="agenda-talk-meta">景旭宇 · 中国航空工业集团西安飞行自动控制研究所</span></td></tr>
+      <tr><td class="agenda-time">9:45–10:00</td><td><span class="agenda-talk-title">航空全自主安全关键处理器</span><span class="agenda-talk-meta">何剑瑞 · 中国航空工业集团西安飞行自动控制研究所</span></td></tr>
       <tr><td class="agenda-time">10:00–10:15</td><td><span class="agenda-talk-title">RISC-V + OpenHarmony 助力端侧AI芯未来</span><span class="agenda-talk-meta">张涛 · RISC-V工委会</span></td></tr>
       <tr class="agenda-break"><td class="agenda-time">10:15–10:45</td><td><span class="agenda-talk-title">茶歇</span></td></tr>
       <tr><td class="agenda-time">10:45–11:00</td><td><span class="agenda-talk-title">从&quot;模型上芯&quot;到&quot;Agent 入场&quot;：RT-Thread 的 RISC-V 端侧 AI 全栈实践</span><span class="agenda-talk-meta">张丙儒 · 睿赛德电子科技</span></td></tr>
