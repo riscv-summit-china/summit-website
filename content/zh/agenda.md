@@ -29,7 +29,7 @@ section_nav:
     <tr><td class="agenda-time">9:30–18:00</td><td><strong><a class="agenda-overview-link" href="#oct18-xiangshan">香山处理器专场</a></strong><span>玫瑰厅2 · 5F</span></td></tr>
     <tr><td class="agenda-date" rowspan="2">10 月 19 日<span>周一</span></td><td class="agenda-time">9:00–12:20</td><td><strong><a class="agenda-overview-link" href="#october-19">第六届 RISC-V 中国峰会开幕式</a></strong><span>梅花厅 · 5F</span></td></tr>
     <tr><td class="agenda-time">13:30–17:40</td><td><strong><a class="agenda-overview-link" href="#october-19">第六届 RISC-V 中国峰会主论坛</a></strong><span>梅花厅 · 5F</span></td></tr>
-    <tr><td class="agenda-date" rowspan="7">10 月 20 日<span>周二</span></td><td class="agenda-time">9:00–17:30</td><td><strong><a class="agenda-overview-link" href="#oct20-track-a">人工智能分论坛</a></strong><span>茉莉厅 · 6F</span><span class="agenda-co-chairs">联合主席：陈炜（希姆计算）、苏中（达摩院）</span></td></tr>
+    <tr><td class="agenda-date" rowspan="7">10 月 20 日<span>周二</span></td><td class="agenda-time">9:00–17:45</td><td><strong><a class="agenda-overview-link" href="#oct20-track-a">人工智能分论坛</a></strong><span>茉莉厅 · 6F</span><span class="agenda-co-chairs">联合主席：陈炜（希姆计算）、苏中（达摩院）</span></td></tr>
     <tr><td class="agenda-time">9:00–17:45</td><td><strong><a class="agenda-overview-link" href="#oct20-track-b">数据中心与高性能计算分论坛</a></strong><span>水仙厅 · 6F</span><span class="agenda-co-chairs">联合主席：张泽松（香港城市大学）、何宁（奕斯伟计算）</span></td></tr>
     <tr><td class="agenda-time">9:00–17:45</td><td><strong><a class="agenda-overview-link" href="#oct20-track-c">软件生态分论坛</a></strong><span>牡丹厅 · 5F</span><span class="agenda-co-chairs">联合主席：屈晟（中科院软件所）、李向明（RISCstar）</span></td></tr>
     <tr><td class="agenda-time">9:00–17:45</td><td><strong><a class="agenda-overview-link" href="#oct20-track-d">嵌入式、物联网与智能硬件分论坛</a></strong><span>菊花厅 · 5F</span><span class="agenda-co-chairs">联合主席：胡振波（芯来科技）、张涛（海思）</span></td></tr>
@@ -131,7 +131,8 @@ section_nav:
       <tr><td class="agenda-time">16:30–16:45</td><td><span class="agenda-talk-title">重塑开源AI算力未来：从 OS 到 vLLM，共筑 RISC-V AI 生态底座</span><span class="agenda-talk-meta">傅炜 · Red Hat Limited</span></td></tr>
       <tr><td class="agenda-time">16:45–17:00</td><td><span class="agenda-talk-title">面向 Yosemite SoC 冷层内存的 RVV 加速 KV 缓存压缩</span><span class="agenda-talk-meta">刘小旋 · 众智齐芯（上海）科技有限公司</span></td></tr>
       <tr><td class="agenda-time">17:00–17:15</td><td><span class="agenda-talk-title">从单盒智能到多盒联邦：RISC-V智能体基础设施的架构与实践</span><span class="agenda-talk-meta">梁致远 · 中国电信研究院</span></td></tr>
-      <tr><td class="agenda-time">17:15–17:30</td><td><span class="agenda-talk-title">Building Open Cloud‑Native AI with RISC‑V &amp; CNCF</span><span class="agenda-talk-meta">Keith Chan · The Linux Foundation APAC</span></td></tr>
+      <tr><td class="agenda-time">17:15–17:30</td><td><span class="agenda-talk-title">RISC-V筑基AI工厂：构建自主可控算力底座</span><span class="agenda-talk-meta">黄超 · 奕行智能</span></td></tr>
+      <tr><td class="agenda-time">17:30–17:45</td><td><span class="agenda-talk-title">Building Open Cloud‑Native AI with RISC‑V &amp; CNCF</span><span class="agenda-talk-meta">Keith Chan · The Linux Foundation APAC</span></td></tr>
     </tbody>
   </table>
   <h3 id="oct20-track-b" class="agenda-session-title"><span class="agenda-session-location">水仙厅 · 6F</span>数据中心与高性能计算分论坛</h3>
