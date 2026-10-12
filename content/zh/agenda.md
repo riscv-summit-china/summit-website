@@ -304,7 +304,7 @@ section_nav:
       <tr><td class="agenda-time">13:45–14:00</td><td><span class="agenda-talk-title">从编译器到运行时库—RISC-V 功能安全工具链的落地实践</span><span class="agenda-talk-meta">霍世莹 · 兆松科技（武汉）有限公司</span></td></tr>
       <tr><td class="agenda-time">14:00–14:15</td><td><span class="agenda-talk-title">RISC-V内核中断实时特性增强与MCU硬件虚拟化架构</span><span class="agenda-talk-meta">范添彬 · 芯来科技</span></td></tr>
       <tr><td class="agenda-time">14:15–14:30</td><td><span class="agenda-talk-title">RISC-V驱动汽车芯片革新</span><span class="agenda-talk-meta">曹常锋 · 湖南紫荆半导体有限公司</span></td></tr>
-      <tr><td class="agenda-time">14:30–14:45</td><td><span class="agenda-talk-title">RT-Thread/RISC-V在车载与机器人实时控制中的实践</span><span class="agenda-talk-meta">张丙儒 · 睿赛德电子科技</span></td></tr>
+      <tr><td class="agenda-time">14:30–14:45</td><td><span class="agenda-talk-title">RT-Thread物理AI新范式</span><span class="agenda-talk-meta">熊谱翔 · 睿赛德电子科技</span></td></tr>
       <tr><td class="agenda-time">14:45–15:00</td><td><span class="agenda-talk-title">RISC-V助力软件定义汽车创新</span><span class="agenda-talk-meta">仲小龙 · Infineon</span></td></tr>
       <tr><td class="agenda-time">15:00–15:15</td><td><span class="agenda-talk-title">基于 RISC-V 的微电网边缘协同实践</span><span class="agenda-talk-meta">范健 · 上海赛昉半导体科技有限公司</span></td></tr>
       <tr><td class="agenda-time">15:15–15:30</td><td><span class="agenda-talk-title">从开放到可靠——玄铁车规功能安全架构演进</span><span class="agenda-talk-meta">李伟立 · 阿里巴巴达摩院</span></td></tr>
