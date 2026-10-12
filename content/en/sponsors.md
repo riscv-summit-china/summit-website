@@ -67,6 +67,9 @@ bronze:
 host:
   - icon: "/img/rios-logo.png"
     url: "https://www.rioslab.org"
+co_hosts:
+  - icon: "/img/logos/2026/co-host/riscv-working-committee.webp"
+    alt: "RISC-V Working Committee"
 ---
 
 We sincerely invite global RISC-V ecosystem partners, semiconductor companies, system vendors, software and toolchain companies, research institutions, and open source communities to sponsor the Summit and jointly advance RISC-V technology innovation, industrial adoption, and ecosystem growth.
