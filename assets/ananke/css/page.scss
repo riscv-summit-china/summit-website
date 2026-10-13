@@ -1295,10 +1295,10 @@ body:not(.in-home) {
 
                 figcaption {
                     padding: 0.7em 0 0.15em;
-                    color: #475569;
-                    font-weight: 500;
+                    color: #0f2e67;
+                    font-weight: 700;
                     text-align: center;
-                    font-size: 0.94rem;
+                    font-size: 1.02rem;
                 }
             }
         }
@@ -1496,8 +1496,9 @@ body:not(.in-home) {
 
                 figcaption {
                     margin-top: 0.65em;
-                    font-size: 0.92rem;
-                    color: #475569;
+                    font-size: 1.02rem;
+                    color: #0f2e67;
+                    font-weight: 700;
                     text-align: center;
                     background: transparent;
                     border: none;
@@ -1874,7 +1875,7 @@ body:not(.in-home) {
             margin-top: 0;
             .exhibition-plan-narrow { max-width: none; }
             .exhibition-plan-details { display: grid; gap: 1.5em; min-width: 0; }
-            figcaption { margin-top: 0.75em; color: #0f2e67; font-weight: 600; text-align: center; }
+            figcaption { margin-top: 0.75em; color: #0f2e67; font-size: 1.02rem; font-weight: 700; text-align: center; }
             @media all and (max-width: 760px) {
                 grid-template-columns: 1fr;
             }
@@ -1965,10 +1966,13 @@ body:not(.in-home) {
             }
             figcaption {
                 padding: 0.85em 0 0.2em;
+                color: #0f2e67;
+                font-size: 1.02rem;
+                font-weight: 700;
                 text-align: center;
                 .image-desc {
                     display: block;
-                    color: #1e293b;
+                    color: #0f2e67;
                     font-weight: 700;
                     font-size: 1.02rem;
                     line-height: 1.45;

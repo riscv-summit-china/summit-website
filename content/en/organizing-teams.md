@@ -96,4 +96,6 @@ teams:
         position: Chair
       - name: Wei Fu
         position: Vice Chair
+      - name: Yifei Sun
+        position: Executive Deputy Secretary-General / Shanghai Open Processor Industry Innovation Center (SOPIC)
 ---
