@@ -1305,6 +1305,13 @@ body:not(.in-home) article#agenda {
             margin-bottom: 0;
             font-size: 1.06rem;
         }
+        .agenda-co-chairs {
+            margin-top: 0.4rem;
+            color: #35517d;
+            font-size: 0.92rem;
+            font-weight: 600;
+            line-height: 1.6;
+        }
         .agenda-overview-link {
             color: inherit;
             text-decoration: none;
@@ -1461,12 +1468,6 @@ body:not(.in-home) article#agenda {
             font-size: 1.12rem;
         }
         span { display: block; }
-        .agenda-co-chairs {
-            margin-top: 0.6rem;
-            color: #0f2e67;
-            font-weight: 600;
-            line-height: 1.7;
-        }
         td >strong +span {
             display: flex;
             align-items: center;
