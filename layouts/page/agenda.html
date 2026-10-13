@@ -27,6 +27,9 @@
         <div class="info-page-main">
           <div class="content">
             {{ .Content | markdownify | emojify | safeHTML }}
+            {{ range (slice "october-18" "october-19" "october-20" "october-21") }}
+              {{ partial (printf "agenda/%s/%s.html" $.Site.Language.Lang .) $ }}
+            {{ end }}
           </div>
           {{ if or .Params.a21 .Params.a22_A .Params.a22_B .Params.a22_C .Params.a22_D .Params.a22_E .Params.a23_A .Params.a23_B .Params.a23_C .Params.a23_D .Params.a23_E }}
           {{ partial "index-sections/agenda-main.html" . }}
