@@ -67,6 +67,9 @@ bronze:
 host:
   - icon: "/img/rios-logo.png"
     url: "https://www.rioslab.org"
+co_hosts:
+  - icon: "/img/logos/2026/co-host/riscv-working-committee.webp"
+    alt: "RISC-V工委会"
 ---
 
 我们诚邀全球 RISC-V 生态伙伴、半导体企业、系统厂商、软件与工具链企业、科研机构及开源社区参与赞助，共同推动 RISC-V 技术创新、产业落地与生态繁荣。
