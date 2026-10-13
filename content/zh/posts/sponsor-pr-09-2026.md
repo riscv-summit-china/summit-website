@@ -1,0 +1,26 @@
+---
+title: "MIPS｜第六届 RISC-V 中国峰会宣传稿"
+summary: "MIPS提供的第六届 RISC-V 中国峰会宣传稿。"
+description: "MIPS提供的第六届 RISC-V 中国峰会宣传稿。"
+slug: sponsor-pr-09-2026
+sponsor_order: 9
+type: page
+layout: sponsorship-registration
+date: 2026-10-13
+draft: false
+categories: sponsor-pr
+tags: sponsor riscv 2026
+social_share: false
+newsletter: false
+disable_comments: true
+page_eyebrow: RISC-V SUMMIT CHINA 2026 · SPONSOR PR
+page_variant: sponsor-pr
+published_label: 发布日期：
+publisher_label: 发布方：
+publisher_value: "MIPS"
+source_materials:
+  - "09_MIPS_MIPS_RISV-V Summit Poster.pdf"
+---
+
+
+<figure class="sponsor-pr-artwork"><a href="/img/news/exhibitor-promotions/09-mips-1.webp" target="_blank" rel="noopener noreferrer"><img src="/img/news/exhibitor-promotions/09-mips-1.webp" alt="MIPS宣传稿" loading="lazy" decoding="async"></a></figure>

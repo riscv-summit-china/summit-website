@@ -24,6 +24,9 @@
     <div class="registration-news-shell registration-news-content">
       <div class="registration-news-body">
         {{ .Content }}
+        {{ if .Params.sponsor_roundup }}
+          {{ partial "sponsor-pr-roundup.html" . }}
+        {{ end }}
       </div>
     </div>
   </article>
