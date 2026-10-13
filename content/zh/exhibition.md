@@ -4,7 +4,7 @@ layout: info
 page_id: exhibition-page
 section_title: 会议场地平面图
 summary_image:
-  - url: "/img/rvsc2026-conference-site-plan.jpg"
+  - url: "/img/rvsc2026-conference-site-plan-20261012.webp"
     description: "会议场地平面图"
 exhibition_plan_title: 展厅平面图
 poster_arrangements_link: /posters/
@@ -23,4 +23,4 @@ exhibition_plan_images:
     description: "兰花厅平面图"
 ---
 
-请注意，以下平面图可能存在变更，请以现场实际情况为准。
+请注意，以下平面图可能存在变更，请以现场实际情况为准。[查看原图 PDF](/files/rvsc2026-conference-site-plan-20261012.pdf)

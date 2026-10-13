@@ -96,4 +96,6 @@ teams:
         position: 主席
       - name: 傅炜
         position: 副主席
+      - name: 孙翊飞
+        position: 常务副秘书长 / 上海开放处理器产业创新中心（SOPIC）
 ---
