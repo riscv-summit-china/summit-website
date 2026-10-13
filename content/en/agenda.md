@@ -113,7 +113,7 @@ section_nav:
       <tr class="agenda-break"><td class="agenda-time">10:15–10:45</td><td><span class="agenda-talk-title">Coffee Break</span></td></tr>
       <tr><td class="agenda-time">10:45–11:00</td><td><span class="agenda-talk-title">Deploying Large Models on an In-House RISC-V AI Core and a Verification Methodology for Matrix Extensions</span><span class="agenda-talk-meta">Xiaogeng Wang · Beijing ESWIN Computing Technology Co., Ltd.</span></td></tr>
       <tr><td class="agenda-time">11:00–11:15</td><td><span class="agenda-talk-title">RISC-V AI Operator Library: Building a High-Performance Open Intelligent Computing Ecosystem</span><span class="agenda-talk-meta">Jian Zhang · ZTE Corporation</span></td></tr>
-      <tr><td class="agenda-time">11:15–11:30</td><td><span class="agenda-talk-title">Design of the XiangShan &quot;Badaling&quot; AI IP and Its Companion Software Stack</span><span class="agenda-talk-meta">David Gao · Institute of Computing Technology, Chinese Academy of Sciences</span></td></tr>
+      <tr><td class="agenda-time">11:15–11:30</td><td><span class="agenda-talk-title">Design of the XiangShan &quot;Badaling&quot; AI IP and Its Companion Software Stack</span><span class="agenda-talk-meta">Mingjin Gao · Institute of Computing Technology, Chinese Academy of Sciences</span></td></tr>
       <tr><td class="agenda-time">11:30–11:45</td><td><span class="agenda-talk-title">Baltoro: A RISC-V-First AI Compiler Stack</span><span class="agenda-talk-meta">Adeel Ahmad · 10xEngineers</span></td></tr>
       <tr><td class="agenda-time">11:45–12:00</td><td><span class="agenda-talk-title">Tile-Level Parallel Programming Model and Compiler-Runtime Co-Design for Homogeneous Converged AI-CPUs</span><span class="agenda-talk-meta">JingHui Huang · SpacemiT Technology Co Ltd</span></td></tr>
       <tr class="agenda-break"><td class="agenda-time">12:00–13:30</td><td><span class="agenda-talk-title">Lunch</span></td></tr>
@@ -314,7 +314,7 @@ section_nav:
       <tr><td class="agenda-time">16:30–16:45</td><td><span class="agenda-talk-title">Virtualizing Automotive RISC-V MCUs: From Hardware Primitives to a Working Hypervisor</span><span class="agenda-talk-meta">José Martins · OSYX Technologies</span></td></tr>
       <tr><td class="agenda-time">16:45–17:00</td><td><span class="agenda-talk-title">Make Each Error Count: High-Reliability CPU Architectures and Intelligent Verification</span><span class="agenda-talk-meta">Zhe Jiang · Southeast University</span></td></tr>
       <tr><td class="agenda-time">17:00–17:15</td><td><span class="agenda-talk-title">Building an Automotive RISC-V Functional Safety Software Ecosystem with Model-Based Design and Generative AI</span><span class="agenda-talk-meta">Vincent Chen · MathWorks</span></td></tr>
-      <tr class="agenda-reserved"><td class="agenda-time">17:15–17:30</td><td><span class="agenda-talk-title">Reserved slot (to be confirmed)</span></td></tr>
+      <tr><td class="agenda-time">17:15–17:30</td><td><span class="agenda-talk-title">The RISC-V Isolation Toolbox</span><span class="agenda-talk-meta">Andrew Dellow</span></td></tr>
       <tr class="agenda-reserved"><td class="agenda-time">17:30–17:45</td><td><span class="agenda-talk-title">Reserved slot (to be confirmed)</span></td></tr>
     </tbody>
   </table>
