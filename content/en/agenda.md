@@ -314,7 +314,7 @@ section_nav:
       <tr><td class="agenda-time">16:30–16:45</td><td><span class="agenda-talk-title">Virtualizing Automotive RISC-V MCUs: From Hardware Primitives to a Working Hypervisor</span><span class="agenda-talk-meta">José Martins · OSYX Technologies</span></td></tr>
       <tr><td class="agenda-time">16:45–17:00</td><td><span class="agenda-talk-title">Make Each Error Count: High-Reliability CPU Architectures and Intelligent Verification</span><span class="agenda-talk-meta">Zhe Jiang · Southeast University</span></td></tr>
       <tr><td class="agenda-time">17:00–17:15</td><td><span class="agenda-talk-title">Building an Automotive RISC-V Functional Safety Software Ecosystem with Model-Based Design and Generative AI</span><span class="agenda-talk-meta">Vincent Chen · MathWorks</span></td></tr>
-      <tr><td class="agenda-time">17:15–17:30</td><td><span class="agenda-talk-title">The RISC-V Isolation Toolbox</span><span class="agenda-talk-meta">Andrew Dellow</span></td></tr>
+      <tr><td class="agenda-time">17:15–17:30</td><td><span class="agenda-talk-title">The RISC-V isolation toolbox</span><span class="agenda-talk-meta">Andrew Dellow</span></td></tr>
       <tr class="agenda-reserved"><td class="agenda-time">17:30–17:45</td><td><span class="agenda-talk-title">Reserved slot (to be confirmed)</span></td></tr>
     </tbody>
   </table>
