@@ -1,7 +1,7 @@
 ---
 title: 大会议程
 layout: agenda
-home_desc: 2026 RISC-V 中国峰会议程包括教程日、开幕式、主论坛、7 场并行技术分论坛及 RISC-V GBA/HK Day。
+home_desc: 2026 RISC-V 中国峰会议程包括教程日、开幕式、主论坛、7 场并行技术分论坛及 RISC-V 香港日。
 link_slug: agenda
 section_nav:
   - id: agenda-overview
@@ -36,7 +36,7 @@ section_nav:
     <tr><td class="agenda-time">9:00–17:45</td><td><strong><a class="agenda-overview-link" href="#oct20-track-e">芯片设计与验证分论坛</a></strong><span>玫瑰厅1 · 5F</span><span class="agenda-co-chairs">联合主席：唐丹（开芯院）、苏泓萌（晶心科技）</span></td></tr>
     <tr><td class="agenda-time">9:00–12:30</td><td><strong><a class="agenda-overview-link" href="#oct20-track-g">产学合作与创新创业分论坛</a></strong><span>玫瑰厅2 · 5F</span><span class="agenda-co-chairs">联合主席：刘明（RISC-V 国际开源实验室）、杨轩（Linux基金会亚太区）</span></td></tr>
     <tr><td class="agenda-time">13:30–17:45</td><td><strong><a class="agenda-overview-link" href="#oct20-track-f">汽车电子、工业与机器人分论坛</a></strong><span>玫瑰厅2 · 5F</span><span class="agenda-co-chairs">联合主席：徐滔（赛昉科技）、杨勇（沁恒微）</span></td></tr>
-    <tr><td class="agenda-date">10 月 21 日<span>周三</span></td><td class="agenda-time">9:00–18:00</td><td><strong><a class="agenda-overview-link" href="#october-21">RISC-V GBA/HK Day</a></strong><span>香港城市大学</span></td></tr>
+    <tr><td class="agenda-date">10 月 21 日<span>周三</span></td><td class="agenda-time">9:00–17:10</td><td><strong><a class="agenda-overview-link" href="#october-21">RISC-V 香港日</a></strong><span>香港城市大学 ICP · B-101 室</span></td></tr>
   </tbody>
 </table>
 </section>

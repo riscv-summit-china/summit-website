@@ -1,7 +1,7 @@
 ---
 title: Agenda
 layout: agenda
-home_desc: The RISC-V Summit China 2026 program includes Tutorial Day, the Opening Ceremony, Main Forum, seven parallel technical forums, and RISC-V GBA/HK Day.
+home_desc: The RISC-V Summit China 2026 program includes Tutorial Day, the Opening Ceremony, Main Forum, seven parallel technical forums, and RISC-V Hong Kong Day.
 link_slug: agenda
 section_nav:
   - id: agenda-overview
@@ -36,7 +36,7 @@ section_nav:
     <tr><td class="agenda-time">9:00–17:45</td><td><strong><a class="agenda-overview-link" href="#oct20-track-e">Chip Design &amp; Verification Forum</a></strong><span>Rose Hall 1 · 5F</span><span class="agenda-co-chairs">Co-chairs: Dan Tang (Beijing Institute of Open Source Chip); Charlie Su (Andes Technology)</span></td></tr>
     <tr><td class="agenda-time">9:00–12:30</td><td><strong><a class="agenda-overview-link" href="#oct20-track-g">Industry-Academia Collaboration, Innovation and Entrepreneurship Forum</a></strong><span>Rose Hall 2 · 5F</span><span class="agenda-co-chairs">Co-chairs: Ming Liu (RIOS Lab); Xuan Yang (Linux Foundation APAC)</span></td></tr>
     <tr><td class="agenda-time">13:30–17:45</td><td><strong><a class="agenda-overview-link" href="#oct20-track-f">Automotive, Industrial and Robotics Forum</a></strong><span>Rose Hall 2 · 5F</span><span class="agenda-co-chairs">Co-chairs: Thomas Xu (StarFive Tech); Yong Yang (WCH)</span></td></tr>
-    <tr><td class="agenda-date">Wednesday<span>October 21</span></td><td class="agenda-time">9:00–18:00</td><td><strong><a class="agenda-overview-link" href="#october-21">RISC-V GBA/HK Day</a></strong><span>City University of Hong Kong</span></td></tr>
+    <tr><td class="agenda-date">Wednesday<span>October 21</span></td><td class="agenda-time">9:00–17:10</td><td><strong><a class="agenda-overview-link" href="#october-21">RISC-V Hong Kong Day</a></strong><span>Room B-101 · CityUHK ICP</span></td></tr>
   </tbody>
 </table>
 </section>
