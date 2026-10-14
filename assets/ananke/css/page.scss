@@ -2275,6 +2275,43 @@ body:not(.in-home) {
 
         }
 
+        &.sponsor-pr {
+            .registration-news-body {
+                >p:first-child { font-weight: 400; color: #3f4c62; }
+                .sponsor-pr-artwork {
+                    width: 100%;
+                    max-width: 1000px;
+                    margin: 2em auto;
+                    a { display: block; }
+                    a:focus-visible { outline: 2px solid #0f2e67; outline-offset: 4px; }
+                    img { display: block; width: 100%; height: auto; border-radius: 8px; }
+                }
+            }
+            &.sponsor-roundup {
+                .sponsor-pr-directory {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.65em;
+                    margin: 1.8em 0 2.2em;
+                    a {
+                        display: inline-flex;
+                        align-items: center;
+                        padding: 0.65em 1.15em;
+                        border: 1px solid #dce3ec;
+                        border-radius: 999px;
+                        background: #fff;
+                        color: #0f2e67;
+                        font-weight: 700;
+                        line-height: 1.4;
+                        text-decoration: none;
+                    }
+                    a:hover, a:focus-visible { border-color: #aebed8; background: #fff; }
+                    a.is-selected { border-color: #0f2e67; background: #fff; }
+                }
+                .sponsor-pr-detail { scroll-margin-top: 110px; }
+            }
+        }
+
         &.volunteer-recruitment {
             h1 {
                 font-size: clamp(1.65rem, 2.65vw, 2.2rem);

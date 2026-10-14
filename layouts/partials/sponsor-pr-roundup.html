@@ -1,0 +1,51 @@
+{{ $posts := where .Site.RegularPages "Params.page_variant" "sponsor-pr" }}
+{{ $posts = sort $posts "Params.sponsor_order" }}
+
+<nav class="sponsor-pr-directory" aria-label="企业目录">
+  {{ range $posts }}
+    {{ $id := printf "company-%02d" (int .Params.sponsor_order) }}
+    <a href="{{ .RelPermalink }}" data-sponsor-target="{{ $id }}" aria-controls="{{ $id }}" aria-expanded="false">{{ .Params.publisher_value }}</a>
+  {{ end }}
+</nav>
+
+<div class="sponsor-pr-selection">
+  {{ range $posts }}
+    {{ $id := printf "company-%02d" (int .Params.sponsor_order) }}
+    <section class="sponsor-pr-detail" id="{{ $id }}" hidden>
+      {{ .Content }}
+    </section>
+  {{ end }}
+</div>
+
+<script>
+  (function () {
+    var links = Array.from(document.querySelectorAll('.sponsor-pr-directory [data-sponsor-target]'));
+    var details = Array.from(document.querySelectorAll('.sponsor-pr-detail'));
+
+    function showCompany(id, scroll) {
+      var selected = details.find(function (detail) { return detail.id === id; });
+      if (!selected) return;
+      details.forEach(function (detail) { detail.hidden = detail !== selected; });
+      links.forEach(function (link) {
+        var active = link.dataset.sponsorTarget === id;
+        link.setAttribute('aria-expanded', String(active));
+        link.classList.toggle('is-selected', active);
+      });
+      if (scroll) selected.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    links.forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+        var id = link.dataset.sponsorTarget;
+        showCompany(id, true);
+        history.pushState(null, '', '#' + id);
+      });
+    });
+
+    window.addEventListener('hashchange', function () {
+      showCompany(location.hash.slice(1), true);
+    });
+    showCompany(location.hash.slice(1), false);
+  }());
+</script>
