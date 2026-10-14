@@ -5,7 +5,7 @@ description: "浏览参展企业为第六届 RISC-V 中国峰会准备的宣传�
 slug: sponsor-pr-roundup-2026
 type: page
 layout: sponsorship-registration
-date: 2026-10-13
+date: 2026-10-14
 draft: false
 categories: sponsor-pr
 tags: sponsor riscv 2026
