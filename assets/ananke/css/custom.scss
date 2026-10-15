@@ -1294,8 +1294,12 @@ body:not(.in-home) article#agenda {
         }
     }
     #october-18 .agenda-session-title,
+    #october-19 .agenda-session-title,
     #october-20 .agenda-session-title {
         scroll-margin-top: 8rem;
+    }
+    #october-19 .agenda-detail-table td[rowspan] {
+        vertical-align: top;
     }
     #agenda-overview .summit-agenda-table {
         td.agenda-date { width: 14%; }
