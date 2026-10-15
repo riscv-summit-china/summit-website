@@ -27,8 +27,8 @@ section_nav:
     <tr><td class="agenda-time">9:30–18:00</td><td><strong><a class="agenda-overview-link" href="#oct18-gpgpu">GPGPU 专场 | RISC-V Member Day</a></strong><span>郁金香厅 · 6F</span></td></tr>
     <tr><td class="agenda-time">9:30–18:00</td><td><strong><a class="agenda-overview-link" href="#oct18-ai">AI for RISC-V 专场</a></strong><span>玫瑰厅1 · 5F</span></td></tr>
     <tr><td class="agenda-time">9:30–18:00</td><td><strong><a class="agenda-overview-link" href="#oct18-xiangshan">香山处理器专场</a></strong><span>玫瑰厅2 · 5F</span></td></tr>
-    <tr><td class="agenda-date" rowspan="2">10 月 19 日<span>周一</span></td><td class="agenda-time">9:00–12:00</td><td><strong><a class="agenda-overview-link" href="#oct19-opening">第六届 RISC-V 中国峰会开幕式</a></strong><span>梅花厅 · 5F</span></td></tr>
-    <tr><td class="agenda-time">13:30–17:10</td><td><strong><a class="agenda-overview-link" href="#oct19-main-forum">第六届 RISC-V 中国峰会主论坛</a></strong><span>梅花厅 · 5F</span></td></tr>
+    <tr><td class="agenda-date" rowspan="2">10 月 19 日<span>周一</span></td><td class="agenda-time">9:00–12:00</td><td><strong><a class="agenda-overview-link" href="#oct19-morning">第六届 RISC-V 中国峰会主论坛（上午场）</a></strong><span>梅花厅 · 5F</span></td></tr>
+    <tr><td class="agenda-time">13:30–17:10</td><td><strong><a class="agenda-overview-link" href="#oct19-afternoon">第六届 RISC-V 中国峰会主论坛（下午场）</a></strong><span>梅花厅 · 5F</span></td></tr>
     <tr><td class="agenda-date" rowspan="7">10 月 20 日<span>周二</span></td><td class="agenda-time">9:00–17:45</td><td><strong><a class="agenda-overview-link" href="#oct20-track-a">人工智能分论坛</a></strong><span>茉莉厅 · 6F</span><span class="agenda-co-chairs">联合主席：陈炜（希姆计算）、苏中（达摩院）</span></td></tr>
     <tr><td class="agenda-time">9:00–17:45</td><td><strong><a class="agenda-overview-link" href="#oct20-track-b">数据中心与高性能计算分论坛</a></strong><span>水仙厅 · 6F</span><span class="agenda-co-chairs">联合主席：张泽松（香港城市大学）、何宁（奕斯伟计算）</span></td></tr>
     <tr><td class="agenda-time">9:00–17:45</td><td><strong><a class="agenda-overview-link" href="#oct20-track-c">软件生态分论坛</a></strong><span>牡丹厅 · 5F</span><span class="agenda-co-chairs">联合主席：屈晟（中科院软件所）、李向明（RISCstar）</span></td></tr>
