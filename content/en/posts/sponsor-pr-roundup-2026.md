@@ -43,6 +43,7 @@ sponsor_labels:
   "29": RICORE
   "30": Arteris
   "31": ESWIN Computing
+  "32": UltraRISC
 ---
 
 Companies are bringing their technologies, products, and perspectives to the 6th RISC-V Summit China. Select a company below to explore its promotional materials. Materials are shown as provided by the exhibitors and may be in Chinese.
