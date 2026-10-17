@@ -1,10 +1,22 @@
-{{ $posts := where .Site.RegularPages "Params.page_variant" "sponsor-pr" }}
+{{ $sourceSite := .Site }}
+{{ if eq .Language.Lang "en" }}
+  {{ with .Translations }}
+    {{ $sourceSite = (index . 0).Site }}
+  {{ end }}
+{{ end }}
+{{ $posts := where $sourceSite.RegularPages "Params.page_variant" "sponsor-pr" }}
 {{ $posts = sort $posts "Params.sponsor_order" }}
+{{ $roundup := . }}
 
-<nav class="sponsor-pr-directory" aria-label="企业目录">
+<nav class="sponsor-pr-directory" aria-label="{{ cond (eq .Language.Lang "en") "Exhibitor directory" "企业目录" }}">
   {{ range $posts }}
+    {{ $post := . }}
     {{ $id := printf "company-%02d" (int .Params.sponsor_order) }}
-    <a href="{{ .RelPermalink }}" data-sponsor-target="{{ $id }}" aria-controls="{{ $id }}" aria-expanded="false">{{ .Params.publisher_value }}</a>
+    {{ $label := .Params.publisher_value }}
+    {{ with $roundup.Params.sponsor_labels }}
+      {{ $label = default $label (index . (printf "%d" (int $post.Params.sponsor_order))) }}
+    {{ end }}
+    <a href="{{ .RelPermalink }}" data-sponsor-target="{{ $id }}" aria-controls="{{ $id }}" aria-expanded="false">{{ $label }}</a>
   {{ end }}
 </nav>
 
